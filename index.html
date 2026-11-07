@@ -23,16 +23,55 @@
 @media(max-width:850px){.hero{min-height:530px}.hero-illustration{width:29%}.hero-text{max-width:68%}.quest-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.color-layout{grid-template-columns:minmax(0,1fr)}.color-sidebar{display:grid;grid-template-columns:1fr 1fr;align-items:start}.color-help,.color-progress{grid-column:span 2}.color-tabs{grid-column:span 2}.palette{grid-template-columns:repeat(10,minmax(0,1fr))}.color-tools{grid-template-columns:repeat(4,1fr)}.color-tools .wide{grid-column:span 2}}
 @media(max-width:630px){.screen{padding:12px}.hero{min-height:575px;flex-direction:column-reverse;justify-content:center;text-align:center;padding:14px}.hero-illustration{width:140px;max-height:130px}.hero-text{max-width:100%}.hero h1{margin:10px 0;font-size:43px;letter-spacing:-1px}.hero-text p{margin:6px 0;font-size:15px}.hero-actions{justify-content:center}.hero-actions button{font-size:16px}.grade-cards{grid-template-columns:1fr;margin:13px auto;gap:12px}.grade-card{min-height:0;display:flex;gap:13px;align-items:center;text-align:left;padding:13px}.grade-card .emoji{font-size:44px;margin:0}.grade-card strong{font-size:22px}.grade-card small{margin:4px 0;font-size:13px}.quest-grid{grid-template-columns:1fr 1fr;gap:10px}.quest{min-height:185px;padding:11px;border-width:3px}.quest .q-emoji{font-size:36px}.quest strong{font-size:17px}.quest small{font-size:12px}.hub-banner{padding:12px}.score{font-size:16px;padding:7px}.storyboard{padding:8px;border-width:3px;min-height:300px}.instruction{font-size:17px;padding:8px}.world{min-height:260px}.color-sidebar{display:flex}.palette{grid-template-columns:repeat(10,minmax(0,1fr))}.crayon{min-height:27px;border-width:2px;border-radius:7px}.color-tools{grid-template-columns:repeat(4,1fr)}.color-tools .wide{grid-column:span 2}.color-help,.color-progress{grid-column:auto}.primary{padding:11px 14px;font-size:17px}header .btns .tiny{min-height:36px;padding:5px 9px;font-size:12px}header{padding:6px 10px}header strong{font-size:13px}header small{font-size:10px}.rhythm-stage{min-height:150px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+
+/* Three genuinely different age pathways */
+.quest.kpattern,.quest.kmemory,.quest.kcostume,.quest.korder{background:#fff3d7}
+.quest.onemaze,.quest.onedash,.quest.onelights,.quest.onecues{background:#e9edff}
+.game-copy{font-weight:900;color:#704e66;text-align:center;font-size:clamp(17px,2.2vw,23px);line-height:1.4;padding:10px}
+.game-note{padding:10px;background:#ffefbf;border:2px solid #dbb88b;border-radius:15px;font-weight:900;text-align:center;margin:12px auto}
+.puzzle-pill{background:#fff;border:3px solid #a27686;border-radius:20px;padding:14px 20px;min-height:65px;font-size:clamp(26px,4.5vw,42px);font-weight:900;color:#67425c;box-shadow:0 5px 0 #8f627766;touch-action:manipulation}
+.pattern-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;padding:25px 10px;background:#fae9cc;border-radius:25px;border:3px dashed #b37e80;min-height:130px}
+.pattern-row .puzzle-pill{min-width:66px;min-height:75px;background:#fffaf1;display:grid;place-items:center}
+.pattern-row .unknown{background:#f7b7dc;color:#714760;animation:blink 1.5s ease-in-out infinite}
+.puzzle-options{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin:25px auto}
+.puzzle-options button{min-width:80px;font-size:45px}
+.memory-board{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:690px;margin:20px auto}
+.memory-card{min-height:95px;aspect-ratio:1/1;border:4px solid #8a5474;border-radius:20px;background:linear-gradient(135deg,#dca3d0,#9c62ba);color:white;font-size:clamp(31px,5vw,56px);box-shadow:0 6px 0 #773d69;display:grid;place-items:center}
+.memory-card.up{background:#fff8e8;color:#573c52}.memory-card.matched{background:#c6edd0;border-color:#448977;opacity:.85}
+.workshop{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:18px auto;max-width:800px}
+.work-panel{background:#fff7e9;border:4px solid #ac8290;border-radius:25px;padding:16px;text-align:center}.work-panel h3{margin:4px 0 16px}
+.work-list{display:flex;gap:13px;flex-wrap:wrap;justify-content:center}.work-piece,.work-target{width:clamp(72px,9vw,106px);height:clamp(72px,9vw,106px);font-size:clamp(35px,5vw,56px);border-radius:22px;border:4px solid #996783;background:white;box-shadow:0 5px 0 #633f5670}
+.work-piece.selected{background:#ffe390;outline:5px solid #df9154}.work-target{border-style:dashed;background:#f3e3d2;color:#ac8f97}.work-target.done{background:#d3f4da;border-color:#50876a;border-style:solid}
+.order-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:18px auto}.order-chip{padding:13px;border:3px solid #9d6980;background:#fffdf4;border-radius:15px;font-size:40px;min-width:75px}.order-chip.done{background:#c4efd8}.order-chip.disabled{opacity:.4}
+.maze-board{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));width:min(100%,680px);aspect-ratio:11/9;margin:14px auto;border:5px solid #83536c;border-radius:12px;overflow:hidden;background:#fff5df;touch-action:none}
+.maze-tile{aspect-ratio:1/1;display:grid;place-items:center;font-size:clamp(15px,3vw,31px);border:1px solid #f0d5b4;background:#ffe8bb}.maze-tile.wall{background:repeating-linear-gradient(135deg,#965d7a 0 8px,#b07e94 8px 16px);border-color:#7b4667}.maze-tile.exit{background:#b7ebca}.maze-tile.avatar{background:#fbe590;animation:step-in .25s}
+.maze-controls{display:grid;grid-template-columns:repeat(3,70px);grid-template-rows:repeat(2,60px);gap:7px;justify-content:center;margin:15px auto}.maze-controls button{font-size:30px;border:3px solid #77516c;background:#fff6df;border-radius:15px;font-weight:1000}.maze-controls button:active{background:#ffd87f}.maze-controls .up{grid-column:2;grid-row:1}.maze-controls .left{grid-column:1;grid-row:2}.maze-controls .down{grid-column:2;grid-row:2}.maze-controls .right{grid-column:3;grid-row:2}
+.runner-stage{position:relative;max-width:660px;margin:auto;height:375px;border:5px solid #824d69;border-radius:20px;background:repeating-linear-gradient(90deg,#f0c19f 0 33.3%,#fbe1bd 33.3% 33.8%,#edbd91 33.8% 66.3%,#fbe1bd 66.3% 66.8%,#efc99e 66.8% 100%);overflow:hidden;touch-action:none}
+.runner-stage:before{content:'🎭 BACKSTAGE EXPRESS 🎭';position:absolute;inset:8px 0 auto;text-align:center;color:#864766;font-weight:1000;font-size:14px;z-index:0}
+.runner-hero,.runner-object{position:absolute;transform:translate(-50%,-50%);z-index:2;pointer-events:none}.runner-hero{bottom:5px;font-size:67px;transition:left .15s}.runner-object{font-size:45px}.runner-controls{display:flex;justify-content:center;gap:25px;margin:12px auto}.runner-controls button{font-size:34px;width:106px;height:70px}
+.light-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:480px;margin:22px auto;padding:16px;background:#54304e;border:6px solid #ad805e;border-radius:25px}.light-bulb{height:90px;border-radius:50%;font-size:38px;border:4px solid #8e6580;background:#6a5c75;color:#d4b5ce;box-shadow:inset 0 10px 18px #0006}.light-bulb.on{background:#ffe782;border-color:#ffb44d;color:#b77824;box-shadow:0 0 25px #ffdf81,0 0 50px #eecd6666}
+.cue-board{max-width:620px;margin:20px auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.cue-button{min-height:110px;border-radius:22px;border:4px solid #976f8b;background:#fff5e3;font-size:48px}.cue-button.lit{background:#ffe585;outline:5px solid #f5ad53;transform:scale(1.05)}.cue-board button:disabled{opacity:.64}
+.cue-status{min-height:64px;font-size:21px;font-weight:1000;text-align:center;color:#694359;padding:12px;margin:10px;background:#fff5cf;border-radius:16px}
+@keyframes blink{50%{transform:scale(1.08)}}@keyframes step-in{from{filter:brightness(1.5)}to{filter:none}}
+@media(max-width:650px){.workshop{grid-template-columns:1fr}.memory-board{gap:7px}.memory-card{min-height:68px}.pattern-row{gap:6px}.pattern-row .puzzle-pill{min-height:59px;min-width:49px;padding:4px}.puzzle-options button{min-width:65px}.maze-board{width:100%}.runner-stage{height:300px}.cue-button{min-height:79px;font-size:36px}.light-bulb{height:65px}}
 </style></head>
 <body><div id="app">
-<header><div><strong>🦃 Arthur's Thanksgiving</strong><small id="gradeLabel">Little Stage Adventure • Pre-K, K & First</small></div><div class="btns"><button class="tiny" id="homeBtn" aria-label="Go to main menu">⌂ Home</button><button class="tiny" id="audioBtn" aria-label="Toggle sound">🔊 Sound</button></div></header>
+<header><div><strong>🦃 Arthur's Thanksgiving</strong><small id="gradeLabel">Three Grade Adventures • Pre-K, K & First</small></div><div class="btns"><button class="tiny" id="homeBtn" aria-label="Go to main menu">⌂ Home</button><button class="tiny" id="audioBtn" aria-label="Toggle sound">🔊 Sound</button></div></header>
 <main id="screen" class="screen" aria-live="polite"></main><div id="toast" class="toast hidden" role="status"></div>
 </div>
 <script>
 (()=>{'use strict';
 const S=document.getElementById('screen'),toastEl=document.getElementById('toast'),gradeLabel=document.getElementById('gradeLabel');
-const GRADES={pk:{label:'Pre-K',emoji:'🐣',desc:'Big targets, friendly practice, extra help',huntTargets:3,huntDistractors:3,beats:[2,2,3,3],catchTimes:[27,30,30],catchSpeed:90,catchGoal:[5,6,7],stageSlots:2,colorGoal:9},k:{label:'Kindergarten',emoji:'🧩',desc:'More patterns, memory, and mini-game missions',huntTargets:4,huntDistractors:4,beats:[3,3,4,4],catchTimes:[30,32,32],catchSpeed:119,catchGoal:[7,8,9],stageSlots:3,colorGoal:13},one:{label:'First Grade',emoji:'⭐',desc:'Longer rhythms, faster play, bigger stage challenges',huntTargets:5,huntDistractors:5,beats:[4,4,5,6],catchTimes:[32,35,37],catchSpeed:150,catchGoal:[10,11,12],stageSlots:4,colorGoal:18}};
+const GRADES={pk:{label:'Pre-K',emoji:'🐣',desc:'Coloring, easy turkey hunt, dance, and playful surprises',huntTargets:3,huntDistractors:3,beats:[2,2,3,3],catchTimes:[27,30,30],catchSpeed:90,catchGoal:[5,6,7],stageSlots:2,colorGoal:9},k:{label:'Kindergarten',emoji:'🧩',desc:'A separate costume workshop with puzzles, memory, and story order',huntTargets:4,huntDistractors:4,beats:[3,3,4,4],catchTimes:[30,32,32],catchSpeed:119,catchGoal:[7,8,9],stageSlots:3,colorGoal:13},one:{label:'First Grade',emoji:'⭐',desc:'A separate backstage adventure with mazes, arcade runs, and light puzzles',huntTargets:5,huntDistractors:5,beats:[4,4,5,6],catchTimes:[32,35,37],catchSpeed:150,catchGoal:[10,11,12],stageSlots:4,colorGoal:18}};
 const QUESTS={story:{emoji:'📖',name:'The Big Problem',description:'Hear how Arthur’s Thanksgiving play begins.'},hunt:{emoji:'🔎',name:'The Turkey Hunt',description:'Explore backstage to recover the missing props.'},color:{emoji:'🎨',name:'Coloring Studio',description:'Color Arthur, a turkey costume, and the stage.'},rhythm:{emoji:'🥁',name:'Rehearsal Dance',description:'Watch, remember, and tap the dance steps.'},catch:{emoji:'🧺',name:'Prop Catch!',description:'Slide the basket to catch falling decorations.'},finale:{emoji:'🎭',name:'The Big Show',description:'Put the play together and watch the finale.'}};
+const GRADE_QUESTS={
+  pk:QUESTS,
+  k:{story:QUESTS.story,color:QUESTS.color,kpattern:{emoji:'🍂',name:'Leaf Pattern Parade',description:'Figure out the missing part of a growing pattern.'},kmemory:{emoji:'🃏',name:'Backstage Memory',description:'Flip cards and find matching Thanksgiving pairs.'},kcostume:{emoji:'🪶',name:'Turkey Costume Workshop',description:'Choose pieces and put them in matching costume slots.'},korder:{emoji:'🎬',name:'Get the Play Ready',description:'Put school-play events in the right order.'},finale:QUESTS.finale},
+  one:{story:QUESTS.story,color:QUESTS.color,onemaze:{emoji:'🗺️',name:'Script Quest Maze',description:'Explore four backstage mazes and recover the script.'},onedash:{emoji:'🏃',name:'Prop Delivery Dash',description:'Switch lanes, dodge obstacles, and deliver stage props.'},onelights:{emoji:'💡',name:'Spotlight Switchboard',description:'Solve real light-switch puzzles to brighten the stage.'},onecues:{emoji:'🎛️',name:'Director’s Cue Challenge',description:'Memorize and perform the cues for the big show.'},finale:QUESTS.finale}
+};
+function questsForGrade(){return GRADE_QUESTS[state.grade]||QUESTS}
+function isMissionDone(name){return !!state.done[state.grade+':'+name]||(state.grade==='pk'&&!!state.done[name])}
+function setMissionDone(name){state.done[state.grade+':'+name]=true;save()}
 const COLORS=[['#fbe8ae','Buttercream'],['#ffd23f','Yellow'],['#f79738','Orange'],['#e35359','Red'],['#e984ac','Pink'],['#a266b8','Purple'],['#5b8ed5','Blue'],['#67bacd','Sky'],['#6ebc70','Green'],['#9adf9f','Mint'],['#8b5c47','Brown'],['#cc986b','Tan'],['#f4d0b1','Peach'],['#aeb1b9','Gray'],['#ffffff','White']];
 const STICKERS=['⭐','🍁','🦃','🎀','💖','🍂']; const PAGES=[{label:'Arthur',emoji:'👓'},{label:'Costume',emoji:'🦃'},{label:'Stage',emoji:'🎭'}];
 const KEY='arthur-thanksgiving-little-stage-v1';let state={grade:null,stars:0,done:{},color:{pages:[{parts:{},stickers:[]},{parts:{},stickers:[]},{parts:{},stickers:[]}]},sound:true};
@@ -48,17 +87,17 @@ function say(text){if(!state.sound)return;try{window.speechSynthesis?.cancel();c
 function notify(message){toastEl.textContent=message;toastEl.classList.remove('hidden');if(notify.t)clearTimeout(notify.t);notify.t=setTimeout(()=>toastEl.classList.add('hidden'),1750)}
 function starBurst(x,y){for(let i=0;i<5;i++){const e=document.createElement('span');e.className='float-star';e.textContent=['⭐','✨','🌟'][i%3];e.style.left=(x+(Math.random()-.5)*100)+'px';e.style.top=(y+(Math.random()-.5)*55)+'px';document.body.appendChild(e);setTimeout(()=>e.remove(),1050)}}
 function award(points,msg){state.stars+=points;save();sound('good');notify('⭐ +'+points+' stars! '+msg)}
-function setScreen(key,html){cancel();active=key;S.dataset.screen=key;S.innerHTML=html;S.scrollTop=0;window.scrollTo({top:0,behavior:'instant'});gradeLabel.textContent=state.grade?grade().label+' • Little Stage Adventure':'Little Stage Adventure • Pre-K, K & First'}
+function setScreen(key,html){cancel();active=key;S.dataset.screen=key;S.innerHTML=html;S.scrollTop=0;window.scrollTo({top:0,behavior:'instant'});gradeLabel.textContent=state.grade?grade().label+' • Three Grade Adventures':'Three Grade Adventures • Pre-K, K & First'}
 const avatar=`<svg viewBox="0 0 300 390" role="img" aria-label="Original cartoon illustration of Arthur as the school play director" xmlns="http://www.w3.org/2000/svg"><ellipse cx="144" cy="375" rx="94" ry="14" fill="#8a3457" opacity=".27"/><path d="M99 92 Q65 -3 111 13 Q145 21 129 99" fill="#cf9b72" stroke="#6e424f" stroke-width="8"/><path d="M171 93 Q189 -1 226 20 Q252 42 196 108" fill="#cf9b72" stroke="#6e424f" stroke-width="8"/><path d="M108 48Q99 32 117 35Q128 38 121 55 M200 45Q218 28 223 41Q230 56 208 69" fill="#f5c6ad"/><path d="M75 126 Q89 67 160 71 Q244 72 253 147Q263 227 164 242Q63 239 61 168Z" fill="#d8a77f" stroke="#694353" stroke-width="8"/><ellipse cx="156" cy="172" rx="93" ry="77" fill="#e8bc94"/><ellipse cx="112" cy="141" rx="35" ry="40" fill="#fff8e8" stroke="#614558" stroke-width="6"/><ellipse cx="190" cy="141" rx="35" ry="40" fill="#fff8e8" stroke="#614558" stroke-width="6"/><path d="M147 135Q154 129 160 135" fill="none" stroke="#614558" stroke-width="7"/><circle cx="122" cy="147" r="9" fill="#412b3c"/><circle cx="181" cy="147" r="9" fill="#412b3c"/><ellipse cx="157" cy="184" rx="26" ry="20" fill="#b67669" stroke="#6e4556" stroke-width="5"/><ellipse cx="149" cy="180" rx="6" ry="6" fill="#5b3642"/><path d="M135 214Q158 239 184 211" fill="none" stroke="#6e424f" stroke-width="7" stroke-linecap="round"/><path d="M96 234Q161 208 221 239L244 341Q144 379 72 339Z" fill="#e4a640" stroke="#734453" stroke-width="8"/><path d="M132 252L145 278L161 251" fill="none" stroke="#fff6e0" stroke-width="8"/><path d="M78 267L28 217M220 269L269 208" fill="none" stroke="#c99571" stroke-width="25" stroke-linecap="round"/><path d="M30 218l-4-23m2 23l-17-10m16 11l19-6 M263 211l15-19m-17 18l19 5" stroke="#a67969" stroke-width="9" stroke-linecap="round"/><path d="M112 348L104 371M201 350L204 371" stroke="#694353" stroke-width="23" stroke-linecap="round"/><path d="M88 370Q103 354 131 369 M181 372Q202 359 222 371" stroke="#523e5b" stroke-width="15" stroke-linecap="round"/></svg>`;
 function goHome(){setScreen('home',`<div class="hero"><div class="hero-text"><span class="script">📖 Based on the school Thanksgiving play story</span><h1>Arthur’s<br><em>Thanksgiving!</em></h1><p>Arthur needs help with the school play. Nobody wants to be the turkey! Play, color, rehearse, and make the show shine.</p><div class="hero-actions"><button class="primary" id="playNow">▶ ${state.grade?'Continue Playing':'Choose My Grade'}</button><button class="primary pink" id="quickColor">🎨 Coloring Studio</button></div></div><div class="hero-illustration">${avatar}</div></div><div class="ribbon"><span>🐣 Pre-K</span><span>🧩 Kindergarten</span><span>⭐ First grade</span><span>📱 Made for iPad</span><span>🎨 Three coloring pages</span></div>`);document.getElementById('playNow').onclick=()=>state.grade?hub():chooseGrade();document.getElementById('quickColor').onclick=()=>{if(!state.grade){state.grade='pk';save()}openColor()}}
-function chooseGrade(){setScreen('grades',`<div class="page-heading"><h2>Who is playing today?</h2><p>Choose a grade so the challenges fit your class. Every mode has coloring, games, and a happy ending!</p></div><div class="grade-cards">${Object.entries(GRADES).map(([key,v])=>`<button class="grade-card" data-grade="${key}"><span class="emoji">${v.emoji}</span><span><strong>${v.label}</strong><small>${v.desc}</small></span></button>`).join('')}</div><p class="small-note">All activities use finger-friendly controls. No reading required when the 🔊 button is used.</p>`);S.querySelectorAll('[data-grade]').forEach(b=>b.onclick=()=>{state.grade=b.dataset.grade;save();hub()})}
-function hub(){setScreen('hub',`<div class="hub-banner"><div><h2>🎟️ Arthur's Play Pass</h2><p>${grade().label}: help Arthur get the Thanksgiving play ready. Choose any mission!</p></div><div class="score">⭐ ${state.stars}</div></div><div class="quest-grid">${Object.entries(QUESTS).map(([key,q])=>`<button class="quest ${key==='color'?'coloring':key}" data-quest="${key}"><span class="q-emoji">${q.emoji}</span><strong>${q.name}</strong><small>${q.description}</small><span class="status">${state.done[key]?'✅ Star earned':'▶ Play now'}</span></button>`).join('')}</div><div style="display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap"><button class="secondary" id="changeGrade">🔁 Change grade</button><button class="secondary" id="storyAgain">📖 Hear the story</button></div><p class="small-note">⭐ Every child can replay missions. Progress and coloring are saved on this iPad.</p>`);S.querySelectorAll('[data-quest]').forEach(btn=>btn.onclick=()=>openQuest(btn.dataset.quest));document.getElementById('changeGrade').onclick=chooseGrade;document.getElementById('storyAgain').onclick=()=>openQuest('story')}
-function openQuest(name){if(name==='color')return openColor();if(name==='story')return openStory();if(name==='hunt')return startHunt();if(name==='rhythm')return startRhythm();if(name==='catch')return startCatch();if(name==='finale')return startFinale()}
+function chooseGrade(){setScreen('grades',`<div class="page-heading"><h2>Who is playing today?</h2><p>Choose a grade so the challenges fit your class. Each grade has its OWN games. Everyone also has a coloring studio and a happy ending!</p></div><div class="grade-cards">${Object.entries(GRADES).map(([key,v])=>`<button class="grade-card" data-grade="${key}"><span class="emoji">${v.emoji}</span><span><strong>${v.label}</strong><small>${v.desc}</small></span></button>`).join('')}</div><p class="small-note">All activities use finger-friendly controls. No reading required when the 🔊 button is used.</p>`);S.querySelectorAll('[data-grade]').forEach(b=>b.onclick=()=>{state.grade=b.dataset.grade;save();hub()})}
+function hub(){setScreen('hub',`<div class="hub-banner"><div><h2>${state.grade==='one'?'🎬 First Grade Director Academy':state.grade==='k'?'🧩 Kindergarten Play Workshop':'🎟️ Little Turkey Play Pass'}</h2><p>${grade().label}: ${state.grade==='one'?'Explore, solve, and save the school play.':state.grade==='k'?'Build costumes, solve picture puzzles, and get the play ready.':'Help Arthur get the Thanksgiving play ready.'} Choose any mission!</p></div><div class="score">⭐ ${state.stars}</div></div><div class="quest-grid">${Object.entries(questsForGrade()).map(([key,q])=>`<button class="quest ${key==='color'?'coloring':key}" data-quest="${key}"><span class="q-emoji">${q.emoji}</span><strong>${q.name}</strong><small>${q.description}</small><span class="status">${isMissionDone(key)?'✅ Star earned':'▶ Play now'}</span></button>`).join('')}</div><div style="display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap"><button class="secondary" id="changeGrade">🔁 Change grade</button><button class="secondary" id="storyAgain">📖 Hear the story</button></div><p class="small-note">⭐ Every child can replay missions. Progress and coloring are saved on this iPad.</p>`);S.querySelectorAll('[data-quest]').forEach(btn=>btn.onclick=()=>openQuest(btn.dataset.quest));document.getElementById('changeGrade').onclick=chooseGrade;document.getElementById('storyAgain').onclick=()=>openQuest('story')}
+function openQuest(name){if(name==='color')return openColor();if(name==='story')return openStory();if(name==='hunt')return startHunt();if(name==='rhythm')return startRhythm();if(name==='catch')return startCatch();if(name==='finale')return startFinale();if(name==='kpattern')return startKPattern();if(name==='kmemory')return startKMemory();if(name==='kcostume')return startKCostume();if(name==='korder')return startKOrder();if(name==='onemaze')return startOneMaze();if(name==='onedash')return startOneDash();if(name==='onelights')return startOneLights();if(name==='onecues')return startOneCues()}
 function missionShell(title,round,total,inner){return `<div class="mission"><div class="mission-head"><button class="tiny" id="backHub">← Play Pass</button><h2>${title}</h2><div class="round">${round}/${total}</div></div><div class="storyboard">${inner}</div></div>`}
 function hookupBack(){document.getElementById('backHub').onclick=hub}
 function instruct(s){return `<div class="instruction"><span>${s}</span><button class="hear" id="speakTask" aria-label="Read directions aloud">🔊 Hear</button></div>`}
 function hookupSpeak(text){const b=document.getElementById('speakTask');if(b)b.onclick=()=>say(text)}
-function finish(name,label,emoji='🌟',points=15){if(!state.done[name]){state.done[name]=true;award(points,label+' complete!')}else sound('win');setScreen('result',`<div class="result"><div class="big">${emoji}</div><div class="badge">🏅 ${esc(label)} Badge</div><h2>You did it!</h2><p>Arthur is one step closer to the Thanksgiving school play. Your costume-designer and helper skills are amazing!</p><div class="actions"><button class="primary" id="goHub">🎟️ Choose Another Mission</button><button class="secondary" id="goColor">🎨 Color Again</button></div></div>`);document.getElementById('goHub').onclick=hub;document.getElementById('goColor').onclick=openColor}
+function finish(name,label,emoji='🌟',points=15){if(!isMissionDone(name)){setMissionDone(name);award(points,label+' complete!')}else sound('win');setScreen('result',`<div class="result"><div class="big">${emoji}</div><div class="badge">🏅 ${esc(label)} Badge</div><h2>You did it!</h2><p>Arthur is one step closer to the Thanksgiving school play. Your costume-designer and helper skills are amazing!</p><div class="actions"><button class="primary" id="goHub">🎟️ Choose Another Mission</button><button class="secondary" id="goColor">🎨 Color Again</button></div></div>`);document.getElementById('goHub').onclick=hub;document.getElementById('goColor').onclick=openColor}
 function openStory(){const chapters=[{icon:'🏫',text:'Arthur is getting ready to direct the school Thanksgiving play.',prompt:'Can you help Arthur get ready?'},{icon:'🦃',text:'There is one big problem: nobody wants to be the turkey!',prompt:'Let’s make the turkey costume fun.'},{icon:'🎨',text:'We can find the missing decorations, color the costumes, and practice the dance.',prompt:'Every helper makes the play better.'},{icon:'🌟',text:'With teamwork and a little creativity, the class can put on a wonderful show!',prompt:'Now it is your turn to help!'}];let i=0;function page(){const c=chapters[i];setScreen('story',`<div class="book-card"><div class="big">${c.icon}</div><h2 style="font-size:clamp(30px,4vw,48px)">Arthur's Thanksgiving Play</h2><p>${c.text}</p><p style="color:#bd6678">${c.prompt}</p><div class="actions"><button class="secondary" id="readPage">🔊 Read to Me</button><button class="primary" id="nextPage">${i===chapters.length-1?'🎟️ Play Games':'Next Page →'}</button></div><p style="font-weight:900;color:#ad8591">Page ${i+1} of ${chapters.length}</p></div>`);document.getElementById('readPage').onclick=()=>say(c.text+' '+c.prompt);document.getElementById('nextPage').onclick=()=>{if(++i<chapters.length)page();else finish('story','Story Helper','📖',8)}}page()}
 // Scavenger hunt: four unique scenes with varied targets and distractions.
 const huntScenes=[{name:'The Costume Room',title:'Find the costume pieces',targets:['🪶','🎀','👒','🧵','🦃'],distractors:['🍎','🚲','⚽','🚀','🧊']},{name:'The School Hallway',title:'Find the play decorations',targets:['🍁','🍂','🎃','⭐','🎭'],distractors:['🍕','👟','🐟','🚗','🎾']},{name:'The Stage',title:'Find the stage props',targets:['🪑','🎩','🎵','🎺','🎻'],distractors:['🐶','🍦','🛹','🌵','🥦']},{name:'The Dressing Room',title:'Find the finishing touches',targets:['👓','🧶','🪡','🪞','👑'],distractors:['🪁','🐙','🍋','🦖','🚜']}];let huntFound=[],huntTargets=[],huntItems=[];
@@ -79,7 +118,7 @@ function startCatchRound(world,target,time){const btn=document.getElementById('c
 const finalSets=[['🦃','🎭','🍁','⭐'],['🎀','🎩','🎵','🪑'],['🎃','🪶','🎺','👒'],['🧡','🪞','🎨','🍂']];const finalPositions=[{x:24,y:34},{x:72,y:34},{x:33,y:70},{x:70,y:70}];
 function startFinale(){mission='finale';phase=0;renderFinale()}
 function renderFinale(){selectedProp=null;decorated=[];const n=grade().stageSlots,items=finalSets[phase].slice(0,n),dir='Choose a decoration from below. Then tap its matching shape on the stage.';setScreen('finale',missionShell('🎭 The Big Thanksgiving Show',phase+1,4,`${instruct(dir)}<p class="info-line" id="finalMessage">Put the right props in the right places!</p><div class="finale-stage" id="finaleStage"><div class="stage-curtains"></div><div class="stage-curtains right"></div>${items.map((em,i)=>`<button class="spot" data-slot="${i}" style="left:${finalPositions[i].x}%;top:${finalPositions[i].y}%;transform:translate(-50%,-50%)" aria-label="Stage position for ${em}">${em}</button>`).join('')}</div><div class="finale-items">${items.slice().reverse().map((em,i)=>`<button data-prop="${em}" aria-label="Place ${em}">${em}</button>`).join('')}</div><div class="progress-track"><div class="progress-fill" id="finalFill"></div></div>`));hookupBack();hookupSpeak(dir);S.querySelectorAll('[data-prop]').forEach(b=>b.onclick=()=>{selectedProp=b.dataset.prop;S.querySelectorAll('[data-prop]').forEach(x=>x.classList.toggle('selected',x===b));say('Tap the matching picture on stage.')});S.querySelectorAll('[data-slot]').forEach(b=>b.onclick=()=>{const ix=Number(b.dataset.slot),need=items[ix];if(decorated.includes(ix))return;if(!selectedProp){notify('Choose a decoration below first!');return}if(selectedProp!==need){b.classList.add('wrong');delay(()=>b.classList.remove('wrong'),320);sound('no');notify('Try the matching spot.');return}decorated.push(ix);b.classList.add('ok');b.textContent=need;sound('good');S.querySelectorAll('[data-prop]').forEach(p=>{if(p.dataset.prop===selectedProp)p.disabled=true;p.classList.remove('selected')});selectedProp=null;document.getElementById('finalFill').style.width=decorated.length/items.length*100+'%';document.getElementById('finalMessage').textContent='Stage props ready: '+decorated.length+' / '+items.length;if(decorated.length===items.length){const w=document.getElementById('finaleStage'),spark=document.createElement('div');spark.className='fireworks';w.appendChild(spark);say('Amazing! The stage looks wonderful.');delay(()=>{phase++;if(phase<4){award(4,'Beautiful stage!');renderFinale()}else finalShow()},1500)}})}
-function finalShow(){if(!state.done.finale){state.done.finale=true;award(28,'The big show is ready!')}setScreen('win',`<div class="result" style="max-width:860px"><div class="big">🎭🦃🎉</div><div class="badge">🌟 Thanksgiving Play Superstar</div><h2>CURTAIN CALL!</h2><p>Arthur’s class is ready for their Thanksgiving play! You helped with the costumes, dances, decorations, and stage. Every helper matters.</p><p style="font-size:30px">⭐ ${state.stars} stars earned</p><div class="actions"><button class="primary pink" id="winColor">🎨 Make a Masterpiece</button><button class="primary" id="winHub">🎟️ Play More</button></div></div>`);document.getElementById('winColor').onclick=openColor;document.getElementById('winHub').onclick=hub;say('Hooray! The Thanksgiving school play is ready. Great job!')}
+function finalShow(){if(!isMissionDone('finale')){setMissionDone('finale');award(28,'The big show is ready!')}setScreen('win',`<div class="result" style="max-width:860px"><div class="big">🎭🦃🎉</div><div class="badge">🌟 Thanksgiving Play Superstar</div><h2>CURTAIN CALL!</h2><p>Arthur’s class is ready for their Thanksgiving play! You helped with the costumes, dances, decorations, and stage. Every helper matters.</p><p style="font-size:30px">⭐ ${state.stars} stars earned</p><div class="actions"><button class="primary pink" id="winColor">🎨 Make a Masterpiece</button><button class="primary" id="winHub">🎟️ Play More</button></div></div>`);document.getElementById('winColor').onclick=openColor;document.getElementById('winHub').onclick=hub;say('Hooray! The Thanksgiving school play is ready. Great job!')}
 // Original, finger-colorable SVG illustrations. All illustration shapes are drawn here (no external images).
 const P=(id,tag,attrs)=>`<${tag} data-part="${id}" ${attrs} fill="#fff" stroke="#513849" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>`;
 function backgroundPaper(label){return `<svg class="color-paper" id="colorPaper" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-label="Coloring page: ${label}"><rect width="900" height="620" fill="#fff"/>`}
@@ -177,10 +216,237 @@ function snapshotColor(){return JSON.stringify(currentColorPage())}
 function rememberColor(){colorUndo.push(snapshotColor());if(colorUndo.length>60)colorUndo.shift();colorRedo=[]}
 function countColors(){return state.color.pages.reduce((sum,p)=>sum+Object.values(p.parts).filter(c=>c!=='#ffffff').length,0)}
 function getRenderedSvg(){const markup=pageSvg(colorPage),node=document.createElement('div');node.innerHTML=markup;const svg=node.querySelector('svg'),data=currentColorPage();svg.querySelectorAll('[data-part]').forEach(part=>{part.setAttribute('fill',data.parts[part.getAttribute('data-part')]||'#fff')});const stickers=document.createElementNS('http://www.w3.org/2000/svg','g');stickers.setAttribute('id','stickerLayer');for(const p of data.stickers){const t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',p.x);t.setAttribute('y',p.y);t.setAttribute('text-anchor','middle');t.setAttribute('font-size','58');t.setAttribute('paint-order','stroke');t.setAttribute('stroke','#fff');t.setAttribute('stroke-width','2');t.textContent=p.icon;stickers.appendChild(t)}svg.appendChild(stickers);return svg}
-function updateColorPaper(){const current=document.getElementById('colorPaper');if(!current)return;const svg=getRenderedSvg();current.replaceWith(svg);svg.addEventListener('pointerdown',ev=>{const bounds=svg.getBoundingClientRect();if(stickerChoice){const point=svg.createSVGPoint();point.x=ev.clientX;point.y=ev.clientY;let coordinates;try{coordinates=point.matrixTransform(svg.getScreenCTM().inverse())}catch(e){coordinates={x:((ev.clientX-bounds.left)/bounds.width)*900,y:((ev.clientY-bounds.top)/bounds.height)*620}}rememberColor();currentColorPage().stickers.push({x:Math.round(coordinates.x),y:Math.round(coordinates.y),icon:stickerChoice});stickerChoice=null;updateColorPaper();updateColorPalette();save();sound('pop');return}const part=ev.target.closest('[data-part]');if(!part)return;const id=part.getAttribute('data-part');if(currentColorPage().parts[id]===colorHex)return;rememberColor();currentColorPage().parts[id]=colorHex;save();sound('pop');starBurst(ev.clientX,ev.clientY);updateColorPaper();updateColorPalette();const num=countColors();if(num>=grade().colorGoal&&!state.done.color){state.done.color=true;award(20,'Costume Designer badge unlocked!')}})}
+function updateColorPaper(){const current=document.getElementById('colorPaper');if(!current)return;const svg=getRenderedSvg();current.replaceWith(svg);svg.addEventListener('pointerdown',ev=>{const bounds=svg.getBoundingClientRect();if(stickerChoice){const point=svg.createSVGPoint();point.x=ev.clientX;point.y=ev.clientY;let coordinates;try{coordinates=point.matrixTransform(svg.getScreenCTM().inverse())}catch(e){coordinates={x:((ev.clientX-bounds.left)/bounds.width)*900,y:((ev.clientY-bounds.top)/bounds.height)*620}}rememberColor();currentColorPage().stickers.push({x:Math.round(coordinates.x),y:Math.round(coordinates.y),icon:stickerChoice});stickerChoice=null;updateColorPaper();updateColorPalette();save();sound('pop');return}const part=ev.target.closest('[data-part]');if(!part)return;const id=part.getAttribute('data-part');if(currentColorPage().parts[id]===colorHex)return;rememberColor();currentColorPage().parts[id]=colorHex;save();sound('pop');starBurst(ev.clientX,ev.clientY);updateColorPaper();updateColorPalette();const num=countColors();if(num>=grade().colorGoal&&!isMissionDone('color')){setMissionDone('color');award(20,'Costume Designer badge unlocked!')}})}
 function updateColorPalette(){const c=document.getElementById('colorPageCount');if(c)c.textContent='🎨 '+countColors()+' colored sections • Goal: '+grade().colorGoal;S.querySelectorAll('[data-crayon]').forEach(b=>b.classList.toggle('chosen',b.dataset.crayon===colorHex&&!stickerChoice));S.querySelectorAll('[data-sticker]').forEach(b=>b.classList.toggle('selected',b.dataset.sticker===stickerChoice));const undo=document.getElementById('colorUndo');if(undo)undo.disabled=colorUndo.length===0;const redo=document.getElementById('colorRedo');if(redo)redo.disabled=colorRedo.length===0}
 function openColor(){colorUndo=[];colorRedo=[];setScreen('color',`<div class="mission-head"><button class="tiny" id="colorBack">← Play Pass</button><h2>🎨 Arthur’s Coloring Studio</h2><div class="round">Side Quest</div></div><div class="color-layout"><div class="color-paper-wrap"><div id="colorPaperMount"></div><p class="color-footer">Tap parts of the picture to color • Tap stickers, then tap the picture to place</p></div><div class="color-sidebar"><div class="color-tabs">${PAGES.map((p,i)=>`<button data-page="${i}" class="${colorPage===i?'active':''}" aria-label="Color ${p.label}">${p.emoji}<small style="display:block;font-size:11px">${p.label}</small></button>`).join('')}</div><strong style="font-size:19px">🖍️ Choose a Crayon</strong><div class="palette">${COLORS.map(([hex,label])=>`<button class="crayon" data-crayon="${hex}" style="background:${hex}" title="${label}" aria-label="${label}"></button>`).join('')}</div><strong>✨ Add Stickers</strong><div class="stickers">${STICKERS.map(em=>`<button class="sticker" data-sticker="${em}" aria-label="Add ${em} sticker">${em}</button>`).join('')}</div><div class="color-tools"><button id="colorUndo">↶ Undo</button><button id="colorRedo">↷ Redo</button><button id="colorEraser">🧽 Erase</button><button id="colorClear">🗑️ Reset</button><button id="colorSave" class="wide">📷 Save Picture</button></div><div class="color-progress" id="colorPageCount"></div><p class="color-help">Color ${grade().colorGoal} different parts across all three pictures to win the Costume Designer badge. Keep coloring as long as you like!</p><button class="secondary" id="hearColor">🔊 Hear Directions</button></div></div><div class="color-actions"><button class="primary pink" id="colorBackBig">🎟️ Back to My Play Pass</button></div>`);document.getElementById('colorBack').onclick=hub;document.getElementById('colorBackBig').onclick=hub;document.getElementById('hearColor').onclick=()=>say('Choose a crayon, then tap the picture. You can color Arthur, the turkey costume, and the stage. Add stickers when you are ready.');S.querySelectorAll('[data-page]').forEach(b=>b.onclick=()=>{colorPage=Number(b.dataset.page);colorUndo=[];colorRedo=[];openColor()});S.querySelectorAll('[data-crayon]').forEach(b=>b.onclick=()=>{colorHex=b.dataset.crayon;stickerChoice=null;updateColorPalette();sound('tick')});S.querySelectorAll('[data-sticker]').forEach(b=>b.onclick=()=>{stickerChoice=b.dataset.sticker;updateColorPalette();sound('tick');notify('Tap anywhere on the picture to add the sticker!')});document.getElementById('colorEraser').onclick=()=>{colorHex='#ffffff';stickerChoice=null;updateColorPalette();notify('Tap a colored part to erase')};document.getElementById('colorUndo').onclick=()=>{if(!colorUndo.length)return;colorRedo.push(snapshotColor());const p=JSON.parse(colorUndo.pop());state.color.pages[colorPage]=p;save();updateColorPaper();updateColorPalette()};document.getElementById('colorRedo').onclick=()=>{if(!colorRedo.length)return;colorUndo.push(snapshotColor());state.color.pages[colorPage]=JSON.parse(colorRedo.pop());save();updateColorPaper();updateColorPalette()};document.getElementById('colorClear').onclick=()=>{if(!confirm('Clear this coloring picture?'))return;rememberColor();state.color.pages[colorPage]={parts:{},stickers:[]};save();updateColorPaper();updateColorPalette()};document.getElementById('colorSave').onclick=savePicture;const mount=document.getElementById('colorPaperMount');mount.innerHTML=pageSvg(colorPage);updateColorPaper();updateColorPalette()}
 async function savePicture(){const svg=getRenderedSvg();svg.setAttribute('xmlns','http://www.w3.org/2000/svg');svg.setAttribute('width','900');svg.setAttribute('height','620');const xml=new XMLSerializer().serializeToString(svg),blob=new Blob([xml],{type:'image/svg+xml;charset=utf-8'}),url=URL.createObjectURL(blob),img=new Image();img.onload=()=>{try{const canvas=document.createElement('canvas');canvas.width=1800;canvas.height=1240;const c=canvas.getContext('2d');c.fillStyle='white';c.fillRect(0,0,canvas.width,canvas.height);c.drawImage(img,0,0,canvas.width,canvas.height);canvas.toBlob(png=>{if(!png)throw Error('No PNG');const pngUrl=URL.createObjectURL(png),a=document.createElement('a');a.href=pngUrl;a.download='Arthurs_Thanksgiving_'+PAGES[colorPage].label+'_Coloring.png';document.body.append(a);a.click();a.remove();notify('Picture saved! If Safari opens it, use Share → Save Image.');setTimeout(()=>URL.revokeObjectURL(pngUrl),30000)},'image/png')}catch(e){notify('Could not save PNG. Try an iPad screenshot.')}URL.revokeObjectURL(url)};img.onerror=()=>{notify('Could not export picture. Take an iPad screenshot instead.');URL.revokeObjectURL(url)};img.src=url}
+
+// ================================================================
+// KINDERGARTEN: an entire picture-puzzle workshop (not Pre-K mode)
+// ================================================================
+const K_PATTERN_ICONS=['🍁','🦃','⭐','🎃','🎀','🍂'];
+const K_PATTERNS=[['🍁','🦃'],['⭐','🎃'],['🍁','🍁','🎀'],['🎃','🍂','🍂'],['🦃','🎀','⭐'],['🍁','⭐','🎀','🎃']];
+let kPatternRound=0,kPatternStep=0;
+function startKPattern(){kPatternRound=0;kPatternStep=0;renderKPattern()}
+function renderKPattern(){
+  const pat=K_PATTERNS[kPatternRound],length=4+kPatternStep+(kPatternRound>2?2:0),target=pat[length%pat.length];
+  const shown=Array.from({length},(_,i)=>pat[i%pat.length]);
+  const wrong=K_PATTERN_ICONS.filter(x=>x!==target&& !pat.includes(x)).slice(0,2);
+  const options=[target,...wrong];const position=(kPatternStep+kPatternRound)%3;options.splice(position,0,options.shift());
+  const dir='Look at the pictures. Which one comes next in the pattern?';
+  setScreen('kpattern',missionShell('🍂 Leaf Pattern Parade',kPatternRound+1,6,
+    `${instruct(dir)}<p class="game-copy">Finish the parade pattern! 🎵</p><div class="pattern-row">${shown.map(x=>`<span class="puzzle-pill">${x}</span>`).join('')}<span class="puzzle-pill unknown">❓</span></div><p class="game-note" id="patternStatus">${kPatternStep+1} of 3 patterns in this parade</p><div class="puzzle-options">${options.map(o=>`<button class="puzzle-pill" data-option="${o}" aria-label="Choose ${o}">${o}</button>`).join('')}</div>`));
+  hookupBack();hookupSpeak(dir);
+  S.querySelectorAll('[data-option]').forEach(b=>b.onclick=()=>{
+    if(b.dataset.option!==target){sound('no');document.getElementById('patternStatus').textContent='Try again. Look for what repeats!';return}
+    sound('good');b.classList.add('selected');document.getElementById('patternStatus').textContent='Great thinking! ⭐';
+    delay(()=>{kPatternStep++;if(kPatternStep===3){kPatternStep=0;kPatternRound++;if(kPatternRound===6){finish('kpattern','Pattern Champion','🍂',22);return}}renderKPattern()},420)
+  })
+}
+const K_MEMORY_SYMBOLS=['🍁','🦃','🎭','🎩','⭐','🎀','🎃','🧸','📖'];
+let kMemoryLevel=0,kMemoryDeck=[],kMemoryOpen=[],kMemoryMatched=0,kMemoryBusy=false;
+function startKMemory(){kMemoryLevel=0;renderKMemory()}
+function renderKMemory(){
+  const pairs=[3,4,5,6,6][kMemoryLevel];const vals=K_MEMORY_SYMBOLS.slice(0,pairs);let cards=[...vals,...vals].map((symbol,i)=>({symbol,id:i}));
+  for(let i=cards.length-1;i>0;i--){const j=(i*7+kMemoryLevel*13+11)%(i+1);[cards[i],cards[j]]=[cards[j],cards[i]]}
+  kMemoryDeck=cards;kMemoryOpen=[];kMemoryMatched=0;kMemoryBusy=false;
+  const dir='Tap two cards. Try to remember where the matching pictures are.';
+  setScreen('kmemory',missionShell('🃏 Backstage Memory',kMemoryLevel+1,5,
+   `${instruct(dir)}<p class="game-copy">Find the matching Thanksgiving pairs!</p><p class="game-note" id="memoryStatus">⭐ 0 of ${pairs} pairs found</p><div class="memory-board">${cards.map((_,i)=>`<button class="memory-card" data-card="${i}" aria-label="Turn over card ${i+1}">❔</button>`).join('')}</div>`));
+  hookupBack();hookupSpeak(dir);
+  S.querySelectorAll('[data-card]').forEach(btn=>btn.onclick=()=>{
+    const i=Number(btn.dataset.card);if(kMemoryBusy||kMemoryOpen.includes(i)||btn.classList.contains('matched'))return;
+    kMemoryOpen.push(i);btn.classList.add('up');btn.textContent=cards[i].symbol;sound('tick');
+    if(kMemoryOpen.length===2){
+      const [a,b]=kMemoryOpen;
+      if(cards[a].symbol===cards[b].symbol){
+        S.querySelectorAll('[data-card]').forEach(q=>{if(Number(q.dataset.card)===a||Number(q.dataset.card)===b){q.classList.add('matched');q.disabled=true}});
+        kMemoryMatched++;kMemoryOpen=[];sound('good');document.getElementById('memoryStatus').textContent=`⭐ ${kMemoryMatched} of ${pairs} pairs found`;
+        if(kMemoryMatched===pairs)delay(()=>{kMemoryLevel++;if(kMemoryLevel<5){award(3,'All pairs found!');renderKMemory()}else finish('kmemory','Memory Star','🃏',22)},650)
+      }else{
+        kMemoryBusy=true;delay(()=>{
+          [a,b].forEach(id=>{const x=S.querySelector(`[data-card="${id}"]`);if(x){x.classList.remove('up');x.textContent='❔'}});
+          kMemoryOpen=[];kMemoryBusy=false;
+        },950)
+      }
+    }
+  })
+}
+const K_COSTUMES=[['🪶','🎀','🎩'],['🧣','👑','👓'],['🍁','🎭','⭐','🦃'],['🎩','🎀','🪶','🧡']];
+let kCostumeLevel=0,kCostumePick=null,kCostumeDone=[];
+function startKCostume(){kCostumeLevel=0;renderKCostume()}
+function renderKCostume(){kCostumePick=null;kCostumeDone=[];const parts=K_COSTUMES[kCostumeLevel];
+  const dir='Tap a costume piece on the left, then tap its matching place on the right.';
+  const order=parts.map((_,i)=>(i*3+kCostumeLevel+1)%parts.length); // use a stable, wrapped display
+  const shuffled=parts.slice().reverse();
+  setScreen('kcostume',missionShell('🪶 Turkey Costume Workshop',kCostumeLevel+1,4,
+    `${instruct(dir)}<p class="game-copy">Make the turkey costume for Arthur's play!</p><div class="workshop"><div class="work-panel"><h3>🎒 Costume pieces</h3><div class="work-list">${shuffled.map((item,i)=>`<button class="work-piece" data-piece="${item}" aria-label="Choose ${item}">${item}</button>`).join('')}</div></div><div class="work-panel"><h3>🦃 Costume plan</h3><div class="work-list">${parts.map(item=>`<button class="work-target" data-target="${item}" aria-label="Place ${item}"> ${item} </button>`).join('')}</div></div></div><p class="game-note" id="costumeStatus">Choose a piece, then match the picture. 0 / ${parts.length}</p>`));
+  hookupBack();hookupSpeak(dir);
+  S.querySelectorAll('[data-piece]').forEach(b=>b.onclick=()=>{if(b.disabled)return;kCostumePick=b.dataset.piece;S.querySelectorAll('[data-piece]').forEach(x=>x.classList.toggle('selected',x===b));sound('tick')});
+  S.querySelectorAll('[data-target]').forEach(b=>b.onclick=()=>{
+    if(!kCostumePick){notify('Choose a costume piece first!');return}
+    if(b.dataset.target!==kCostumePick){sound('no');notify('Find the same picture!');return}
+    if(kCostumeDone.includes(kCostumePick))return;kCostumeDone.push(kCostumePick);b.classList.add('done');b.textContent='✅';b.disabled=true;
+    S.querySelectorAll('[data-piece]').forEach(x=>{if(x.dataset.piece===kCostumePick)x.disabled=true;x.classList.remove('selected')});
+    kCostumePick=null;sound('good');document.getElementById('costumeStatus').textContent=`Great match! ${kCostumeDone.length} / ${parts.length}`;
+    if(kCostumeDone.length===parts.length)delay(()=>{kCostumeLevel++;if(kCostumeLevel<4){award(4,'Costume section ready!');renderKCostume()}else finish('kcostume','Costume Builder','🪶',22)},850)
+  })
+}
+const K_ORDER_STORIES=[
+  {line:'Arthur needs the play ready. What order makes sense?',steps:[['📖','Read the script'],['🪶','Make the costume'],['🎭','Start the show']]},
+  {line:'Follow Arthur’s morning backstage.',steps:[['🏫','Arrive at school'],['🎒','Put away the backpack'],['🎭','Go to the stage']]},
+  {line:'Get ready for the Thanksgiving performance.',steps:[['🎀','Decorate the stage'],['🎵','Rehearse the song'],['👏','Take a bow']]},
+  {line:'Help the turkey performer get ready.',steps:[['🦃','Try the costume'],['🪞','Check the mirror'],['🎟️','Walk to the stage']]},
+  {line:'Curtain call! What comes first, next, and last?',steps:[['💡','Turn on the lights'],['🎭','Perform the show'],['⭐','Celebrate together']]}
+];
+let kOrderLevel=0,kOrderStep=0;
+function startKOrder(){kOrderLevel=0;kOrderStep=0;renderKOrder()}
+function renderKOrder(){const task=K_ORDER_STORIES[kOrderLevel],steps=task.steps;
+ const dir=task.line+' '+steps.map(([icon,title],i)=>['First','Next','Last'][i]+' '+title).join('. ')+'.';
+ const shuffle=[steps[1],steps[2],steps[0]];
+ setScreen('korder',missionShell('🎬 Get the Play Ready',kOrderLevel+1,5,
+   `${instruct('Listen to the story, then tap what happens first, next, and last.')}<div class="game-note">${esc(task.line)}</div><div class="order-row">${steps.map((s,i)=>`<span class="order-chip">${i<kOrderStep?s[0]:'❔'}</span>`).join('')}</div><p class="game-copy" id="orderStatus">${['What happens FIRST?','What happens NEXT?','What happens LAST?'][kOrderStep]}</p><div class="puzzle-options">${shuffle.map(s=>`<button class="puzzle-pill" data-order="${s[0]}" aria-label="${esc(s[1])}" ${steps.slice(0,kOrderStep).some(x=>x[0]===s[0])?'disabled':''}>${s[0]}</button>`).join('')}</div><div style="text-align:center"><button class="secondary" id="hearWholeStory">🔊 Hear the Whole Story</button></div>`));
+ hookupBack();hookupSpeak(dir);document.getElementById('hearWholeStory').onclick=()=>say(dir);
+ S.querySelectorAll('[data-order]').forEach(btn=>btn.onclick=()=>{
+   if(btn.dataset.order!==steps[kOrderStep][0]){sound('no');notify('Think about what Arthur does first!');return}
+   sound('good');kOrderStep++;if(kOrderStep===steps.length){delay(()=>{kOrderLevel++;kOrderStep=0;if(kOrderLevel<5){award(4,'Story in order!');renderKOrder()}else finish('korder','Story Director','🎬',22)},550)}else renderKOrder()
+ })
+}
+// ================================================================
+// FIRST GRADE: real movement and logic puzzles with no worksheet UI
+// ================================================================
+const ONE_MAPS=[
+ [
+ '###########','#A...#....E','#.#...#.#.#','#..P..#...#','#.###...#.#','#...#..P..#','#.#.....#.#','#K...#....#','###########'
+ ],
+ [
+ '###########','#A..#.....#','#.#...##P.#','#...#.....#','##.###.#..#','#..P...#..#','#.#.#...#.#','#K....#..E#','###########'
+ ],
+ [
+ '###########','#A...P....#','#.###.#.#.#','#..K..#...#','#.#.#.###.#','#..P...#..#','##.#.#....#','#....#...E#','###########'
+ ],
+ [
+ '###########','#A..#....P#','#..##.#...#','#....K..#.#','#.##.##.#.#','#P...#....#','#.#.#..##.#','#.......#E#','###########'
+ ]
+];
+let oneMazeLevel=0,oneMazeGrid=[],oneMazePlayer={x:1,y:1},oneMazePieces=0,oneMazeKey=false,oneMazeMoves=0;
+function startOneMaze(){oneMazeLevel=0;renderOneMaze()}
+function renderOneMaze(){oneMazeGrid=ONE_MAPS[oneMazeLevel].map(row=>row.split(''));oneMazePieces=0;oneMazeKey=false;oneMazeMoves=0;
+ for(let y=0;y<oneMazeGrid.length;y++)for(let x=0;x<11;x++)if(oneMazeGrid[y][x]==='A'){oneMazePlayer={x,y};oneMazeGrid[y][x]='.'}
+ const dir='Move Arthur through the backstage maze. Find both script pages and the golden key. Then reach the green exit.';
+ setScreen('onemaze',missionShell('🗺️ Script Quest Maze',oneMazeLevel+1,4,
+   `${instruct(dir)}<div class="game-note" id="mazeStatus">📜 0 / 2 script pages · 🔑 Find the key</div><div class="maze-board" id="mazeBoard" aria-label="Backstage maze"></div><div class="maze-controls"><button class="up" data-step="up" aria-label="Move up">⬆</button><button class="left" data-step="left" aria-label="Move left">⬅</button><button class="down" data-step="down" aria-label="Move down">⬇</button><button class="right" data-step="right" aria-label="Move right">➡</button></div><p class="game-copy">You can also swipe the maze to move.</p>`));
+ hookupBack();hookupSpeak(dir);drawOneMaze();S.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>stepOneMaze(b.dataset.step));
+ const el=document.getElementById('mazeBoard');let x0=0,y0=0;el.addEventListener('pointerdown',e=>{x0=e.clientX;y0=e.clientY});el.addEventListener('pointerup',e=>{const dx=e.clientX-x0,dy=e.clientY-y0;if(Math.max(Math.abs(dx),Math.abs(dy))<20)return;stepOneMaze(Math.abs(dx)>Math.abs(dy)?dx>0?'right':'left':dy>0?'down':'up')});
+ window.onkeydown=e=>{if(active==='onemaze'&&['ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();stepOneMaze(e.key.slice(5).toLowerCase())}}
+}
+function drawOneMaze(){const board=document.getElementById('mazeBoard');if(!board)return;
+ board.innerHTML=oneMazeGrid.map((row,y)=>row.map((t,x)=>{
+ const player=x===oneMazePlayer.x&&y===oneMazePlayer.y;
+ return `<span class="maze-tile ${t==='#'?'wall':t==='E'?'exit':''} ${player?'avatar':''}" aria-label="${player?'Arthur':t==='#'?'Wall':t==='E'?'Exit':t==='P'?'Script page':t==='K'?'Key':'Floor'}">${player?'👓':t==='P'?'📜':t==='K'?'🔑':t==='E'?'🎭':''}</span>`
+ }).join('')).join('');
+ const status=document.getElementById('mazeStatus');if(status)status.textContent=`📜 ${oneMazePieces} / 2 script pages · ${oneMazeKey?'🔑 Key found':'🔑 Find the key'} · 👟 ${oneMazeMoves} steps`;
+}
+function stepOneMaze(dir){const deltas={up:[0,-1],down:[0,1],left:[-1,0],right:[1,0]},[dx,dy]=deltas[dir]||[0,0],x=oneMazePlayer.x+dx,y=oneMazePlayer.y+dy;
+ if(!oneMazeGrid[y]||oneMazeGrid[y][x]==='#'||oneMazeGrid[y][x]===undefined){sound('no');return}
+ const t=oneMazeGrid[y][x];if(t==='E'&&(!oneMazeKey||oneMazePieces<2)){notify('Find both pages AND the key first!');sound('no');return}
+ oneMazePlayer={x,y};oneMazeMoves++;if(t==='P'){oneMazePieces++;oneMazeGrid[y][x]='.';award(2,'Script page found!')}
+ if(t==='K'){oneMazeKey=true;oneMazeGrid[y][x]='.';sound('good');notify('Golden key unlocked!')}
+ sound('tick');drawOneMaze();if(t==='E'){sound('win');delay(()=>{oneMazeLevel++;if(oneMazeLevel<4){award(5,'Backstage maze cleared!');renderOneMaze()}else finish('onemaze','Script Explorer','🗺️',28)},550)}
+}
+let oneDashLevel=0,oneDashRun=null;
+function startOneDash(){oneDashLevel=0;renderOneDash()}
+function renderOneDash(){const level=oneDashLevel,needed=[7,9,11,13][level],seconds=[30,35,40,45][level];
+ const dir='Use the left and right buttons to move Arthur. Catch stage decorations, but dodge the silly obstacles!';
+ setScreen('onedash',missionShell('🏃 Prop Delivery Dash',level+1,4,
+   `${instruct(dir)}<p class="game-note" id="dashStatus">📦 0 / ${needed} props · ❤️❤️❤️ · ⏱️ ${seconds}s</p><div class="runner-stage" id="runnerStage"><div class="runner-hero" id="runnerHero" style="left:50%">👓</div></div><div class="runner-controls"><button class="primary" id="dashLeft" aria-label="Move left">⬅</button><button class="primary" id="dashRight" aria-label="Move right">➡</button></div><div style="text-align:center"><button class="primary teal" id="dashStart">▶ START DASH</button></div><p class="game-copy">Catch 🍁 🎭 🎀 ⭐ — avoid 🧊 🥦 🚗</p>`));
+ hookupBack();hookupSpeak(dir);const stage=document.getElementById('runnerStage');let lane=1;
+ const updateHero=()=>{document.getElementById('runnerHero').style.left=(lane*33.333+16.667)+'%'};
+ const move=delta=>{lane=Math.max(0,Math.min(2,lane+delta));updateHero();sound('tick');if(oneDashRun)oneDashRun.lane=lane};
+ document.getElementById('dashLeft').onclick=()=>move(-1);document.getElementById('dashRight').onclick=()=>move(1);
+ let downX=0;stage.addEventListener('pointerdown',e=>{downX=e.clientX});stage.addEventListener('pointerup',e=>{let dx=e.clientX-downX;if(Math.abs(dx)>18)move(dx>0?1:-1);else{const r=stage.getBoundingClientRect();move(e.clientX<r.left+r.width/2?-1:1)}});
+ window.onkeydown=e=>{if(active==='onedash'&&(e.key==='ArrowLeft'||e.key==='ArrowRight')){e.preventDefault();move(e.key==='ArrowLeft'?-1:1)}};
+ document.getElementById('dashStart').onclick=()=>runOneDash(stage,needed,seconds,level)
+}
+function runOneDash(stage,needed,seconds,level){document.getElementById('dashStart').classList.add('hidden');
+ const run={lane:1,score:0,hearts:3,items:[],spawn:0,start:performance.now(),last:performance.now(),wave:0};oneDashRun=run;
+ const goodies=['🍁','🎭','🎀','⭐','🦃'],baddies=['🧊','🥦','🚗'];
+ function renderScore(elapsed){const x=document.getElementById('dashStatus');if(x)x.textContent=`📦 ${run.score} / ${needed} props · ${'❤️'.repeat(run.hearts)} · ⏱️ ${Math.max(0,Math.ceil(seconds-elapsed))}s`}
+ function finishDash(success){run.items.forEach(o=>o.el.remove());oneDashRun=null;
+  if(success){delay(()=>{oneDashLevel++;if(oneDashLevel<4){award(5,'Delivery complete!');renderOneDash()}else finish('onedash','Prop Delivery Pro','🏃',28)},800)}
+  else{document.getElementById('dashStart').classList.remove('hidden');document.getElementById('dashStart').textContent='🔁 Try Again';notify('Almost! Watch the lanes and try again.')}}
+ function frame(now){if(active!=='onedash'||oneDashRun!==run)return;
+  const dt=Math.min(.04,(now-run.last)/1000),elapsed=(now-run.start)/1000;run.last=now;run.spawn+=dt;
+  if(run.spawn>Math.max(.55,.92-level*.09)){
+    run.spawn=0;run.wave++;const good=run.wave%4!==0&&Math.random()>.22;
+    const lane=(run.wave*7+Math.floor(run.wave/3)+level)%3;
+    const em=(good?goodies:baddies)[Math.floor(Math.random()*(good?goodies.length:baddies.length))];
+    const el=document.createElement('div');el.className='runner-object';el.textContent=em;el.style.left=(lane*33.333+16.667)+'%';stage.appendChild(el);
+    run.items.push({lane,y:-50,el,good,velocity:130+level*22+Math.random()*38});
+  }
+  const height=stage.clientHeight;
+  for(const obj of [...run.items]){
+    obj.y+=dt*obj.velocity;obj.el.style.top=obj.y+'px';
+    if(obj.y>=height-100&&obj.y<height-35&&obj.lane===run.lane){
+      if(obj.good){run.score++;sound('pop');}else{run.hearts--;sound('no');notify('Watch out for obstacles!')}
+      obj.el.remove();run.items.splice(run.items.indexOf(obj),1);
+    }else if(obj.y>height+40){obj.el.remove();run.items.splice(run.items.indexOf(obj),1)}
+  }
+  renderScore(elapsed);
+  if(run.score>=needed){finishDash(true);return}
+  if(run.hearts<=0||elapsed>=seconds){finishDash(false);return}
+  rafId=requestAnimationFrame(frame)
+ }
+ rafId=requestAnimationFrame(frame)
+}
+const ONE_LIGHT_SCRIPTS=[[0],[0,4],[0,4,8],[1,5,6,7],[0,2,4,6,8]];
+let oneLightsLevel=0,oneLightsBoard=[];
+function toggleOneLight(i){const cells=[i,i-3,i+3,i-1,i+1].filter(n=>n>=0&&n<9&&(Math.abs(Math.floor(n/3)-Math.floor(i/3))+Math.abs(n%3-i%3)<=1));cells.forEach(j=>oneLightsBoard[j]=!oneLightsBoard[j])}
+function startOneLights(){oneLightsLevel=0;renderOneLights()}
+function renderOneLights(){oneLightsBoard=Array(9).fill(true);ONE_LIGHT_SCRIPTS[oneLightsLevel].forEach(i=>toggleOneLight(i));
+ const dir='Some spotlights have gone dark. Tap the lights to change nearby lights. Turn all nine lights gold to light Arthur’s stage.';
+ setScreen('onelights',missionShell('💡 Spotlight Switchboard',oneLightsLevel+1,5,
+  `${instruct(dir)}<p class="game-copy">Light every bulb to get the stage ready!</p><div class="light-grid">${Array.from({length:9},(_,i)=>`<button class="light-bulb" data-light="${i}" aria-label="Spotlight ${i+1}">💡</button>`).join('')}</div><p class="game-note" id="lightStatus"></p><div style="text-align:center"><button class="secondary" id="lightHint">💡 Show me a hint</button></div>`));
+ hookupBack();hookupSpeak(dir);drawOneLights();S.querySelectorAll('[data-light]').forEach(b=>b.onclick=()=>{
+  toggleOneLight(Number(b.dataset.light));sound('tick');drawOneLights();if(oneLightsBoard.every(Boolean)){
+   S.querySelectorAll('[data-light]').forEach(x=>x.disabled=true);sound('win');delay(()=>{oneLightsLevel++;if(oneLightsLevel<5){award(5,'Spotlights ready!');renderOneLights()}else finish('onelights','Light Engineer','💡',28)},800)
+  }
+ });
+ document.getElementById('lightHint').onclick=()=>{
+   let solution=null;for(let mask=1;mask<512;mask++){
+    const b=oneLightsBoard.slice();for(let i=0;i<9;i++)if(mask&(1<<i)){for(const j of [i,i-3,i+3,i-1,i+1])if(j>=0&&j<9&&Math.abs(Math.floor(j/3)-Math.floor(i/3))+Math.abs(j%3-i%3)<=1)b[j]=!b[j]}
+    if(b.every(Boolean)){solution=mask;break}
+   }
+   if(solution!==null){const ix=Array.from({length:9},(_,i)=>i).find(i=>solution&(1<<i));const btn=S.querySelector(`[data-light="${ix}"]`);btn?.classList.add('hinted');btn?.setAttribute('style','outline:5px solid #ff5479');delay(()=>btn?.removeAttribute('style'),1300);say('Try the glowing spotlight!')}
+ }
+}
+function drawOneLights(){S.querySelectorAll('[data-light]').forEach(b=>{const lit=oneLightsBoard[Number(b.dataset.light)];b.classList.toggle('on',lit);b.textContent=lit?'💡':'◌'});const st=document.getElementById('lightStatus');if(st)st.textContent=`✨ ${oneLightsBoard.filter(Boolean).length} of 9 spotlights glowing`}
+const ONE_CUE_ICONS=['💡','🎭','🥁','🦃'];
+let oneCuesLevel=0,oneCuesStep=0,oneCuesSeq=[],oneCuesInput=0,oneCuesStatus='idle';
+function startOneCues(){oneCuesLevel=0;oneCuesStep=0;renderOneCues()}
+function renderOneCues(){const size=Math.min(6,3+Math.floor((oneCuesLevel+oneCuesStep)/2));oneCuesSeq=Array.from({length:size},(_,i)=>(oneCuesLevel*2+oneCuesStep+i*3+i*i)%4);oneCuesInput=0;oneCuesStatus='ready';
+ const dir='Watch the director’s stage cues. Then tap them in the same order. Lights, curtain, drum, and turkey!';
+ setScreen('onecues',missionShell('🎛️ Director’s Cue Challenge',oneCuesLevel+1,4,
+  `${instruct(dir)}<p class="game-copy">Control the whole Thanksgiving performance!</p><div class="cue-status" id="cueStatus">Round ${oneCuesStep+1} of 3. Ready?</div><div class="cue-board">${ONE_CUE_ICONS.map((em,i)=>`<button class="cue-button" data-cue="${i}" aria-label="${['Lights','Curtain','Music','Turkey costume'][i]}" disabled>${em}</button>`).join('')}</div><div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><button class="primary" id="cueWatch">▶ Watch Stage Cues</button><button class="secondary" id="cueRepeat" disabled>🔁 Watch Again</button></div><div class="progress-track"><div class="progress-fill" id="cueFill"></div></div>`));
+ hookupBack();hookupSpeak(dir);document.getElementById('cueWatch').onclick=showOneCues;document.getElementById('cueRepeat').onclick=showOneCues;
+ S.querySelectorAll('[data-cue]').forEach(b=>b.onclick=()=>tapOneCue(Number(b.dataset.cue)))
+}
+function showOneCues(){if(oneCuesStatus==='watching')return;oneCuesStatus='watching';
+ S.querySelectorAll('[data-cue]').forEach(b=>b.disabled=true);document.getElementById('cueWatch').disabled=true;document.getElementById('cueRepeat').disabled=true;document.getElementById('cueStatus').textContent='Watch Arthur’s stage directions! 👀';
+ oneCuesSeq.forEach((cue,i)=>delay(()=>{
+  const b=S.querySelector(`[data-cue="${cue}"]`);if(!b)return;b.classList.add('lit');sound('drum');delay(()=>b.classList.remove('lit'),410)
+ },450+i*770));
+ delay(()=>{oneCuesStatus='input';oneCuesInput=0;document.getElementById('cueStatus').textContent='Your turn — run the show!';S.querySelectorAll('[data-cue]').forEach(b=>b.disabled=false);document.getElementById('cueRepeat').disabled=false},oneCuesSeq.length*770+540)
+}
+function tapOneCue(ix){if(oneCuesStatus!=='input')return;
+ const b=S.querySelector(`[data-cue="${ix}"]`);b?.classList.add('lit');delay(()=>b?.classList.remove('lit'),240);
+ if(ix!==oneCuesSeq[oneCuesInput]){oneCuesStatus='ready';sound('no');document.getElementById('cueStatus').textContent='Oops! Watch the stage cues again!';S.querySelectorAll('[data-cue]').forEach(x=>x.disabled=true);document.getElementById('cueWatch').disabled=false;document.getElementById('cueRepeat').disabled=false;document.getElementById('cueFill').style.width='0%';return}
+ sound('good');oneCuesInput++;document.getElementById('cueFill').style.width=(oneCuesInput/oneCuesSeq.length*100)+'%';
+ if(oneCuesInput===oneCuesSeq.length){oneCuesStatus='complete';S.querySelectorAll('[data-cue]').forEach(x=>x.disabled=true);document.getElementById('cueStatus').textContent='Perfect stage directions! ⭐';delay(()=>{
+ oneCuesStep++;if(oneCuesStep===3){oneCuesStep=0;oneCuesLevel++}if(oneCuesLevel<4){award(3,'Stage cue complete!');renderOneCues()}else finish('onecues','Showtime Director','🎛️',28)
+ },700)}
+}
+
 // Header actions and initial screen.
 document.getElementById('homeBtn').onclick=goHome;document.getElementById('audioBtn').onclick=()=>{state.sound=!state.sound;save();document.getElementById('audioBtn').textContent=state.sound?'🔊 Sound':'🔇 Muted';if(!state.sound)try{window.speechSynthesis?.cancel()}catch(e){}};document.getElementById('audioBtn').textContent=state.sound?'🔊 Sound':'🔇 Muted';window.addEventListener('visibilitychange',()=>{if(document.hidden){try{window.speechSynthesis?.cancel()}catch(e){}}});goHome();
 })();
