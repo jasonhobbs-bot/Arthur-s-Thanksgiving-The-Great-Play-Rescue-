@@ -6,25 +6,77 @@
 <meta name="theme-color" content="#0c1024">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Backstage Mayhem">
-<meta name="description" content="A thrilling touch-friendly original Thanksgiving school-play adventure. Arcade exploration, escape challenges and a spectacular finale.">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icon-192.png" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="style.css">
-<title>BACKSTAGE MAYHEM — Arthur's Thanksgiving Adventure</title>
+<meta name="apple-mobile-web-app-title" content="Arthur’s Thanksgiving: Showtime">
+<meta name="description" content="An original iPad game inspired by Arthur’s Thanksgiving: save the school play with three age-based adventures, including a special Pre-K mode.">
+
+
+
+<style>:root{--bg:#090e1d;--ink:#f5f8ff;--sub:#b5bdd7;--gold:#ffd678;--pink:#ff6a8a;--mint:#72f1c4;--blue:#70c0ff;--edge:#455071;--surface:#131c37;--shadow:0 28px 80px #020817ae}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);overscroll-behavior:none;-webkit-tap-highlight-color:transparent;touch-action:pan-y}button{font:inherit;cursor:pointer;-webkit-user-select:none;user-select:none}button:focus-visible{outline:3px solid var(--mint);outline-offset:3px}.app{min-height:100svh;max-width:1540px;padding:16px clamp(9px,2.4vw,30px) 12px;margin:auto;background:radial-gradient(ellipse at 56% 25%,#1f284b 0%,#10162c 42%,#090e1d 85%)}.masthead{display:flex;justify-content:space-between;gap:18px;align-items:center;min-height:48px;margin:0 2px 12px}.identity{display:flex;align-items:center;gap:11px}.identity strong{display:block;font-weight:1000;letter-spacing:2px;font-size:13px;line-height:1.2}.identity small{display:block;color:#8194bc;font-size:10px;font-weight:700;letter-spacing:.75px;margin-top:5px}.brandmark{width:41px;height:41px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#b9ffbb,#5ee6a8);box-shadow:0 4px 0 #2c7560;color:#1b524f;font-size:23px;font-weight:1000;letter-spacing:-4px;padding-right:4px}.brandmark span{color:#c05255}.header-actions{display:flex;gap:8px;align-items:center}.edition{font-weight:900;letter-spacing:1.7px;color:#899aba;font-size:10px;margin-right:15px}.icon-button{height:41px;width:43px;border-radius:11px;background:#1e2a45;color:#dceaff;border:1px solid #354264;font-weight:900;font-size:21px}.icon-button:active{transform:translateY(2px)}.game-frame{width:100%;max-width:1450px;aspect-ratio:16/9;position:relative;background:#0b152a;border:2px solid #394462;border-radius:16px;overflow:hidden;box-shadow:0 5px 0 #050914,0 30px 110px #03051295;isolation:isolate;touch-action:none}.game-frame canvas{width:100%;height:100%;display:block;touch-action:none}.edge-light{position:absolute;inset:0;z-index:1;pointer-events:none;box-shadow:inset 0 0 0 1px #ffffff12,inset 0 -35px 80px #08091845;border-radius:14px}.hud{position:absolute;z-index:4;left:0;right:0;top:0;padding:15px 19px 6px;display:flex;align-items:flex-start;justify-content:space-between;gap:8px;background:linear-gradient(#080d22ed,#080d2260 78%,transparent)}.hidden{display:none!important}.mission-index{font-size:11px;color:#b9b3c5;letter-spacing:1.6px;font-weight:1000}.mission-name{font-size:clamp(16px,2.25vw,27px);font-weight:1000;letter-spacing:.8px;text-shadow:0 2px 15px #000b;line-height:1.2}.mission-task{font-size:12px;font-weight:800;color:#ffe4ad;margin-top:5px;max-width:560px}.hud-right{display:flex;align-items:center;gap:9px}.hud-chip{height:39px;padding:0 13px;display:flex;align-items:center;gap:7px;background:#111b30d9;border:1px solid #526389b3;border-radius:12px;font-weight:1000}.stars-chip span{color:#ffdb79;font-size:20px}.hp-chip{color:#ff677a;white-space:nowrap;letter-spacing:1px}.pause-btn{width:39px;height:39px;border:1px solid #526389b3;background:#111b30d9;color:#fff;border-radius:12px;font-weight:1000}.progress-rail{position:absolute;top:104px;left:20px;right:20px;max-width:570px;z-index:3;height:7px;border-radius:8px;background:#0009;box-shadow:0 0 0 2px #fff2;overflow:hidden}.progress-rail>div{height:100%;width:0;background:linear-gradient(90deg,#60dbbf,#ffda7f);transition:width .2s}.mission-popup{position:absolute;top:134px;left:50%;transform:translateX(-50%);min-width:310px;max-width:min(600px,86%);z-index:10;display:flex;align-items:center;gap:13px;padding:13px 22px;background:#101d34ed;border:1px solid #81fad19e;box-shadow:0 10px 50px #0009,0 0 25px #28ebc033;border-radius:15px;pointer-events:none;animation:popup .2s ease-out}.mission-popup>span{font-size:32px}.mission-popup strong{font-size:15px;letter-spacing:1px;color:#89f4d5}.mission-popup p{margin:3px 0 0;font-weight:700;font-size:14px}.game-tip{position:absolute;z-index:5;bottom:29px;left:50%;transform:translateX(-50%);background:#10162ee0;color:#ffe8bd;padding:11px 17px;border:1px solid #ffe6a575;border-radius:12px;font-size:13px;font-weight:800;max-width:50%;text-align:center;pointer-events:none}.touch-ui{position:absolute;inset:0;pointer-events:none;z-index:5}.stick-zone{pointer-events:auto;position:absolute;left:25px;bottom:19px;width:160px;height:160px;display:grid;place-items:center;touch-action:none}.stick-base{width:122px;height:122px;border:2px solid #f4f8ff47;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 32px #94f5e018,0 0 22px #0009;background:#0d213c9e;backdrop-filter:blur(4px)}.stick-base:before,.stick-base:after{content:"";position:absolute;background:#b0c3e644}.stick-base:before{width:2px;height:110px}.stick-base:after{height:2px;width:110px}.stick-knob{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 31% 28%,#d4fff5,#66f1c3 60%,#1c947f);border:3px solid #e3fff8a1;box-shadow:0 5px 16px #0008;position:relative;z-index:1;transition:transform .04s linear;will-change:transform}.action-stack{position:absolute;right:22px;bottom:19px;display:flex;gap:13px;align-items:flex-end;pointer-events:none}.dash-button,.action-button{pointer-events:auto;touch-action:none;border:2px solid #ffffff6f;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;color:#10253b;box-shadow:0 6px 0 #0009,0 8px 25px #0009}.action-stack small{font-size:11px;font-weight:1000;letter-spacing:.8px}.action-stack b{font-size:30px;line-height:1.2}.dash-button{width:83px;height:83px;border-radius:50%;background:linear-gradient(135deg,#81d7ff,#3576df);margin-bottom:0}.action-button{width:111px;height:111px;border-radius:50%;background:linear-gradient(135deg,#ffe7ac,#f79158)}.action-button:active,.dash-button:active,.action-button.pressed,.dash-button.pressed{transform:scale(.93);filter:brightness(1.19)}.screen-overlay{position:absolute;inset:0;z-index:7;pointer-events:none}.view{position:absolute;inset:0;overflow:auto;overscroll-behavior:contain;pointer-events:auto}.view.hidden{display:none!important}.view-menu{display:flex;align-items:center;justify-content:space-between;padding:clamp(18px,4.4vw,65px);background:linear-gradient(90deg,#080e22fa 0%,#0a1128ee 31%,#0a1225ab 53%,#0d10241b 100%)}.hero-copy{width:min(690px,68%);position:relative;z-index:1}.eyebrow{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:1000;letter-spacing:2px;color:#c8e8db}.status-dot{display:inline-block;width:8px;height:8px;border-radius:100%;background:#79f0b7;box-shadow:0 0 13px #52ffa0}.edition-tag{color:#ffdc7c;border-left:1px solid #6c7d93;padding-left:10px}.hero-title{font-weight:1000;letter-spacing:-3.5px;line-height:.99;text-shadow:0 8px 0 #0003;margin:17px 0 15px}.hero-title>span{display:block;color:#fff;font-size:clamp(35px,5.6vw,85px);white-space:nowrap}.hero-title em{display:block;font-style:normal;color:#ffc86b;font-size:clamp(44px,7.7vw,119px);white-space:nowrap;letter-spacing:-5px}.hero-title .bang{color:#f77a83;display:inline-block;transform:rotate(9deg);margin-left:3px}.hero-rule{height:5px;background:linear-gradient(90deg,#ff786e 0%,#ffcb78 46%,transparent 95%);width:min(460px,100%);border-radius:6px;margin-bottom:19px}.hero-desc{font-size:clamp(13px,1.55vw,19px);line-height:1.45;color:#d6dcf1;font-weight:650;max-width:550px;margin:0 0 8px}.hero-hook{font-size:clamp(14px,1.7vw,20px);font-weight:800;color:#e7eefb;margin:0 0 23px}.hero-hook b{color:#82ffcb}.hero-buttons,.modal-actions{display:flex;gap:11px;flex-wrap:wrap;align-items:center}.primary-cta,.secondary-cta{min-height:51px;display:inline-flex;gap:25px;align-items:center;justify-content:space-between;padding:13px 21px;border:2px solid #ffe6a233;border-radius:11px;font-size:clamp(13px,1.28vw,16px);font-weight:1000;letter-spacing:.3px;transition:transform .12s,filter .12s;white-space:nowrap}.primary-cta{background:linear-gradient(110deg,#ffd977,#ffa64c);color:#2b2131;box-shadow:0 5px 0 #86582a,0 10px 18px #0005}.secondary-cta{background:#1e2943db;color:#e3eaff;border-color:#6775947d}.primary-cta:hover,.secondary-cta:hover{filter:brightness(1.12)}.primary-cta:active,.secondary-cta:active{transform:translateY(3px);box-shadow:0 2px 0 #0007}.hero-meta{display:flex;flex-wrap:wrap;gap:15px;color:#aab8ce;letter-spacing:.9px;font-size:10px;font-weight:1000;margin-top:26px}.hero-side{display:flex;align-self:stretch;position:relative;align-items:flex-start;justify-content:end;flex:1}.mission-badge{margin-top:9px;width:140px;aspect-ratio:1/1;transform:rotate(9deg);background:#10213bcc;border:2px dashed #fac97f8c;box-shadow:inset 0 0 0 8px #0e1b3488,0 9px 38px #000b;border-radius:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}.mission-badge-top{font-size:10px;color:#80e6c5;font-weight:1000;letter-spacing:2px}.mission-badge-big{font-size:53px;line-height:1;font-weight:1000;color:#ffd27f}.mission-badge-label{font-size:9px;font-weight:1000;letter-spacing:1px}.hero-orbit{position:absolute;right:0;bottom:3%;font-size:35px;color:#ffd484;text-shadow:0 8px 9px #0008;display:flex;flex-direction:column;gap:55px}.hero-orbit span:nth-child(1){transform:rotate(-17deg)}.hero-orbit span:nth-child(3){transform:rotate(19deg)}.modal-view{background:radial-gradient(ellipse at 50% 22%,#1b2852ed,#0a1128f7 78%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(12px,3.1vw,46px)}.modal-kicker{color:#7cf2c7;font-size:12px;letter-spacing:3px;font-weight:1000;margin-bottom:13px}.modal-view h1{font-size:clamp(29px,4.2vw,58px);line-height:1.04;letter-spacing:-1.1px;margin:0 0 15px;font-weight:1000;text-transform:uppercase}.modal-intro{max-width:700px;line-height:1.5;font-size:clamp(14px,1.5vw,18px);font-weight:650;color:#bdc9e3;margin:0 auto 19px}.mode-choices{display:flex;gap:20px;width:min(760px,100%);margin-top:12px}.mode-choice{background:linear-gradient(145deg,#1e3550,#14223e);border:2px solid #4e7997;text-align:left;padding:20px 22px;flex:1;border-radius:16px;box-shadow:0 10px 40px #0006;color:#fff}.mode-choice:nth-child(2){border-color:#a45875;background:linear-gradient(145deg,#462438,#23162e)}.mode-choice:hover,.mode-choice:focus-visible{transform:translateY(-5px);border-color:#ffe19a}.mode-symbol{font-size:33px;display:block;margin-bottom:5px}.mode-choice strong{display:block;font-size:25px;font-weight:1000}.mode-choice small{color:#ffd57b;font-size:11px;letter-spacing:1.2px;font-weight:1000}.mode-choice p{font-size:14px;line-height:1.4;color:#d1d9ef}.mode-play{display:block;color:#86efc9;font-weight:1000;margin-top:10px}.text-back{border:0;background:transparent;color:#a7b5ce;font-size:12px;font-weight:950;letter-spacing:1.3px;margin-top:25px;padding:10px}.stage-map{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;width:min(1060px,100%);margin:20px 0 27px}.stage-node{min-height:165px;background:#1a2744d9;border:1px solid #507194;border-radius:14px;text-align:left;padding:18px 14px;color:#fff;display:flex;flex-direction:column;gap:8px}.stage-node span:first-child{font-size:28px}.stage-node strong{font-size:14px;font-weight:1000;line-height:1.2}.stage-node small{color:#9fc0d3;font-size:11px;letter-spacing:1px;font-weight:900}.stage-node.locked{opacity:.4;filter:grayscale(.7)}.stage-node:not(.locked):hover{border-color:#f5c978;transform:translateY(-3px)}.stage-node.done{background:linear-gradient(155deg,#174d54,#193247);border-color:#6ae0c5}.briefing-layout{display:flex;align-items:center;gap:35px;max-width:950px;text-align:left}.briefing-poster{min-width:260px;width:37%;height:333px;background:radial-gradient(circle at 50% 28%,#456b7e,#20334c 58%,#0b1931);border:4px solid #6c8596;box-shadow:8px 8px 0 #050a19;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:13px;padding:20px;transform:rotate(-2deg)}.briefing-icon{font-size:89px;filter:drop-shadow(0 6px 15px #0007)}.briefing-poster span{letter-spacing:2px;font-size:10px;font-weight:900;color:#a6e2d5}.briefing-poster strong{font-size:31px;line-height:1.1;color:#ffda86}.briefing-text h1{font-size:clamp(28px,3.6vw,53px)}.briefing-text>p{color:#d4dcf0;line-height:1.45;font-size:clamp(15px,1.55vw,19px)}.briefing-task{border-left:4px solid #ffd37d;background:#ffd37d17;color:#ffdb8a;padding:11px 15px;font-size:16px;font-weight:1000;margin-top:20px}.briefing-text .control-instructions{font-size:12px;color:#c4cde1;margin:18px 0 23px}.clear-medal{width:80px;height:80px;border:5px solid #fff4c4;border-radius:50%;display:grid;place-items:center;background:linear-gradient(#ffd77d,#f49a53);color:#493a51;box-shadow:0 0 40px #ffd78686,0 8px 0 #0004;margin:0 0 19px;font-size:49px;font-weight:1000}.trophy-icon{font-size:83px;margin:0 0 4px}.results{display:flex;justify-content:center;gap:10px;margin:14px 0 24px;min-width:550px}.results>div{flex:1;padding:13px 20px;background:#141f37;border:1px solid #60739577;border-radius:12px;display:flex;flex-direction:column;gap:3px}.results small{font-size:11px;font-weight:1000;letter-spacing:1px;color:#93a4c2}.results strong{font-size:25px;color:#ffe0a2;font-weight:1000}.footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:9px;color:#71819e;letter-spacing:.3px;line-height:1.5;margin:10px 4px 0}.footer b{color:#8ee5c3}.footer>div:last-child{text-align:right;max-width:600px}@keyframes popup{from{opacity:0;top:118px}to{opacity:1;top:134px}}
+@media(max-width:850px){.edition{display:none}.hero-side{display:none}.hero-copy{width:100%}.view-menu{background:linear-gradient(90deg,#080e22f5,#0a1128d1 85%,#0a1225a2)}.hero-title>span{font-size:clamp(39px,8vw,66px)}.hero-title em{font-size:clamp(52px,10.6vw,88px)}.hero-title{letter-spacing:-2px}.stage-map{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.stage-node{min-height:120px;padding:9px}.stage-node strong{font-size:11px}.stage-node span:first-child{font-size:20px}.briefing-poster{min-width:160px;width:29%;height:225px}.briefing-icon{font-size:56px}.briefing-poster strong{font-size:19px}.briefing-layout{gap:22px}.footer .desktop-hint{display:none}.mission-name{font-size:16px}.mission-task{font-size:11px}.touch-ui .stick-zone{left:10px;bottom:8px;transform:scale(.77);transform-origin:bottom left}.touch-ui .action-stack{right:10px;bottom:10px;transform:scale(.8);transform-origin:bottom right}}
+@media(max-width:600px){.app{padding:8px 3px}.masthead{margin:0 7px 8px;min-height:36px}.brandmark{height:33px;width:33px;font-size:19px}.identity strong{font-size:10px;letter-spacing:1px}.identity small{font-size:8px}.icon-button{width:34px;height:33px;font-size:16px}.game-frame{min-height:360px;aspect-ratio:16/10;border-radius:8px}.view{padding:13px}.hero-title>span{font-size:32px}.hero-title em{font-size:45px;letter-spacing:-2px}.hero-desc{font-size:13px}.hero-hook{font-size:14px;margin-bottom:14px}.hero-meta{gap:7px;font-size:8px;margin-top:14px}.hero-buttons{gap:8px}.primary-cta,.secondary-cta{font-size:12px;min-height:40px;padding:8px 10px;gap:7px}.eyebrow{font-size:9px;gap:5px}.mode-choices{gap:6px}.mode-choice{padding:9px 8px}.mode-choice strong{font-size:15px}.mode-choice p{font-size:11px}.mode-symbol{font-size:20px}.mode-choice small{font-size:9px}.modal-kicker{font-size:10px;margin:0 0 7px}.modal-view h1{font-size:25px;margin-bottom:7px}.modal-intro{font-size:12px;line-height:1.35;margin-bottom:8px}.stage-map{margin:8px 0;gap:3px}.stage-node{min-height:92px;padding:6px 3px}.stage-node strong{font-size:8px}.stage-node small{font-size:7px}.stage-node span:first-child{font-size:17px}.briefing-poster{min-width:100px;width:30%;height:185px;padding:6px}.briefing-icon{font-size:40px}.briefing-poster span{font-size:6px}.briefing-poster strong{font-size:14px}.briefing-layout{gap:10px}.briefing-text>p{font-size:12px}.briefing-task{font-size:10px;padding:8px;margin-top:5px}.briefing-text .control-instructions{font-size:9px;margin:8px 0}.results{min-width:0;width:90%;gap:3px;margin:7px 0}.results>div{padding:5px}.results strong{font-size:15px}.results small{font-size:8px}.clear-medal{width:49px;height:49px;font-size:25px;margin-bottom:8px}.touch-ui .stick-zone{transform:scale(.58);left:7px;bottom:7px}.touch-ui .action-stack{transform:scale(.62);right:8px;bottom:7px}.hud{padding:7px 8px}.mission-index{font-size:7px}.mission-name{font-size:13px}.mission-task{font-size:9px}.hud-chip{font-size:11px;height:27px;padding:0 6px}.pause-btn{height:27px;width:27px}.hud-right{gap:4px}.progress-rail{top:67px;height:5px;left:8px}.mission-popup{top:80px;min-width:200px;padding:6px 10px}.game-tip{bottom:10px;font-size:9px;padding:5px 7px}.footer{font-size:8px}}
+@media(max-height:550px){.view-menu{padding:13px 38px}.hero-desc{margin-bottom:5px}.hero-hook{margin-bottom:10px}.hero-title{margin:9px 0}.hero-meta{margin-top:12px}.modal-view{padding:8px}.mode-choices{margin-top:3px}.mode-choice p{margin:6px 0}.briefing-poster{height:215px}.briefing-icon{font-size:59px}.briefing-text>p{font-size:13px}.briefing-task{margin-top:8px}.briefing-text .control-instructions{margin:9px 0}.results{margin:6px 0 10px}.modal-intro{margin-bottom:9px}.stage-map{margin:7px 0 10px}.stage-node{min-height:112px}}
+@media(pointer:coarse){.touch-ui{display:block}}@media(pointer:fine){.touch-ui{display:none!important}}
+
+/* The 30-minute edition adds a third grade mode and act progress. */
+.mode-choices{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important}
+.mode-choice{min-width:0!important;padding:16px!important}
+.mode-choice strong{font-size:clamp(16px,1.8vw,24px)!important}
+.mode-choice p{font-size:clamp(11px,1.0vw,14px)!important}
+#actclear .trophy-icon{font-size:clamp(40px,6vw,80px);margin:2px auto 8px}
+#actclear .briefing-task{margin:12px auto;max-width:650px}
+@media(max-width:850px){.mode-choices{gap:6px!important}.mode-choice{padding:9px!important}.mode-choice p{display:none}.mode-choice .mode-symbol{font-size:22px!important}.mode-choice strong{font-size:13px!important}.mode-choice small{font-size:10px!important}.mode-choice .mode-play{font-size:11px!important}#readMissionBtn{min-height:38px;padding:6px 10px;font-size:12px}}
+@media(max-width:600px){.mode-choices{grid-template-columns:repeat(3,minmax(0,1fr))!important}.mission-task{font-size:10px}.mission-index{font-size:9px}.hud-chip{height:33px;padding:0 6px}.hp-chip{letter-spacing:-2px}.action-stack{right:9px;bottom:7px}.action-button{width:82px;height:82px}.dash-button{width:65px;height:65px}.stick-zone{left:0;bottom:2px;width:125px;height:125px}.stick-base{width:100px;height:100px}}
+
+/* Arthur's Thanksgiving look and responsive 4-mode selection */
+.brandmark{background:linear-gradient(135deg,#ffcf93,#df895c);color:#593c42;letter-spacing:-2px}.brandmark span{color:#fff3b0;font-size:15px}
+.identity strong{color:#ffe4b0}.hero-title em{color:#ffc080}.hero-desc{max-width:600px}
+.mode-choices{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important}
+.mode-choice{padding:15px 10px!important}.mode-choice .mode-symbol{font-size:clamp(24px,3vw,42px)!important}.mode-choice strong{font-size:clamp(13px,1.4vw,19px)!important}
+.mode-choice small{letter-spacing:0!important}.mode-choice p{font-size:12px!important;line-height:1.25}
+@media(max-width:920px){.mode-choices{gap:5px!important}.mode-choice{padding:7px!important}.mode-choice .mode-symbol{font-size:23px!important}.mode-choice strong{font-size:12px!important}.mode-choice p{display:none!important}.mode-choice .mode-play{font-size:10px!important}}
+@media(max-width:570px){.mode-choices{grid-template-columns:repeat(2,minmax(0,1fr))!important}.mode-choice{min-height:97px!important}}
+/* Preschool playable story world: big moving touch targets, no joystick or reading needed */
+.little-view{display:flex;flex-direction:column;gap:8px;overflow:hidden!important;padding:16px 22px!important;background:linear-gradient(150deg,#272443,#3c3155 40%,#73506c 100%)}
+.little-top,.little-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:2;flex-shrink:0}
+.little-small{border:2px solid #ffdbab77;color:#ffe8c8;background:#251c3cbf;border-radius:999px;font-weight:900;padding:8px 15px;font-size:clamp(11px,1.2vw,15px)}
+.little-chapter{font-weight:1000;color:#fff0c0;letter-spacing:1px;font-size:clamp(13px,1.4vw,20px);text-align:center;text-shadow:0 3px 12px #0008}
+.little-count{border-radius:13px;padding:9px 17px;background:#2a254c;border:2px solid #f7dcae70;font-size:20px;font-weight:1000;color:#ffdc8c;white-space:nowrap}
+.little-heading{display:flex;align-items:center;justify-content:center;gap:15px;min-height:93px;flex-shrink:0;position:relative;z-index:1}
+.little-character{width:76px;height:76px;display:grid;place-items:center;border-radius:24px;background:#ffe6b5;box-shadow:inset 0 -7px #e4a68a,0 6px 18px #24182a65;font-size:48px}
+.little-eyebrow{font-weight:950;letter-spacing:1px;font-size:clamp(10px,1.2vw,14px);color:#ffdaac}
+.little-heading h2{font-size:clamp(22px,3.3vw,41px);line-height:1.02;margin:3px 0;color:white;font-weight:1000}
+.little-heading p{font-size:clamp(12px,1.7vw,20px);font-weight:800;margin:0;color:#ffe5c7}
+.little-sound{border:3px solid #ffd08c;border-radius:50%;background:#ffdf9d;box-shadow:0 5px #a96a63;width:68px;height:68px;font-size:30px;margin-left:15px;flex-shrink:0}
+.little-scene{position:relative;flex:1;min-height:130px;overflow:hidden;border:3px solid #fff0c259;border-radius:21px;background:radial-gradient(ellipse at 35% 24%,#d9b9a280,#a9809c6b 48%,#4f496cae 100%);box-shadow:inset 0 -40px 80px #2b244b75}
+.little-scene::before{content:'🎟️    🎭      🍂    🎼     🍁';position:absolute;top:7px;left:2%;right:2%;text-align:center;opacity:.55;letter-spacing:10px;font-size:clamp(15px,2.2vw,26px);pointer-events:none}
+.little-scene::after{content:'';position:absolute;left:0;right:0;bottom:0;height:19%;background:linear-gradient(#9c668784,#c17e73);border-top:5px solid #e8b37d99;pointer-events:none}
+.little-stage-figure{position:absolute;bottom:3%;left:50%;transform:translateX(-50%);font-size:clamp(36px,5vw,66px);z-index:1;pointer-events:none;filter:drop-shadow(0 8px 7px #291b388a)}
+.little-token{position:absolute;width:clamp(61px,7.8vw,98px);height:clamp(61px,7.8vw,98px);display:grid;place-items:center;font-size:clamp(34px,4.2vw,57px);background:linear-gradient(150deg,#fff9e9,#ffe0ba);border-radius:28%;border:4px solid #fff7d9;box-shadow:0 7px 0 #b9757688,0 12px 22px #2517318c;cursor:pointer;touch-action:manipulation;z-index:3;transition:scale .12s,filter .12s;animation:littleBob var(--float,2.8s) ease-in-out infinite alternate;user-select:none}
+.little-token:focus-visible{outline:5px solid #73ffe7}.little-token:active{scale:1.12}.little-token.little-wrong{animation:littleWiggle .3s}
+.little-token.little-correct{animation:littlePop .32s forwards;pointer-events:none}
+.little-token.little-glow{border-color:#ffd75e;box-shadow:0 0 0 6px #ffec834d,0 5px 0 #b9757688,0 12px 22px #2517318c}
+@keyframes littleBob{from{transform:translateY(-5px) rotate(-5deg)}to{transform:translateY(7px) rotate(5deg)}}
+@keyframes littlePop{to{transform:scale(1.9) rotate(15deg);opacity:0}}
+@keyframes littleWiggle{0%{transform:translateX(0)}33%{transform:translateX(-8px)}66%{transform:translateX(8px)}100%{transform:translateX(0)}}
+.little-meter{height:15px;border:3px solid #f7d8aa88;background:#201e35;border-radius:100px;flex:1;overflow:hidden;max-width:510px}
+.little-meter>div{height:100%;width:0%;background:linear-gradient(90deg,#93d5ac,#ffe08b);transition:width .2s}.little-bottom{height:40px}.little-bottom span{font-weight:1000;color:#ffe6b1;white-space:nowrap}
+.little-finish{position:absolute;inset:0;z-index:8;background:radial-gradient(ellipse at center,#8b507ddd,#26223df5);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:22px;text-align:center;gap:12px}.little-win-icon{font-size:clamp(70px,9vw,140px);filter:drop-shadow(0 12px 13px #1f102380);animation:littleBob 1.2s infinite alternate}.little-finish h2{margin:0;font-size:clamp(29px,4vw,64px);font-weight:1000;color:#fff3bd}.little-finish p{font-weight:800;color:#ffe1b4;max-width:620px;font-size:clamp(15px,2vw,24px)}
+@media(max-width:850px){.little-view{padding:8px 11px!important;gap:5px}.little-heading{min-height:72px}.little-character{width:58px;height:58px;font-size:37px}.little-sound{width:50px;height:50px;font-size:23px}.little-count{font-size:15px;padding:6px 9px}.little-small{padding:5px 10px;font-size:10px}.little-heading h2{font-size:clamp(18px,2.9vw,29px)}.little-heading p{font-size:clamp(11px,1.7vw,16px)}.little-token{width:clamp(55px,7.4vw,80px);height:clamp(55px,7.4vw,80px);font-size:clamp(32px,4vw,46px)}.little-bottom{height:31px}}
+</style>
+<title>ARTHUR’S THANKSGIVING — SAVE THE SCHOOL PLAY</title>
 </head>
 <body>
 <div class="app">
   <header class="masthead">
-    <div class="identity"><div class="brandmark">G<span>!</span></div><div><strong>GATOR ARCADE</strong><small>Thanksgiving Special • Classroom Edition</small></div></div>
-    <div class="header-actions"><span class="edition">ARTHUR'S THANKSGIVING · UNOFFICIAL COMPANION</span><button id="soundBtn" class="icon-button" title="Toggle sound" aria-label="Toggle sound">♫</button><button id="fullscreenBtn" class="icon-button" title="Fullscreen" aria-label="Fullscreen">⛶</button></div>
+    <div class="identity"><div class="brandmark">A<span>★</span></div><div><strong>ARTHUR’S PLAYHOUSE</strong><small>Save the Thanksgiving School Play</small></div></div>
+    <div class="header-actions"><span class="edition">INSPIRED BY ARTHUR’S THANKSGIVING · UNOFFICIAL</span><button id="soundBtn" class="icon-button" title="Toggle sound" aria-label="Toggle sound">♫</button><button id="fullscreenBtn" class="icon-button" title="Fullscreen" aria-label="Fullscreen">⛶</button></div>
   </header>
   <main class="game-frame" id="gameFrame">
     <canvas id="gameCanvas" width="1280" height="720" aria-label="Play area. Use the on-screen controls to move, dash and interact, or a keyboard."></canvas>
     <div class="edge-light"></div>
     <div class="hud hidden" id="hud">
-      <div class="hud-left"><div class="mission-index" id="missionIndex">MISSION 01 / 05</div><div class="mission-name" id="missionName">CAMPUS CHAOS</div><div class="mission-task" id="missionTask">Find the lost rehearsal pages</div></div>
+      <div class="hud-left"><div class="mission-index" id="missionIndex">CHAPTER 01 / 05</div><div class="mission-name" id="missionName">THE TURKEY SEARCH</div><div class="mission-task" id="missionTask">Find the lost rehearsal pages</div></div>
       <div class="hud-right"><div class="hud-chip stars-chip"><span>✦</span><strong id="starCount">0</strong></div><div class="hud-chip hp-chip" id="hearts">♥ ♥ ♥ ♥ ♥</div><button class="pause-btn" id="pauseBtn" title="Pause" aria-label="Pause">Ⅱ</button></div>
     </div>
     <div id="progressRail" class="progress-rail hidden"><div id="progressFill"></div></div>
@@ -36,25 +88,491 @@
     </div>
     <div id="screen" class="screen-overlay">
       <section id="menu" class="view view-menu">
-        <div class="hero-copy"><div class="eyebrow"><i class="status-dot"></i> NEW ARCADE ADVENTURE <span class="edition-tag">VOL. 01</span></div><div class="hero-title"><span>BACKSTAGE</span><em>MAYHEM<span class="bang">!</span></em></div><div class="hero-rule"></div><p class="hero-desc">The Thanksgiving play is falling apart. The turkey costume is missing. Props are flying. The stage lights are broken.</p><p class="hero-hook">You've got <b>one job:</b> save the show.</p><div class="hero-buttons"><button id="startBtn" class="primary-cta">▶ &nbsp; START ADVENTURE <span>→</span></button><button id="mapBtn" class="secondary-cta">MISSIONS <span>⌁</span></button></div><div class="hero-meta"><span>✹ 5 CHAPTERS / 20 ACTS</span><span>✹ BIG BOSS FINALE</span><span>✹ iPAD + KEYBOARD</span></div></div>
-        <div class="hero-side"><div class="mission-badge"><div class="mission-badge-top">TOP SECRET</div><div class="mission-badge-big">05</div><div class="mission-badge-label">CHAPTERS / 20 ACTS<br>SAVE THE SHOW</div></div><div class="hero-orbit"><span>🍁</span><span>✶</span><span>🎭</span></div></div>
+        <div class="hero-copy"><div class="eyebrow"><i class="status-dot"></i> STORYBOOK ARCADE ADVENTURE <span class="edition-tag">VOL. 01</span></div><div class="hero-title"><span>ARTHUR’S</span><em>SHOWTIME<span class="bang">!</span></em></div><div class="hero-rule"></div><p class="hero-desc">Arthur is directing the Thanksgiving school play—but no one wants to be the turkey! Find a performer, create a costume, and help the class put on a wonderful show.</p><p class="hero-hook">It's <b>showtime!</b> Can you help Arthur and his friends?</p><div class="hero-buttons"><button id="startBtn" class="primary-cta">▶ &nbsp; START THE SHOW <span>→</span></button><button id="mapBtn" class="secondary-cta">MISSIONS <span>⌁</span></button></div><div class="hero-meta"><span>✹ PRE-K TO GRADE 5</span><span>✹ 20 ACTS + SHOWTIME FINALE</span><span>✹ iPAD + KEYBOARD</span></div></div>
+        <div class="hero-side"><div class="mission-badge"><div class="mission-badge-top">DIRECTOR’S PASS</div><div class="mission-badge-big">05</div><div class="mission-badge-label">CHAPTERS / 20 ACTS<br>HELP ARTHUR</div></div><div class="hero-orbit"><span>🍁</span><span>✶</span><span>🎭</span></div></div>
       </section>
-      <section id="mode" class="view modal-view hidden"><div class="modal-kicker">PLAYER SELECT</div><h1>CHOOSE YOUR GRADE LEVEL</h1><p class="modal-intro">20 playable acts across 5 chapters. Choose the right challenge for your students.</p><div class="mode-choices">
-  <button class="mode-choice" data-mode="rookie"><span class="mode-symbol">🌟</span><strong>SUPER STARTER</strong><small>PRE-K–1</small><p>More hearts, gentler obstacles, and fewer pickups. Designed for shared or guided play.</p><span class="mode-play">LET'S PLAY →</span></button>
-  <button class="mode-choice" data-mode="adventure"><span class="mode-symbol">⚡</span><strong>ADVENTURER</strong><small>GRADES 2–3</small><p>Big missions, colorful puzzles, bonus stars, and more action.</p><span class="mode-play">LET'S GO →</span></button>
-  <button class="mode-choice" data-mode="expert"><span class="mode-symbol">🔥</span><strong>STAGE LEGEND</strong><small>GRADES 4–5</small><p>More objectives, tougher traps, and an intense finale!</p><span class="mode-play">BRING IT ON →</span></button>
+      <section id="mode" class="view modal-view hidden"><div class="modal-kicker">PLAYER SELECT</div><h1>CHOOSE HOW TO PLAY</h1><p class="modal-intro">Pre-K has a gentle tap-to-play adventure. Grades 1–5 explore an action game with joystick controls.</p><div class="mode-choices">
+  <button class="mode-choice" data-mode="little"><span class="mode-symbol">🧸</span><strong>LITTLE TURKEY HELPERS</strong><small>PRE-K & KINDERGARTEN</small><p>Tap big pictures, collect feathers, play stage rhythms. No losing, no joystick, and cheerful spoken instructions.</p><span class="mode-play">LET’S HELP ARTHUR →</span></button>
+  <button class="mode-choice" data-mode="rookie"><span class="mode-symbol">🦃</span><strong>STORY ADVENTURERS</strong><small>GRADES 1–2</small><p>Explore, find costume pieces, repair the stage, and rehearse with extra hearts and helpful hints.</p><span class="mode-play">START ADVENTURE →</span></button>
+  <button class="mode-choice" data-mode="adventure"><span class="mode-symbol">🎭</span><strong>STAGE HEROES</strong><small>GRADES 3–4</small><p>More exploration, quicker challenges, stage puzzles, and a dramatic curtain finale.</p><span class="mode-play">SAVE THE SHOW →</span></button>
+  <button class="mode-choice" data-mode="expert"><span class="mode-symbol">🌟</span><strong>DIRECTOR’S CHALLENGE</strong><small>GRADE 5</small><p>The most demanding backstage adventure, with more objectives and bonus collectibles.</p><span class="mode-play">BRING IT ON →</span></button>
 </div><button class="text-back" data-go="menu">← BACK TO TITLE</button></section>
-      <section id="map" class="view modal-view hidden"><div class="modal-kicker">MISSION CONTROL</div><h1>OPERATION: SAVE THE SHOW</h1><p class="modal-intro">Choose a stage you've unlocked. Your best scores save on this iPad.</p><div id="stageMap" class="stage-map"></div><div class="modal-actions"><button class="secondary-cta" data-go="menu">← BACK</button><button id="continueBtn" class="primary-cta">CONTINUE ▶</button></div></section>
-      <section id="briefing" class="view modal-view hidden"><div class="modal-kicker" id="briefingKicker">MISSION 01 / 05</div><div class="briefing-layout"><div class="briefing-poster"><div id="briefingIcon" class="briefing-icon">🍁</div><span>MISSION FILE // CLASSIFIED</span><strong id="briefingPosterTitle">CAMPUS CHAOS</strong></div><div class="briefing-text"><h1 id="briefingTitle">CAMPUS CHAOS</h1><p id="briefingStory">The rehearsal pages have blown across campus.</p><div id="briefingTask" class="briefing-task">ACT 1 OF 4</div><button id="readMissionBtn" class="secondary-cta" type="button" style="margin-bottom:8px">🔊 HEAR THIS MISSION</button><p class="control-instructions"><b>iPad:</b> drag joystick · BOOST to dash · INTERACT near glowing objects<br><b>Keyboard:</b> WASD / arrows · SHIFT dash · E or SPACE interact</p><button id="launchBtn" class="primary-cta">BEGIN MISSION <span>→</span></button></div></div></section>
+      <section id="map" class="view modal-view hidden"><div class="modal-kicker">MISSION CONTROL</div><h1>ARTHUR’S SHOWTIME CHAPTERS</h1><p class="modal-intro">Choose a stage you've unlocked. Your best scores save on this iPad.</p><div id="stageMap" class="stage-map"></div><div class="modal-actions"><button class="secondary-cta" data-go="menu">← BACK</button><button id="continueBtn" class="primary-cta">CONTINUE ▶</button></div></section>
+      <section id="briefing" class="view modal-view hidden"><div class="modal-kicker" id="briefingKicker">CHAPTER 01 / 05</div><div class="briefing-layout"><div class="briefing-poster"><div id="briefingIcon" class="briefing-icon">🍁</div><span>DIRECTOR’S NOTES</span><strong id="briefingPosterTitle">THE TURKEY SEARCH</strong></div><div class="briefing-text"><h1 id="briefingTitle">THE TURKEY SEARCH</h1><p id="briefingStory">The rehearsal pages have blown across campus.</p><div id="briefingTask" class="briefing-task">ACT 1 OF 4</div><button id="readMissionBtn" class="secondary-cta" type="button" style="margin-bottom:8px">🔊 HEAR THIS MISSION</button><p class="control-instructions"><b>iPad:</b> drag joystick · BOOST to dash · INTERACT near glowing objects<br><b>Keyboard:</b> WASD / arrows · SHIFT dash · E or SPACE interact</p><button id="launchBtn" class="primary-cta">BEGIN MISSION <span>→</span></button></div></div></section>
       <section id="actclear" class="view modal-view hidden"><div class="modal-kicker">BACKSTAGE PROGRESS</div><div class="trophy-icon">⭐</div><h1 id="actCompleteTitle">ACT COMPLETE!</h1><p id="actProgressCopy" class="modal-intro">1 OF 4 ACTS COMPLETE</p><div class="briefing-task" id="actNextTitle">NEXT MISSION</div><p id="actNextCopy" class="modal-intro">The adventure continues.</p><div class="modal-actions"><button id="nextActBtn" class="primary-cta">▶ NEXT ACT →</button><button id="actMapBtn" class="secondary-cta">MISSION MAP</button></div></section>
       <section id="paused" class="view modal-view hidden"><div class="modal-kicker">BREAK TIME</div><h1>GAME PAUSED</h1><p class="modal-intro">Your mission is right where you left it. Every completed act is saved on this iPad.</p><div class="modal-actions"><button id="resumeBtn" class="primary-cta">▶ RESUME</button><button class="secondary-cta" id="restartBtn">↻ RESTART</button><button class="secondary-cta" id="quitBtn">MISSION MAP</button></div></section>
       <section id="clear" class="view modal-view hidden"><div class="modal-kicker">MISSION COMPLETE</div><div class="clear-medal" id="clearMedal">S</div><h1 id="clearTitle">CAMPUS CLEARED!</h1><p class="modal-intro" id="clearCopy">The rehearsal is back on track.</p><div class="results"><div><small>POINTS</small><strong id="resultPoints">0000</strong></div><div><small>TIME</small><strong id="resultTime">00:00</strong></div><div><small>RANK</small><strong id="resultRank">S</strong></div></div><div class="modal-actions"><button class="secondary-cta" id="replayBtn">↻ REPLAY</button><button id="nextBtn" class="primary-cta">NEXT MISSION →</button></div></section>
       <section id="dead" class="view modal-view hidden"><div class="modal-kicker">THE SHOW MUST GO ON</div><h1>NOT OUT YET.</h1><p class="modal-intro">Every great crew has to improvise. Try a different route, use BOOST to slip past hazards, and don't give up.</p><div class="modal-actions"><button id="retryBtn" class="primary-cta">↻ TRY AGAIN</button><button id="deadMapBtn" class="secondary-cta">MISSION MAP</button></div></section>
-      <section id="won" class="view modal-view hidden"><div class="modal-kicker">STANDING OVATION</div><div class="trophy-icon">🏆</div><h1>YOU SAVED THE SHOW!</h1><p class="modal-intro">The costume is ready, the stage is lit, and Arthur's Thanksgiving play can go on. It took teamwork, creativity, and the courage to step up.</p><div class="results"><div><small>TOTAL SCORE</small><strong id="totalPoints">00000</strong></div><div><small>STAGES</small><strong>5 / 5</strong></div><div><small>BADGE</small><strong>DIRECTOR</strong></div></div><div class="modal-actions"><button id="playAgainBtn" class="primary-cta">PLAY AGAIN ↻</button><button id="winnerMapBtn" class="secondary-cta">STAGE SELECT</button></div></section>
+      <section id="won" class="view modal-view hidden"><div class="modal-kicker">STANDING OVATION</div><div class="trophy-icon">🏆</div><h1>YOU SAVED THE SHOW!</h1><p class="modal-intro">Arthur and his friends are ready for their Thanksgiving play! You helped everyone work together, solve problems, and make room for the turkey performer.</p><div class="results"><div><small>TOTAL SCORE</small><strong id="totalPoints">00000</strong></div><div><small>STAGES</small><strong>5 / 5</strong></div><div><small>BADGE</small><strong>DIRECTOR</strong></div></div><div class="modal-actions"><button id="playAgainBtn" class="primary-cta">PLAY AGAIN ↻</button><button id="winnerMapBtn" class="secondary-cta">STAGE SELECT</button></div></section>
+      <section id="little" class="view little-view hidden">
+        <div class="little-top"><button id="littleBack" class="little-small">← CHOOSE MODE</button><div id="littleChapter" class="little-chapter">🎭 ARTHUR NEEDS A TURKEY!</div><div class="little-count" id="littleCount">⭐ 0</div></div>
+        <div class="little-heading"><div class="little-character" id="littleCharacter">🦃</div><div><div class="little-eyebrow" id="littlePosition">CHAPTER 1 · STORY 1 / 4</div><h2 id="littleTitle">Find the Turkey!</h2><p id="littlePrompt">Tap the turkey pictures!</p></div><button id="littleSpeak" class="little-sound" aria-label="Hear the directions">🔊</button></div>
+        <div id="littleScene" class="little-scene" aria-label="Touch the large pictures to play"><div class="little-stage-figure" id="littleStageFigure">🎭</div></div>
+        <div class="little-bottom"><div class="little-meter"><div id="littleFill"></div></div><span id="littleStatus">0 / 8</span><button id="littleHint" class="little-small">🔊 HEAR HINT</button></div>
+        <div id="littleFinish" class="little-finish hidden"><div id="littleWinIcon" class="little-win-icon">🌟</div><h2 id="littleWinTitle">GREAT JOB!</h2><p id="littleWinText">Arthur's school play is coming together!</p><button id="littleNext" class="primary-cta">▶ KEEP PLAYING</button></div>
+      </section>
     </div>
   </main>
-  <footer class="footer"><div><b>DIRECTOR'S NOTE:</b> Real gameplay, not multiple-choice worksheets. <span class="desktop-hint">Move with WASD / arrows · Dash SHIFT · Use E / SPACE · Pause ESC</span></div><div>20-ACT UNOFFICIAL CLASSROOM COMPANION TO <i>ARTHUR'S THANKSGIVING</i> • NOT AFFILIATED WITH THE AUTHOR OR PUBLISHER</div></footer>
+  <footer class="footer"><div><b>BOOK CONNECTION:</b> Help Arthur solve the Thanksgiving play’s turkey-role problem. <span class="desktop-hint">Move with WASD / arrows · Dash SHIFT · Use E / SPACE · Pause ESC</span></div><div>20-ACT UNOFFICIAL CLASSROOM COMPANION TO <i>ARTHUR'S THANKSGIVING</i> • NOT AFFILIATED WITH THE AUTHOR OR PUBLISHER</div></footer>
 </div>
-<script src="game.js" defer></script>
+<script>/* ARTHUR’S THANKSGIVING SHOWTIME — original unofficial arcade companion. */
+(()=>{
+'use strict';
+const W=1280,H=720,TAU=Math.PI*2,canvas=document.getElementById('gameCanvas'),ctx=canvas.getContext('2d',{alpha:false});
+const $=id=>document.getElementById(id), clamp=(n,a,b)=>Math.max(a,Math.min(b,n)), lerp=(a,b,t)=>a+(b-a)*t, rand=(a,b)=>Math.random()*(b-a)+a;
+const STAGES=[
+ {name:'THE TURKEY SEARCH',short:'Turkey Search',icon:'🦃',story:'Arthur is directing the Thanksgiving play, but nobody wants to be the turkey. Find scattered invitations and script pages so the class can begin choosing roles.',task:'FIND SCRIPT PAGES AND TURKEY CLUES',finish:'Arthur found the rehearsal script! The turkey role is still a mystery, so it is time to build a costume.',spawn:[210,650],world:[2350,1350],exit:[2210,650],colors:['#2e4947','#427963','#b5c38e']},
+ {name:'COSTUME CREATORS',short:'Costume Creators',icon:'🪶',story:'The turkey outfit is almost ready! Search the costume room for ribbons, colorful feathers, and the trunk key. Give the performer a wonderful costume.',task:'FIND COSTUME PIECES AND OPEN THE TRUNK',finish:'The costume looks incredible! Now help Arthur prepare the classroom stage.',spawn:[220,650],world:[2350,1350],exit:[2180,650],colors:['#37324a','#63516b','#c99486']},
+ {name:'REHEARSAL MAGIC',short:'Rehearsal Magic',icon:'🎶',story:'Arthur needs everyone to practice together. Collect music notes, choose the right stage-light colors, and help the performers learn their cues.',task:'RESTORE THE REHEARSAL CUES',finish:'Everyone knows their cues! Time for a dress rehearsal.',spawn:[220,650],world:[2350,1350],exit:[2200,650],colors:['#32234b','#63558d','#c0aad4']},
+ {name:'THE BIG PRACTICE',short:'Big Practice',icon:'🎭',story:'It is almost showtime! Race through the stage markers, collect the missing decorations, and get every performer to their places.',task:'FOLLOW THE REHEARSAL MARKERS',finish:'The performers are ready. The Thanksgiving audience is arriving!',spawn:[210,650],world:[2350,1350],exit:[2200,650],colors:['#4b2543','#9d5365','#edab80']},
+ {name:'SAVE THE SHOW',short:'Save the Show',icon:'🌟',story:'The curtain rig and confetti machine have become tangled! Turn on the stage lights and use bursts of sparkle to reset the rig so Arthur’s Thanksgiving play can begin.',task:'RESTART THE LIGHTS AND CLEAR THE CURTAIN',finish:'The curtain opens! The turkey performer joins the cast, and Arthur’s school play is a success!',spawn:[210,590],world:[2000,1200],exit:[1850,600],colors:['#3c2746','#82547c','#d19ea0']}
+];
+const C=['#f46e77','#68c9ff','#ffd56c','#69e7af'];
+const SAVE='arthurs-thanksgiving-showtime-2026-v1';
+const WAVE_KIND={collect:'checkpoint',checkpoint:'collect',badges:'checkpoint',consoles:'collect',towers:'collect',boss:'boss'};
+const ACTS=[
+ [{title:'ARTHUR’S INVITATIONS',kind:'collect',hint:'Find invitations to the Thanksgiving play.'},{title:'THE FRIENDSHIP TRAIL',kind:'checkpoint',hint:'Visit every rehearsal station and meet the cast.'},{title:'TURKEY ROLE CLUES',kind:'collect',hint:'Search for clues about the missing turkey performer.'},{title:'SCRIPTS TO THE STAGE',kind:'checkpoint',hint:'Deliver the rehearsal script to the classroom stage.'}],
+ [{title:'COLORFUL FEATHERS',kind:'badges',hint:'Find costume supplies and open the wardrobe trunk.'},{title:'THE PROP PARADE',kind:'checkpoint',hint:'Follow the costume-room route.'},{title:'RIBBONS AND BUTTONS',kind:'collect',hint:'Collect festive pieces for the turkey outfit.'},{title:'THE TURKEY COSTUME',kind:'badges',hint:'Unlock the final costume trunk.'}],
+ [{title:'MUSIC NOTE SEARCH',kind:'collect',hint:'Collect music notes for the class rehearsal.'},{title:'SPOTLIGHT COLORS',kind:'consoles',hint:'Gather power pieces and match the stage-light colors.'},{title:'EVERYONE HAS A CUE',kind:'checkpoint',hint:'Visit every rehearsal cue in order.'},{title:'LIGHTS FOR THE PLAY',kind:'consoles',hint:'Get every light ready for the Thanksgiving show.'}],
+ [{title:'FIRST REHEARSAL',kind:'checkpoint',hint:'Follow stage marks and help everyone practice.'},{title:'THE DECORATION DASH',kind:'collect',hint:'Find autumn decorations for the classroom stage.'},{title:'READY, SET, ACTION!',kind:'consoles',hint:'Set the right light color for each scene.'},{title:'FULL DRESS REHEARSAL',kind:'checkpoint',hint:'Make it through the full rehearsal route.'}],
+ [{title:'LAST-MINUTE DECOR',kind:'collect',hint:'Collect the decorations before the audience arrives.'},{title:'CHECK THE LIGHTS',kind:'consoles',hint:'Make sure each stage light is ready.'},{title:'OPENING NIGHT',kind:'towers',hint:'Turn on the three big stage spotlights.'},{title:'THE CURTAIN JAM',kind:'boss',hint:'Power three lights, then reset the tangled curtain rig!'}]
+];
+const ROUTE=[[365,445],[720,1005],[1040,555],[1480,930],[1810,420],[2120,965],[1740,755],[1305,510],[865,925],[390,1090],[610,335],[1045,820],[1520,630],[2095,350],[2100,1085],[1640,940],[1120,485],[755,730],[400,885],[935,1120]];
+const MODE_SPEC={rookie:{label:'GRADES 1–2',health:9,speed:258,targets:9,console:4,checkpoints:8,hazard:.65,boss:6},adventure:{label:'GRADES 3–4',health:7,speed:287,targets:12,console:5,checkpoints:11,hazard:.87,boss:9},expert:{label:'GRADE 5',health:6,speed:307,targets:16,console:7,checkpoints:15,hazard:1.18,boss:13}};
+const modeSpec=()=>MODE_SPEC[st.mode]||MODE_SPEC.adventure;
+
+let save={unlocked:0,bests:{},mode:'adventure',actProgress:{}};
+try{const raw=JSON.parse(localStorage.getItem(SAVE)||'{}');if(raw&&typeof raw==='object'){save={...save,...raw,bests:raw.bests||{},actProgress:raw.actProgress||{}};save.unlocked=clamp(Number(save.unlocked)||0,0,5)}}catch{}
+const persist=()=>{try{localStorage.setItem(SAVE,JSON.stringify(save))}catch{}};
+const st={screen:'menu',mode:MODE_SPEC[save.mode]?save.mode:'adventure',level:0,act:0,wave:0,actElapsed:0,world:null,player:null,cam:{x:0,y:0},elapsed:0,now:0,last:0,score:0,particles:[],floaters:[],burst:[],popupUntil:0,shake:0,goalComplete:false,boss:null,fireballs:[],prompt:'',hudClock:0,attractLeaves:Array.from({length:28},()=>({x:rand(0,W),y:rand(0,H),spd:rand(.5,1.8),s:rand(8,20),rot:rand(0,TAU)}))};
+const keys=new Set(),stick={x:0,y:0,pointer:null},touchUI=$('touchUI');let audio=null,muted=false;
+const views=['menu','mode','map','briefing','actclear','paused','clear','dead','won','little'];
+const on=(el,ev,fn)=>el.addEventListener(ev,fn);
+function beep(type='coin'){
+ if(muted)return;
+ try{audio=audio||new(window.AudioContext||window.webkitAudioContext)();if(audio.state==='suspended')audio.resume();const t=audio.currentTime,os=audio.createOscillator(),gain=audio.createGain();os.connect(gain);gain.connect(audio.destination);let f=550,d=.095,kind='sine',peak=.075;
+ if(type==='coin'){f=880;d=.13;kind='triangle'}else if(type==='dash'){f=180;d=.13;kind='sawtooth';peak=.047}else if(type==='hit'){f=120;d=.24;kind='sawtooth';peak=.065}else if(type==='fire'){f=510;d=.085;kind='square';peak=.028}else if(type==='complete'){f=650;d=.27;kind='triangle'}else if(type==='click'){f=370;d=.06;peak=.035}
+ os.type=kind;os.frequency.setValueAtTime(f,t);os.frequency.exponentialRampToValueAtTime(type==='hit'?65:type==='fire'?230:f*1.3,t+d);gain.gain.setValueAtTime(0.001,t);gain.gain.exponentialRampToValueAtTime(peak,t+.018);gain.gain.exponentialRampToValueAtTime(.001,t+d);os.start(t);os.stop(t+d+.01)
+ }catch{}
+}
+function showView(view){st.screen=view;$('screen').classList.remove('hidden');views.forEach(v=>$(v).classList.toggle('hidden',v!==view));$('hud').classList.add('hidden');$('progressRail').classList.add('hidden');touchUI.classList.add('hidden');$('gameTip').classList.add('hidden');$('missionPopup').classList.add('hidden')}
+function liveView(){st.screen='playing';$('screen').classList.add('hidden');$('hud').classList.remove('hidden');$('progressRail').classList.remove('hidden');touchUI.classList.remove('hidden');$('missionPopup').classList.add('hidden');st.hudClock=0;hudUpdate()}
+function popup(title,text,icon='✦'){if(st.screen!=='playing')return;$('popupTitle').textContent=title;$('popupText').textContent=text;$('popupIcon').textContent=icon;$('missionPopup').classList.remove('hidden');st.popupUntil=st.elapsed+3}
+function menu(){showView('menu')}
+function map(){if(st.mode==='little'){window.LittleShow.start();return}renderMap();showView('map')}
+function renderMap(){let html='';for(let i=0;i<STAGES.length;i++){const s=STAGES[i],locked=i>save.unlocked,best=save.bests[i+'-'+st.mode];html+=`<button type="button" class="stage-node ${locked?'locked':''} ${best?'done':''}" data-stage="${i}" ${locked?'disabled':''}><span>${locked?'🔒':s.icon}</span><small>STAGE 0${i+1}</small><strong>${s.short.toUpperCase()}</strong><small>${best?'✓ '+best.rank+' RANK':'TAP TO PLAY'}</small></button>`}$('stageMap').innerHTML=html;document.querySelectorAll('[data-stage]').forEach(b=>on(b,'click',()=>{if(st.mode)briefLevel(+b.dataset.stage);else showView('mode')}))}
+function briefLevel(i){st.level=i;st.act=clamp(save.actProgress[st.mode+'-'+i]||0,0,3);let s=STAGES[i];$('briefingKicker').textContent=`CHAPTER 0${i+1} / 05 • ${modeSpec().label} • 4 ACTS`; $('briefingIcon').textContent=s.icon;$('briefingPosterTitle').textContent=s.name;$('briefingTitle').textContent=s.name;$('briefingStory').textContent=s.story;$('briefingTask').textContent='START WITH ACT '+(st.act+1)+': '+ACTS[i][st.act].title+' • '+ACTS[i][st.act].hint;showView('briefing')}
+function freshPlayer(){return{x:STAGES[st.level].spawn[0],y:STAGES[st.level].spawn[1],vx:0,vy:0,face:1,r:24,hp:modeSpec().health,maxHp:modeSpec().health,inv:0,dash:0,dashCD:0,walk:0,knockX:0,knockY:0}}
+function pickup(x,y,type='page',extra={}){return{x,y,type,r:25,got:false,phase:rand(0,TAU),...extra}}
+function hazard(type,x,y,opts={}){return{type,x,y,ax:x,ay:y,range:160,speed:1.0,phase:rand(0,TAU),r:29,...opts}}
+function scenery(x,y,type,extra={}){return{x,y,type,...extra}}
+function createBaseWorld(i){const s=STAGES[i],w={w:s.world[0],h:s.world[1],items:[],secrets:[],hazards:[],objects:[],walls:[],decor:[],completed:false,checkpoint:0,lights:0,progress:0};
+ if(i===0){w.items=[pickup(392,520),pickup(745,858),pickup(1040,555),pickup(1380,820),pickup(1750,520),pickup(1960,765)];w.hazards=[hazard('cart',615,650,{axis:'y',range:165,speed:1.55}),hazard('pumpkin',1180,675,{axis:'x',range:215,speed:1.6,phase:0}),hazard('cart',1730,670,{axis:'y',range:220,speed:1.75})];w.objects=[{type:'npc',x:440,y:670,dialogue:'Arthur is directing the play. Nobody wants to play the turkey yet—and now the script is gone! Gather every page.',name:'STAGE MANAGER'}];w.walls=[{x:875,y:72,w:640,h:330},{x:1590,y:1020,w:360,h:280}];}
+ if(i===1){w.items=[pickup(580,400,'key'),pickup(1140,960,'key'),pickup(1795,400,'key')];w.objects=[{type:'trunk',x:1930,y:940,open:false},{type:'npc',x:400,y:650,name:'PROP MASTER',dialogue:'Three access badges unlock the turkey costume trunk. Watch for the wild stage carts!'}];w.hazards=[hazard('cart',710,680,{axis:'y',range:220,speed:1.25}),hazard('cart',1350,700,{axis:'x',range:185,speed:1.6}),hazard('pumpkin',1780,720,{axis:'y',range:200,speed:1.8})];w.walls=[{x:680,y:50,w:320,h:260},{x:1270,y:970,w:290,h:310},{x:1630,y:70,w:330,h:190}];}
+ if(i===2){w.objects=[{type:'console',x:530,y:390,idx:0,sel:3,target:1,locked:false},{type:'console',x:1000,y:910,idx:1,sel:0,target:3,locked:false},{type:'console',x:1440,y:405,idx:2,sel:2,target:0,locked:false},{type:'console',x:1930,y:850,idx:3,sel:1,target:2,locked:false},{type:'npc',x:410,y:650,name:'LIGHTING TECH',dialogue:'Match the color of each console to the bright ring around it. INTERACT cycles colors. Four matches power up the theater.'}];w.hazards=[hazard('beam',790,680,{axis:'y',range:240,speed:1.0,r:52}),hazard('beam',1270,680,{axis:'y',range:220,speed:1.3,r:50}),hazard('beam',1760,680,{axis:'y',range:220,speed:1.5,r:50})];w.walls=[{x:670,y:30,w:290,h:245},{x:1260,y:1000,w:225,h:290}];}
+ if(i===3){w.objects=[{type:'checkpoint',x:525,y:650,idx:0,lit:false},{type:'checkpoint',x:940,y:340,idx:1,lit:false},{type:'checkpoint',x:1430,y:940,idx:2,lit:false},{type:'checkpoint',x:1920,y:570,idx:3,lit:false}];w.hazards=[hazard('cart',710,655,{axis:'y',range:220,speed:2.1}),hazard('pumpkin',1120,670,{axis:'x',range:145,speed:2.3}),hazard('beam',1570,660,{axis:'y',range:235,speed:1.8,r:55}),hazard('cart',1890,785,{axis:'x',range:100,speed:2.5})];w.walls=[{x:785,y:60,w:260,h:150},{x:1160,y:1010,w:235,h:275}];}
+ if(i===4){w.objects=[{type:'tower',x:565,y:400,idx:0,lit:false},{type:'tower',x:1040,y:920,idx:1,lit:false},{type:'tower',x:1480,y:300,idx:2,lit:false}];w.hazards=[];}
+ const secrets=[[[720,210],[2090,1130]],[[1200,330],[2090,1110]],[[790,990],[1730,1150]],[[570,260],[2020,1070]],[[660,1040],[1730,930]]];w.secrets=secrets[i].map(([x,y])=>pickup(x,y,'ticket'));
+ for(let j=0;j<42;j++){let x=110+((j*211)%Math.max(400,w.w-180)),y=75+((j*331)%Math.max(400,w.h-150));if(i===0)w.decor.push(scenery(x,y,j%4===0?'tree':'leaf',{size:rand(10,24),seed:j}));else if(i===1)w.decor.push(scenery(x,y,j%3===0?'crate':'mark',{size:rand(15,31),seed:j}));else w.decor.push(scenery(x,y,j%4===0?'sparkle':'mark',{size:rand(9,18),seed:j}))}
+ w.exit={x:s.exit[0],y:s.exit[1],r:52};return w}
+
+function createWorld(i,act,wave=0){
+ const w=createBaseWorld(i),spec=modeSpec(),meta=ACTS[i][act];w.kind=wave%2===0?meta.kind:WAVE_KIND[meta.kind];w.act=act;w.wave=wave;w.roundCount=2+(act===0||i===2&&act===3?1:0);w.actName=meta.title;
+ w.items=[];w.objects=[];w.checkpoint=0;w.lights=0;w.hazards=w.hazards.slice();
+ // Each act features a full traversal of the original illustrated world.
+ // Routes zig-zag between upper and lower areas so a pickup cannot end in a few seconds.
+ const shift=(act*3+i*2+wave*7)%ROUTE.length;
+ const point=k=>{const a=ROUTE[(k+shift)%ROUTE.length];return [clamp(a[0]+((act%2)*35),110,w.w-120),clamp(a[1],110,w.h-110)]};
+ const addItems=(count,type)=>{for(let j=0;j<count;j++){const [x,y]=point(j);w.items.push(pickup(x,y,type))}};
+ const addCheckpoints=count=>{for(let j=0;j<count;j++){const [x,y]=point(j);w.objects.push({type:'checkpoint',x,y,idx:j,lit:false})}};
+ const addConsoles=count=>{for(let j=0;j<count;j++){const [x,y]=point(j*2+1);w.objects.push({type:'console',x,y,idx:j,sel:(j+act)%4,target:(j*3+act+1)%4,locked:false})}};
+ if(w.kind==='collect'){addItems(spec.targets+(act===3?2:0),'page')}
+ if(w.kind==='badges'){addItems(spec.targets-2,'key');w.objects.push({type:'trunk',x:1990,y:850,open:false})}
+ if(w.kind==='checkpoint'){addCheckpoints(spec.checkpoints+(act===3?2:0))}
+ if(w.kind==='consoles'){addItems(spec===MODE_SPEC.rookie?3:5,'key');addConsoles(spec.console)}
+ if(w.kind==='towers'){const n=spec===MODE_SPEC.rookie?4:6;for(let j=0;j<n;j++){const [x,y]=point(j*3+1);w.objects.push({type:'tower',x,y,idx:j,lit:false})}}
+ if(w.kind==='boss'){w.objects=[{type:'tower',x:410,y:395,idx:0,lit:false},{type:'tower',x:810,y:1010,idx:1,lit:false},{type:'tower',x:1650,y:340,idx:2,lit:false}]}
+ // More interactive hazard variety in every act, while keeping early learners safe.
+ if(w.kind!=='boss'){const hcount=act===3?5:3;for(let j=0;j<hcount;j++){const [x,y]=point(j*3+2);w.hazards.push(hazard(j%3===0?'cart':j%3===1?'pumpkin':'beam',x,y,{axis:j%2?'x':'y',range:act>=2?160:100,speed:1.0+j*.19,r:j%3===2?42:27}))}}
+ // The exit is near the far end, but it remains locked until every objective is done.
+ w.exit={x:Math.min(2190,w.w-110),y:i===4?610:665,r:52};
+ return w;
+}
+function beginAct(keepChapter=false){
+ st.wave=0;st.actElapsed=0;st.goalComplete=false;st.world=createWorld(st.level,st.act,st.wave);
+ const previous=st.player;st.player=freshPlayer();if(keepChapter&&previous){st.player.hp=Math.min(st.player.maxHp,previous.hp+2)}
+ st.boss=st.world.kind==='boss'?{x:1410,y:585,baseY:585,hp:modeSpec().boss+st.wave*2,max:modeSpec().boss+st.wave*2,alive:true,shoot:2,hit:0}:null;
+ st.fireballs=[];st.burst=[];st.particles=[];st.floaters=[];
+ st.cam={x:0,y:clamp(st.player.y-H/2,0,st.world.h-H)};st.shake=0;st.prompt='';keys.clear();stick.x=stick.y=0;
+ liveView();popup('ACT '+(st.act+1)+' / 4 — '+ACTS[st.level][st.act].title,'Round 1 of '+st.world.roundCount+'. '+ACTS[st.level][st.act].hint,STAGES[st.level].icon);beep('complete');
+}
+function completeWave(){
+ if(st.screen!=='playing')return;
+ if(st.wave+1>=st.world.roundCount){completeAct();return}
+ const max=st.world.roundCount;st.wave++;
+ const old=st.player;
+ st.world=createWorld(st.level,st.act,st.wave);st.player=freshPlayer();
+ st.player.hp=Math.min(st.player.maxHp,old.hp+2);
+ st.boss=st.world.kind==='boss'?{x:1410,y:585,baseY:585,hp:modeSpec().boss+st.wave*2,max:modeSpec().boss+st.wave*2,alive:true,shoot:2,hit:0}:null;
+ st.fireballs=[];st.burst=[];st.particles=[];st.floaters=[];st.cam={x:0,y:clamp(st.player.y-H/2,0,st.world.h-H)};
+ st.shake=0;st.goalComplete=false;keys.clear();stick.x=stick.y=0;
+ popup('ROUND '+(st.wave+1)+' / '+max,st.world.kind==='boss'?'Another tangled curtain to fix! Turn the lights on and untangle it.':st.world.kind==='checkpoint'?'New rehearsal relay! Follow the glowing checkpoints in order.':st.world.kind==='collect'?'Another supply run! Gather the scattered props and head for the EXIT.':st.world.kind==='consoles'?'New controls are online! Recover fuses and synchronize the lights.':'The stage needs another rescue mission!',STAGES[st.level].icon);
+ beep('complete');hudUpdate();
+}
+function completeAct(){
+ if(st.screen!=='playing')return;
+ if(st.act>=3){completeLevel();return}
+ st.act++;
+ const key=st.mode+'-'+st.level;
+ save.actProgress[key]=Math.max(save.actProgress[key]||0,st.act);persist();
+ $('actCompleteTitle').textContent='ACT '+st.act+' CLEARED!';
+ $('actNextTitle').textContent='NEXT: '+ACTS[st.level][st.act].title;
+ $('actNextCopy').textContent=ACTS[st.level][st.act].hint;
+ $('actProgressCopy').textContent=`CHAPTER ${st.level+1} • ${st.act} OF 4 ACTS COMPLETE • ${formatTime(st.elapsed)} ELAPSED`;
+ beep('complete');showView('actclear');
+}
+function launchLevel(){st.elapsed=0;st.score=0;beginAct()}
+function formatTime(t){const n=Math.floor(t);return`${String(Math.floor(n/60)).padStart(2,'0')}:${String(n%60).padStart(2,'0')}`}
+function progressStatus(){
+ const w=st.world,k=w.kind,items=w.items.filter(x=>x.got).length;
+ if(k==='collect')return{n:items,all:w.items.length,text:`${st.level===4?'SUPPLIES':'COLLECTIBLES'} ${items} / ${w.items.length}`};
+ if(k==='badges'){let open=w.objects.find(x=>x.type==='trunk').open;return{n:items+(open?1:0),all:w.items.length+1,text:`BADGES ${items} / ${w.items.length} • TRUNK ${open?'OPEN':'LOCKED'}`}}
+ if(k==='consoles'){const n=w.objects.filter(x=>x.type==='console'&&x.locked).length,all=w.objects.filter(x=>x.type==='console').length;return{n:items+n,all:w.items.length+all,text:`FUSES ${items}/${w.items.length} • LIGHTS ${n}/${all}`}}
+ if(k==='checkpoint')return{n:w.checkpoint,all:w.objects.filter(x=>x.type==='checkpoint').length,text:`CHECKPOINTS ${w.checkpoint} / ${w.objects.length}`};
+ if(k==='towers'){const n=w.objects.filter(x=>x.type==='tower'&&x.lit).length;return{n,all:w.objects.length,text:`POWER STATIONS ${n}/${w.objects.length}`}}
+ const n=w.objects.filter(x=>x.type==='tower'&&x.lit).length;const hp=st.boss?.hp||0;
+ return{n:n+(st.boss&&!st.boss.alive?1:0),all:4,text:`LIGHTS ${n}/3 • KNOTS ${Math.max(0,hp)}`};
+}
+
+function hudUpdate(){if(!st.world)return;const p=progressStatus();$('missionIndex').textContent=`CHAPTER ${st.level+1}/5 • ACT ${st.act+1}/4 • ROUND ${st.wave+1}/${st.world.roundCount} • ${formatTime(st.elapsed)}`;$('missionName').textContent=ACTS[st.level][st.act].title;$('missionTask').textContent=p.text;$('starCount').textContent=st.score.toLocaleString();$('hearts').textContent='♥ '.repeat(st.player.hp).trim()+' ♡ '.repeat(st.player.maxHp-st.player.hp).trim();$('progressFill').style.width=(p.n/p.all*100)+'%';$('actionCaption').textContent=st.world.kind==='boss'&&st.world.lights===3&&st.boss?.alive?'UNTANGLE':'INTERACT';$('actionSymbol').textContent=st.world.kind==='boss'&&st.world.lights===3&&st.boss?.alive?'⚡':'✦'}
+function award(points,x,y,label){st.score+=points;if(points>0){floatText(x,y,label||`+${points}`,'#ffe292');beep('coin')}}
+function sparks(x,y,color='#ffd78a',count=13,speed=150){for(let i=0;i<count;i++){const a=Math.random()*TAU,v=rand(speed*.2,speed);st.particles.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,life:rand(.34,.85),total:.85,size:rand(2,6),color})}}
+function floatText(x,y,text,color='#fff'){st.floaters.push({x,y,text,color,life:1.0})}
+function near(a,b,r=78){return Math.hypot(a.x-b.x,a.y-b.y)<r}
+function issueGoalHint(){if(st.screen==='playing')popup('MISSION CONTROL',progressStatus().text,'📡')}
+function completeLevel(){if(st.screen!=='playing')return;let bonus=Math.max(0,Math.floor(2400-st.elapsed))*2+st.player.hp*110;st.score+=bonus;const rank=st.player.hp===st.player.maxHp&&st.elapsed<480?'S':st.player.hp>=Math.ceil(st.player.maxHp*.7)?'A':'B';let key=st.level+'-'+st.mode,best=save.bests[key];if(!best||st.score>best.score)save.bests[key]={score:st.score,time:Math.round(st.elapsed),rank};save.unlocked=Math.max(save.unlocked,st.level+1);save.actProgress[st.mode+'-'+st.level]=0;save.mode=st.mode;persist();$('clearMedal').textContent=rank;$('clearTitle').textContent=STAGES[st.level].name+' CLEARED!';$('clearCopy').textContent=STAGES[st.level].finish;$('resultPoints').textContent=st.score.toLocaleString();$('resultTime').textContent=formatTime(st.elapsed);$('resultRank').textContent=rank;$('nextBtn').textContent=st.level===4?'SEE THE FINALE →':'NEXT MISSION →';beep('complete');showView('clear')}
+function healthHit(sourceX,sourceY){let p=st.player;if(p.inv>0||p.dash>0)return;p.hp--;p.inv=st.mode==='rookie'?2.2:1.55;st.shake=18;beep('hit');sparks(p.x,p.y,'#ff7388',20,220);let a=Math.atan2(p.y-sourceY,p.x-sourceX);p.knockX=Math.cos(a)*500;p.knockY=Math.sin(a)*500;floatText(p.x,p.y,'OUCH!','#ff8faa');if(p.hp<=0){showView('dead');beep('hit')}else{hudUpdate()}}
+function dash(){if(st.screen!=='playing')return;let p=st.player;if(p.dashCD>0)return;p.dash=.2;p.dashCD=1.23;beep('dash');sparks(p.x,p.y,'#7df1d3',13,100);let d=moveDirection();if(Math.hypot(d.x,d.y)<.1){p.vx=p.face*1;p.vy=0}}
+function action(){
+ if(st.screen!=='playing')return;
+ const w=st.world,p=st.player;
+ if(near(p,w.exit,85)){
+   if(goalReady()){sparks(w.exit.x,w.exit.y,'#87ffe0',45,300);completeWave()}
+   else issueGoalHint();
+   return;
+ }
+ const interact=w.objects.filter(o=>o.type!=='checkpoint'&&near(p,o,o.type==='npc'?93:100))
+   .sort((a,b)=>Math.hypot(p.x-a.x,p.y-a.y)-Math.hypot(p.x-b.x,p.y-b.y))[0];
+ if(interact){
+   if(interact.type==='npc'){
+     popup(interact.name,interact.dialogue,'💬');beep('click');
+   }else if(interact.type==='trunk'){
+     if(w.items.every(o=>o.got)){
+       if(!interact.open){
+         interact.open=true;sparks(interact.x,interact.y,'#ffd778',42,250);
+         award(500,interact.x,interact.y,'COSTUME SAVED!');
+         popup('COSTUME FOUND','The costume is safe! Head to the glowing EXIT.','🦃');
+         st.goalComplete=true;
+       }
+     }else popup('SECURITY LOCKED','Find all three access badges first.','🔐');
+   }else if(interact.type==='console'){
+     if(interact.locked){popup('ALREADY LOCKED','This spotlight is ready. Find the next console.','✓')}
+     else if(w.items.some(x=>!x.got)){popup('FUSES NEEDED','Collect the glowing power fuses before using these controls.','🔋')}
+     else{
+       interact.sel=(interact.sel+1)%4;beep('click');sparks(interact.x,interact.y,C[interact.sel],8,90);
+       if(interact.sel===interact.target){
+         interact.locked=true;award(350,interact.x,interact.y,'SYNCED!');
+         sparks(interact.x,interact.y,C[interact.sel],32);
+         popup('SPOTLIGHT SYNCED',`${w.objects.filter(o=>o.type==='console'&&o.locked).length} / ${w.objects.filter(o=>o.type==='console').length} stage lights calibrated.`,'💡');
+       }else popup('COLOR TUNED','Keep turning until the center matches the glowing outer ring.','🎨');
+     }
+   }else if(interact.type==='tower'){
+     if(!interact.lit){
+       interact.lit=true;w.lights++;award(300,interact.x,interact.y,'LIGHT ON!');
+       sparks(interact.x,interact.y,'#ffde8a',33,270);
+       popup('STAGE POWER',`${w.lights} / ${w.objects.filter(o=>o.type==='tower').length} spotlights activated.${w.kind==='boss'&&w.lights===3?' The curtain rig is vulnerable!':''}`,'⚡');
+     }
+   }
+   return;
+ }
+ if(w.kind==='boss'&&st.boss&&st.boss.alive){
+   if(w.lights<3){popup('SHIELD ACTIVE',`Activate all three light towers first. ${w.lights} of 3 online.`,'🛡️');return}
+   if(p.blastCD>0)return;
+   if(near(p,st.boss,860)){
+     p.blastCD=.49;st.burst.push({x:p.x,y:p.y,tx:st.boss.x,ty:st.boss.y,life:.26,max:.26});
+     beep('fire');sparks(p.x,p.y,'#86efff',8,90);st.boss.hp--;st.boss.hit=.24;st.shake=5;
+     if(st.boss.hp<=0){
+       st.boss.alive=false;st.fireballs.length=0;st.score+=1500;
+       sparks(st.boss.x,st.boss.y,'#ffe989',150,410);
+       popup('CURTAIN FIXED','Amazing! Reach the glowing EXIT to start the show.','🏆');beep('complete');
+     }else floatText(st.boss.x,st.boss.y-60,'-1 KNOT','#ffc184');
+     hudUpdate();
+   }else popup('OUT OF RANGE','Move closer to the curtain rig and try again.','⚡');
+   return;
+ }
+ popup('KEEP MOVING','Explore the area and follow the glowing mission markers.','🧭');
+}
+function goalReady(){const w=st.world;if(!w)return false;switch(w.kind){case 'collect':return w.items.every(o=>o.got);case 'badges':return w.objects.some(o=>o.type==='trunk'&&o.open);case 'consoles':return w.items.every(o=>o.got)&&w.objects.filter(o=>o.type==='console').every(o=>o.locked);case 'checkpoint':return w.checkpoint>=w.objects.filter(o=>o.type==='checkpoint').length;case 'towers':return w.objects.filter(o=>o.type==='tower').every(o=>o.lit);case 'boss':return !!st.boss&&!st.boss.alive;}return false}
+function moveDirection(){let x=stick.x+(keys.has('a')||keys.has('arrowleft')?-1:0)+(keys.has('d')||keys.has('arrowright')?1:0),y=stick.y+(keys.has('w')||keys.has('arrowup')?-1:0)+(keys.has('s')||keys.has('arrowdown')?1:0);const mag=Math.hypot(x,y);if(mag>1){x/=mag;y/=mag}return{x,y}}
+function collides(x,y,p){if(x<p.r+20||y<p.r+22||x>st.world.w-p.r-20||y>st.world.h-p.r-25)return true;return st.world.walls.some(w=>{const qx=clamp(x,w.x,w.x+w.w),qy=clamp(y,w.y,w.y+w.h);return Math.hypot(x-qx,y-qy)<p.r+4})}
+function movement(dt){let p=st.player,d=moveDirection(),spd=modeSpec().speed; p.inv=Math.max(0,p.inv-dt);p.dash=Math.max(0,p.dash-dt);p.dashCD=Math.max(0,p.dashCD-dt);p.blastCD=Math.max(0,(p.blastCD||0)-dt);if(p.dash>0)spd*=3.0;if(Math.abs(d.x)>0.05)p.face=Math.sign(d.x);
+ if(p.dash>0&&Math.hypot(d.x,d.y)<.1){d={x:p.face,y:0}}
+ const dx=(d.x*spd+p.knockX)*dt,dy=(d.y*spd+p.knockY)*dt;p.vx=lerp(p.vx,d.x,clamp(dt*12,0,1));p.vy=lerp(p.vy,d.y,clamp(dt*12,0,1));p.knockX*=Math.max(0,1-dt*11);p.knockY*=Math.max(0,1-dt*11);if(!collides(p.x+dx,p.y,p))p.x+=dx;if(!collides(p.x,p.y+dy,p))p.y+=dy;p.walk+=Math.hypot(dx,dy)*.06;if(p.dash>0&&Math.random()<.7)sparks(p.x-p.face*12,p.y,'#72ebdb',1,45);
+ const maxX=Math.max(0,st.world.w-W),maxY=Math.max(0,st.world.h-H);st.cam.x=lerp(st.cam.x,clamp(p.x-W*.43,0,maxX),Math.min(1,dt*7));st.cam.y=lerp(st.cam.y,clamp(p.y-H*.50,0,maxY),Math.min(1,dt*7));
+}
+function updateHazards(dt){const w=st.world,p=st.player,speedFactor=modeSpec().hazard;for(const h of w.hazards){const wave=Math.sin(st.elapsed*h.speed*speedFactor+h.phase);h.x=h.ax+(h.axis==='x'?wave*h.range:0);h.y=h.ay+(h.axis==='y'?wave*h.range:0);h.spin=(h.spin||0)+dt*3.8;if(near(p,h,(h.r||31)+p.r-6))healthHit(h.x,h.y)}
+ if(w.kind==='boss'&&st.boss?.alive){let b=st.boss;b.y=b.baseY+Math.sin(st.elapsed*1.4)*155;b.hit=Math.max(0,b.hit-dt);b.shoot-=dt;if(b.shoot<0){b.shoot=st.mode==='rookie'?1.85:st.mode==='expert'?.82:1.18;const a=Math.atan2(p.y-b.y,p.x-b.x);const speed=st.mode==='rookie'?155:st.mode==='expert'?275:220;st.fireballs.push({x:b.x-60,y:b.y,vx:Math.cos(a)*speed,vy:Math.sin(a)*speed,life:5,rot:0});beep('click')}
+ for(let i=st.fireballs.length-1;i>=0;i--){let f=st.fireballs[i];f.x+=f.vx*dt;f.y+=f.vy*dt;f.life-=dt;f.rot+=dt*7;if(near(f,p,p.r+23)){healthHit(f.x,f.y);st.fireballs.splice(i,1)}else if(f.life<0||f.x<0||f.y<0||f.x>w.w||f.y>w.h)st.fireballs.splice(i,1)}}}
+function updatePickups(){let w=st.world,p=st.player;for(const it of w.secrets){if(!it.got&&near(p,it,49)){it.got=true;award(550,it.x,it.y,'SECRET BONUS!');sparks(it.x,it.y,'#ffe18a',38,230);popup('SECRET DISCOVERED','You found a hidden golden backstage ticket! +550 points.','🏅')}}for(const it of w.items){if(!it.got&&near(p,it,49)){it.got=true;award(it.type==='key'?240:180,it.x,it.y,it.type==='key'?'BADGE GET!':'PAGE GET!');sparks(it.x,it.y,it.type==='key'?'#ffd78b':'#aafcdd',23,165);if(w.items.every(x=>x.got)){popup('ALL COLLECTED',w.kind==='badges'?'Now open the costume trunk!':w.kind==='consoles'?'Now synchronize the lights!':'Head to the EXIT once the objectives are done.','✦')}hudUpdate()}}
+ if(w.kind==='checkpoint'){const cp=w.objects.find(o=>o.type==='checkpoint'&&o.idx===w.checkpoint);if(cp&&near(p,cp,76)){cp.lit=true;w.checkpoint++;award(375,cp.x,cp.y,`CHECKPOINT ${w.checkpoint}!`);sparks(cp.x,cp.y,'#ffd97e',31,190);popup('CHECKPOINT CLEARED',w.checkpoint===w.objects.length?'Route complete! Head to the EXIT.':`Great timing! Now reach checkpoint ${w.checkpoint+1}.`,'🏁');hudUpdate()}}
+}
+function updateFX(dt){for(let i=st.particles.length-1;i>=0;i--){let p=st.particles[i];p.x+=p.vx*dt;p.y+=p.vy*dt;p.vx*=1-dt*.6;p.vy*=1-dt*.6;p.life-=dt;if(p.life<0)st.particles.splice(i,1)}for(let i=st.floaters.length-1;i>=0;i--){let f=st.floaters[i];f.y-=dt*60;f.life-=dt;if(f.life<=0)st.floaters.splice(i,1)}for(let i=st.burst.length-1;i>=0;i--){st.burst[i].life-=dt;if(st.burst[i].life<=0)st.burst.splice(i,1)}st.shake*=Math.max(0,1-dt*10)}
+function updateTip(){let p=st.player,w=st.world,goal=goalReady(),msg='';if(near(p,w.exit,130))msg=goal?'✦ INTERACT to exit the stage':'🔒 Finish your mission before leaving';else{let o=w.objects.filter(o=>['console','trunk','tower','npc'].includes(o.type)&&near(p,o,130)).sort((a,b)=>Math.hypot(p.x-a.x,p.y-a.y)-Math.hypot(p.x-b.x,p.y-b.y))[0];if(o){msg=o.type==='npc'?`✦ INTERACT • TALK TO ${o.name}`:o.type==='trunk'?'✦ INTERACT • OPEN COSTUME TRUNK':o.type==='console'?'✦ INTERACT • TUNE COLOR':o.type==='tower'?'✦ INTERACT • ACTIVATE SPOTLIGHT':''}}if(w.kind==='boss'&&w.lights===3&&st.boss?.alive&&near(p,st.boss,830))msg='✨ INTERACT to UNTANGLE the curtain rig';$('gameTip').textContent=msg;$('gameTip').classList.toggle('hidden',!msg)}
+function tick(dt){if(st.screen!=='playing')return;st.elapsed+=dt;st.actElapsed+=dt;movement(dt);updateHazards(dt);if(st.screen!=='playing')return;updatePickups();updateFX(dt);if(st.popupUntil<st.elapsed)$('missionPopup').classList.add('hidden');st.hudClock+=dt;if(st.hudClock>.16){st.hudClock=0;hudUpdate();updateTip()}}
+/* ------------------------- CANVAS VECTOR ART ---------------------------- */
+function rounded(x,y,w,h,r=10){r=Math.min(r,w/2,h/2);ctx.beginPath();ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.quadraticCurveTo(x+w,y,x+w,y+r);ctx.lineTo(x+w,y+h-r);ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);ctx.lineTo(x+r,y+h);ctx.quadraticCurveTo(x,y+h,x,y+h-r);ctx.lineTo(x,y+r);ctx.quadraticCurveTo(x,y,x+r,y);ctx.closePath()}
+function box(x,y,w,h,color,r=0){ctx.fillStyle=color;if(r){rounded(x,y,w,h,r);ctx.fill()}else ctx.fillRect(x,y,w,h)}
+function circ(x,y,r,fill,stroke=null,lw=1){ctx.beginPath();ctx.arc(x,y,r,0,TAU);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=lw;ctx.stroke()}}
+function ellipse(x,y,rx,ry,color,rotation=0){ctx.beginPath();ctx.ellipse(x,y,rx,ry,rotation,0,TAU);ctx.fillStyle=color;ctx.fill()}
+function line(x1,y1,x2,y2,color,lw=2){ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.strokeStyle=color;ctx.lineWidth=lw;ctx.stroke()}
+function text(t,x,y,font='20px system-ui',color='#fff',align='center',stroke=null){ctx.font=font;ctx.fillStyle=color;ctx.textAlign=align;ctx.textBaseline='middle';if(stroke){ctx.lineWidth=4;ctx.strokeStyle=stroke;ctx.strokeText(String(t),x,y)}ctx.fillText(String(t),x,y)}
+function glow(x,y,r,c){ctx.save();const g=ctx.createRadialGradient(x,y,2,x,y,r);g.addColorStop(0,c);g.addColorStop(1,'transparent');ctx.fillStyle=g;ctx.beginPath();ctx.arc(x,y,r,0,TAU);ctx.fill();ctx.restore()}
+function polygon(points,color,stroke=null,lw=2){ctx.beginPath();ctx.moveTo(points[0][0],points[0][1]);for(let j=1;j<points.length;j++)ctx.lineTo(points[j][0],points[j][1]);ctx.closePath();ctx.fillStyle=color;ctx.fill();if(stroke){ctx.strokeStyle=stroke;ctx.lineWidth=lw;ctx.stroke()}}
+function ground(w){const s=STAGES[st.level],c=s.colors;ctx.fillStyle=c[0];ctx.fillRect(0,0,w.w,w.h);let g=ctx.createLinearGradient(0,0,0,w.h);g.addColorStop(0,c[1]+'aa');g.addColorStop(.55,c[0]+'00');g.addColorStop(1,'#02091f73');ctx.fillStyle=g;ctx.fillRect(0,0,w.w,w.h);
+ ctx.save();ctx.globalAlpha=.11;ctx.strokeStyle=c[2];ctx.lineWidth=2;for(let x=0;x<w.w;x+=100){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,w.h);ctx.stroke()}for(let y=0;y<w.h;y+=100){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w.w,y);ctx.stroke()}ctx.restore();
+ if(st.level===0){box(0,506,w.w,308,'#78948c');box(0,523,w.w,272,'#536b70');box(0,534,w.w,248,'#677d76');ctx.setLineDash([35,34]);line(0,659,w.w,659,'#f8de9b87',4);ctx.setLineDash([]);
+ for(let i=0;i<18;i++){const x=i*140+20;box(x,485,65,9,'#e0d3af63',5);box(x,802,65,9,'#e0d3af63',5)}box(70,870,590,65,'#4d806e66',31);box(1490,285,570,80,'#75a77b56',31);
+ }else if(st.level===1){for(let y=170;y<w.h;y+=180){box(0,y,w.w,16,'#c8b99916');line(0,y,w.w,y,'#b9d9e328',2)}for(let x=240;x<w.w;x+=490){box(x,120,12,w.h-240,'#bce5e31b',5)}
+ }else if(st.level===2){for(let x=0;x<w.w;x+=190){line(x,0,x+700,w.h,'#8c7dd722',10)}for(let x=0;x<w.w;x+=530)glow(x+180,640,230,'#655bc827');
+ }else if(st.level===3){for(let x=0;x<w.w;x+=170){box(x,0,85,w.h,'#ffb79c0c');line(x,0,x,w.h,'#fcc5a118',3)}for(let y=120;y<w.h;y+=240){box(0,y,w.w,18,'#ffd6be10')}
+ }else {const g2=ctx.createRadialGradient(w.w/2,w.h/2,80,w.w/2,w.h/2,950);g2.addColorStop(0,'#87397380');g2.addColorStop(1,'#080f29');ctx.fillStyle=g2;ctx.fillRect(0,0,w.w,w.h);circ(1130,610,530,'#331c54','#df78ad3a',7);circ(1130,610,430,'#58305a44','#f4b0ff1f',4);for(let x=0;x<w.w;x+=100){const light=(Math.sin(st.elapsed*2+x*.03)+1)*.08;box(x,40,70,34,`rgba(255,207,155,${light+.09})`,15);box(x,w.h-69,70,28,'#e875a62c',14)}}
+ line(23,23,w.w-23,23,'#ffffff24',5);line(23,w.h-23,w.w-23,w.h-23,'#00000055',10);
+}
+function backgroundStructure(w){if(st.level===0){building(875,72,640,330,'ARTHUR’S SCHOOL');building(1590,1020,360,280,'ARTS WING');for(let i=0;i<5;i++){drawTree(250+i*240,230+(i%2)*70,.8);drawTree(340+i*360,1140-(i%2)*80,.75)}}else if(st.level===1){building(680,50,320,260,'PROP ARCHIVE');building(1270,970,290,310,'STORAGE');building(1630,70,330,190,'WARDROBE');for(let x=280;x<w.w-170;x+=310){box(x,115,160,22,'#a4c0cf33',6);box(x,1235,160,22,'#9bdaec22',6);line(x,130,x+125,130,'#ffffff23',2)}}else if(st.level===2){building(670,30,290,245,'POWER GRID');building(1260,1000,225,290,'ELECTRICAL');for(let x=330;x<w.w;x+=380){ctx.beginPath();ctx.moveTo(x,200);ctx.bezierCurveTo(x+110,410,x-110,740,x+130,1100);ctx.strokeStyle='#827be749';ctx.lineWidth=9;ctx.stroke()}}else if(st.level===3){building(785,60,260,150,'RIGGING');building(1160,1010,235,275,'COSTUMES');box(0,78,w.w,35,'#c75a7690');box(0,1258,w.w,50,'#b8416890');for(let x=0;x<w.w;x+=110)line(x,80,x+60,115,'#f2b4a63b',11)}else{for(let j=0;j<28;j++){const x=80+j*65;ellipse(x,100,24,20,j%3?'#140c32':'#29123e');ellipse(x,1090,24,20,j%3?'#140c32':'#29123e')}for(let x=180;x<w.w;x+=260){glow(x,45,110,'#e090ff23');glow(x,1140,125,'#c873d528')}}}
+function building(x,y,w,h,label){ctx.save();ctx.shadowColor='#050712b0';ctx.shadowBlur=30;ctx.shadowOffsetY=18;box(x,y,w,h,'#1b2c3a',18);ctx.restore();box(x+12,y+12,w-24,h-24,st.level===0?'#5c8583':'#303951',11);for(let j=1;j<5;j++){const nx=x+(w/5)*j;line(nx,y+25,nx,y+h-25,'#f2ecda2b',4)}box(x+35,y+h*.29,w-70,h*.25,'#131f36ba',10);text(label,x+w/2,y+h*.41,`900 ${Math.min(33,w/12)}px system-ui`,'#fcdb8b');box(x+40,y+h-20,w-80,12,'#ffebb14c',6)}
+function drawTree(x,y,scale=1){ctx.save();ctx.translate(x,y);ctx.scale(scale,scale);ellipse(1,10,69,18,'#001c2366');box(-13,-42,26,71,'#784b52',8);for(const [a,b,r,col] of [[-35,-66,59,'#29565b'],[38,-76,55,'#3f8574'],[-3,-108,62,'#3f9a78']]){circ(a,b,r,col)}for(let i=0;i<12;i++){let a=i*2.399,rad=35+(i%3)*13;circ(Math.cos(a)*rad,Math.sin(a)*rad-77,5,i%2?'#d9a567':'#eb825f')}ctx.restore()}
+function drawDecor(w){for(const d of w.decor){if(st.level===0&&d.type==='tree'&&d.y<475){drawTree(d.x,d.y,.33)}else if(d.type==='leaf'){ctx.save();ctx.translate(d.x,d.y);ctx.rotate(d.seed);ellipse(0,0,d.size*.55,d.size*.28,d.seed%2?'#e6af5a88':'#de766c88');line(-d.size*.6,0,d.size*.6,0,'#fbe0ae66',2);ctx.restore()}else if(d.type==='crate'){box(d.x,d.y,d.size*2,d.size*1.6,'#5d677b55',4);line(d.x+4,d.y+4,d.x+d.size*1.8,d.y+d.size*1.4,'#a1aebe44',3)}else if(d.type==='mark'){line(d.x,d.y,d.x+17,d.y,'#d2ebfa1a',2)}else if(d.type==='sparkle'){const a=Math.sin(st.elapsed*2+d.seed);glow(d.x,d.y,16,'#cab3ff26');circ(d.x,d.y,1.3+a*.6,'#ead7ff84')}}}
+function shadow(x,y,r=40){ellipse(x,y+17,r,r*.26,'#00000077')}
+function exitPortal(o){let active=goalReady(),t=st.elapsed;glow(o.x,o.y,active?140:85,active?'#5affc946':'#ffc68b24');ctx.save();ctx.translate(o.x,o.y);ctx.rotate(.02*Math.sin(t));for(let i=0;i<3;i++){ctx.beginPath();ctx.ellipse(0,-10,38+i*12,65+i*7,0,0,TAU);ctx.strokeStyle=active?`rgba(102,255,218,${.8-i*.2})`:`rgba(200,197,192,${.35-i*.07})`;ctx.lineWidth=6-i;ctx.stroke()}box(-32,-46,64,85,active?'#194c53c9':'#394453db',8);box(-25,-38,50,69,active?'#42a79a':'#515c74',5);if(active){for(let j=0;j<5;j++){let y=((t*65+j*21)%77)-35;line(-23,y,23,y,'#d4fff584',2)}}text('EXIT',0,-96,'900 24px system-ui',active?'#97ffdb':'#d9c7bd');text(active?'OPEN':'LOCKED',0,63,'900 15px system-ui',active?'#7bffd2':'#cfb4ae');ctx.restore()}
+function collectible(it){if(it.got)return;const t=st.elapsed+it.phase;const bob=Math.sin(t*3)*7;glow(it.x,it.y+bob,55,it.type==='key'?'#ffe57e47':'#95ffdc4e');shadow(it.x,it.y+20,23);ctx.save();ctx.translate(it.x,it.y+bob);ctx.rotate(Math.sin(t*2)*.1);if(it.type==='ticket'){box(-24,-20,48,40,'#ffe4a2',9);box(-18,-15,36,30,'#efb352',6);text('★',0,0,'900 28px system-ui','#63415f')}else if(it.type==='key'){circ(0,-10,18,'#ffcd65','#ffefbe',4);circ(0,-10,6,'#667572');box(-6,0,12,39,'#ffcb69',3);box(4,18,14,9,'#ffc96e',3);box(4,29,10,7,'#ffc96e',3)}else{box(-21,-29,43,56,'#d5a466',5);box(-23,-33,43,56,'#fff2d6',5);for(let i=0;i<3;i++)line(-14,-19+i*12,8,-19+i*12,'#b7936d',3);polygon([[3,23],[14,12],[14,23]],'#ffb466')}ctx.restore()}
+function character(x,y,scale=1,role='arthur',face=1,walk=0,hit=false){
+ ctx.save();ctx.translate(x,y);ctx.scale(face*scale,scale);ctx.translate(0,Math.sin(walk)*2);shadow(0,18,29);
+ const main=role==='arthur',fur=main?'#d59a76':'#b77a75',shirt=main?'#f6c96e':'#8db4d6';
+ ellipse(-13,19,11,17,'#26364e');ellipse(12,19,11,17,'#26364e');ellipse(-13,26,15,6,'#b7c0ce');ellipse(13,26,15,6,'#b7c0ce');
+ ellipse(0,-5,30,33,shirt);box(-30,-13,60,37,shirt,10);box(-5,-20,10,8,'#fff2cd',3);
+ ellipse(-32,0,10,17,fur);ellipse(32,0,10,17,fur);
+ // Rounded aardvark ears and warm storybook face; artwork drawn natively, no licensed art assets.
+ ellipse(-22,-65,12,25,fur,-.33);ellipse(20,-65,12,25,fur,.33);
+ ellipse(-22,-66,6,16,'#f4c5a8',-.33);ellipse(20,-66,6,16,'#f4c5a8',.33);
+ ellipse(-1,-40,36,31,fur);ellipse(20,-31,31,16,'#e7b08b');
+ ellipse(-12,-48,10,12,'#fff5dd');ellipse(12,-48,10,12,'#fff5dd');circ(-10,-46,3.4,'#283648');circ(14,-46,3.4,'#283648');
+ // Friendly circular glasses distinguish Arthur for the book connection.
+ circ(-11,-48,15,null,'#67493f',3.5);circ(15,-48,15,null,'#67493f',3.5);line(4,-48,1,-48,'#67493f',3);line(-26,-48,-38,-52,'#67493f',3);
+ ellipse(43,-29,6,5,'#7c4c40');ctx.beginPath();ctx.arc(25,-28,12,.25,2.2);ctx.strokeStyle='#7c4c40';ctx.lineWidth=2;ctx.stroke();
+ if(hit){ctx.globalAlpha=.3;circ(0,-20,60,'#fff')}ctx.restore();
+}
+function npcObject(o){character(o.x,o.y,.88,'fox',-1,st.elapsed*1.5);box(o.x-67,o.y-118,134,21,'#1c2841e0',8);text(o.name,o.x,o.y-107,'900 12px system-ui','#fbe3af');if(near(st.player,o,98))glow(o.x,o.y-80,45,'#ffe89628')}
+function trunkObject(o){shadow(o.x,o.y+5,51);glow(o.x,o.y-11,76,o.open?'#7bffd540':'#f9d67d37');box(o.x-54,o.y-32,108,70,o.open?'#2b786f':'#855747',13);box(o.x-57,o.y-43,114,34,o.open?'#4eaa8c':'#ae8269',10);box(o.x-16,o.y-28,32,30,'#ffdb7e',5);text(o.open?'✓':'🔒',o.x,o.y-56,'31px system-ui','#ffffff');if(o.open){for(let j=0;j<5;j++)polygon([[o.x-50+j*25,o.y-40],[o.x-45+j*25,o.y-88],[o.x-32+j*25,o.y-41]],['#ffb36f','#f07b80','#ffd36c','#73dab1','#80bce9'][j]);text('TURKEY COSTUME',o.x,o.y+69,'900 13px system-ui','#b6ffe0')}
+}
+function consoleObject(o){const t=st.elapsed,clr=C[o.sel],rim=C[o.target];glow(o.x,o.y,91,o.locked?'#83ffe057':rim+'4d');shadow(o.x,o.y+35,55);ctx.save();ctx.translate(o.x,o.y);ctx.rotate(Math.sin(t*1.2)*.015);circ(0,0,60,'#12192f',rim,9);circ(0,0,47,'#25314c','#ffffff44',4);circ(0,0,34,clr,'#fff9',4);ctx.strokeStyle='#ffffff99';ctx.lineWidth=3;for(let j=0;j<4;j++){let a=j*TAU/4+t*.2;line(Math.cos(a)*41,Math.sin(a)*41,Math.cos(a)*51,Math.sin(a)*51,'#fff7',3)}text(o.locked?'✓':'↻',0,0,'900 37px system-ui','#14263a');ctx.restore();text('LIGHT '+(o.idx+1),o.x,o.y-91,'1000 16px system-ui','#fff2d6');if(o.locked)text('SYNCED',o.x,o.y+84,'900 14px system-ui','#7affe0')}
+function towerObject(o){let active=o.lit;glow(o.x,o.y,active?180:70,active?'#ffee925c':'#a1b0d82d');shadow(o.x,o.y+22,37);box(o.x-29,o.y-40,58,91,active?'#ac8c63':'#444768',12);box(o.x-36,o.y-49,72,48,'#253553',13);circ(o.x,o.y-23,23,active?'#ffe7a0':'#59657f','#fff5ce55',4);if(active){ctx.save();ctx.globalAlpha=.15+Math.sin(st.elapsed*3)*.05;polygon([[o.x-12,o.y-30],[o.x+12,o.y-30],[o.x+110,o.y-240],[o.x-110,o.y-240]],'#fff4a9');ctx.restore()}text(active?'POWERED':'OFFLINE',o.x,o.y+79,'900 14px system-ui',active?'#ffecac':'#d4b3bc')}
+function checkpointObject(o){const active=o.lit,pending=o.idx===st.world.checkpoint,t=st.elapsed;glow(o.x,o.y,pending?126:65,pending?'#ffd87766':'#7081d832');circ(o.x,o.y,56,active?'#1f5a5b':'#263754',pending?'#ffe49f':'#6181a1',8);circ(o.x,o.y,37,active?'#62d8b7':pending?'#f8bd70':'#37506c');text(active?'✓':String(o.idx+1),o.x,o.y,'1000 48px system-ui',active?'#163e4c':pending?'#35304a':'#95a6be');text(active?'CLEARED':pending?'TARGET':'LOCKED',o.x,o.y+88,'900 15px system-ui',active?'#7cf5cc':pending?'#ffe2aa':'#8491af');if(pending){for(let j=0;j<5;j++){let a=t*2+j*TAU/5;circ(o.x+Math.cos(a)*76,o.y+Math.sin(a)*76,4,'#ffdb98')}}}
+function hazardObject(h){const t=st.elapsed;shadow(h.x,h.y+9,h.r);if(h.type==='cart'){ctx.save();ctx.translate(h.x,h.y);ctx.rotate(Math.sin(t*2+h.phase)*.14);box(-33,-23,67,50,'#b46964',9);box(-36,-30,72,19,'#e2b27e',5);box(-31,-26,62,16,'#efc88c',4);circ(-23,28,9,'#263343','#a9bfd0',3);circ(24,28,9,'#263343','#a9bfd0',3);text('⚠',0,-2,'900 32px system-ui','#ffe7ac');ctx.restore()}else if(h.type==='pumpkin'){ctx.save();ctx.translate(h.x,h.y);ctx.rotate(t*.8);for(let j=0;j<3;j++)ellipse((j-1)*12,0,22,29,j%2?'#ed9a4e':'#ffb361');box(-6,-36,12,16,'#5b8a5c',4);ctx.restore()}else if(h.type==='beam'){glow(h.x,h.y,85,'#f065bd51');ctx.save();ctx.globalAlpha=.35;polygon([[h.x,h.y-190],[h.x-53,h.y+25],[h.x+53,h.y+25]],'#fb72c8');ctx.restore();circ(h.x,h.y-4,26,'#e86bb3','#fff2c0',5);text('!',h.x,h.y-5,'1000 30px system-ui','#3e2952')}}
+function projectile(f){glow(f.x,f.y,42,'#ff759a77');ctx.save();ctx.translate(f.x,f.y);ctx.rotate(f.rot);polygon([[-17,-13],[18,-14],[23,13],[-13,20]],'#fda26c','#ffedb5',4);line(-12,-9,15,9,'#ac455a',4);ctx.restore()}
+function bossObject(b){
+ const t=st.elapsed;glow(b.x,b.y,235,b.alive?'#f3999a55':'#73ffd85b');shadow(b.x,b.y+76,116);
+ ctx.save();ctx.translate(b.x,b.y+Math.sin(t*2)*6);const flash=b.hit>0;
+ box(-128,-134,255,247,flash?'#fbeed3':'#543358',24);
+ box(-128,-145,255,29,'#f4bc80',9);text('THE CURTAIN',0,-130,'1000 19px system-ui','#4a3350');
+ for(let i=0;i<6;i++)box(-123+i*42,-108,43,195,i%2?'#a44a72':'#bc6181',8);
+ polygon([[-126,-104],[-12,-88],[-54,78],[-127,82]],'#cf6b80');
+ polygon([[126,-104],[12,-88],[54,78],[127,82]],'#cf6b80');
+ line(-107,25,-35,65,'#ffe0a2',9);line(109,25,38,65,'#ffe0a2',9);
+ // The central rope knot is the challenge to untangle; it is not a character or weapon.
+ circ(0,0,55,'#f0c98c','#fce4bb',7);line(-41,-33,40,34,'#a66562',13);
+ line(-39,33,39,-37,'#a66562',13);circ(0,0,19,'#fff1c4','#c58b64',8);
+ text(b.alive?'🎀':'⭐',0,4,'57px system-ui');
+ if(!b.alive){glow(0,0,110,'#80ffd76b');text('CURTAIN OPEN!',0,101,'1000 22px system-ui','#ccffdb')}
+ ctx.restore();
+ if(b.alive){const hp=b.hp/b.max;box(b.x-112,b.y-240,224,22,'#10182d',9);box(b.x-107,b.y-235,214*hp,12,'#ffd081',7);text('KNOTS TO UNTANGLE',b.x,b.y-263,'1000 17px system-ui','#ffe6ca')}
+ else text('THE PLAY CAN BEGIN!',b.x,b.y-260,'1000 24px system-ui','#90ffde');
+}
+function labelAt(x,y,title,color='#f5e7b2'){box(x-69,y-31,138,29,'#13233dd9',7);text(title,x,y-16,'1000 13px system-ui',color)}
+function objective(){
+ const w=st.world;if(!w)return null;if(goalReady())return w.exit;
+ if(w.items.some(o=>!o.got))return w.items.filter(o=>!o.got).reduce((a,b)=>Math.hypot(a.x-st.player.x,a.y-st.player.y)<Math.hypot(b.x-st.player.x,b.y-st.player.y)?a:b);
+ if(w.kind==='badges')return w.objects.find(o=>o.type==='trunk');
+ if(w.kind==='consoles')return w.objects.find(o=>o.type==='console'&&!o.locked);
+ if(w.kind==='checkpoint')return w.objects.find(o=>o.type==='checkpoint'&&o.idx===w.checkpoint);
+ if(w.kind==='towers'||w.kind==='boss')return w.objects.find(o=>o.type==='tower'&&!o.lit)||st.boss;
+ return w.exit;
+}
+
+function objectiveArrow(){const o=objective();if(!o)return;const sx=o.x-st.cam.x,sy=o.y-st.cam.y;if(sx>92&&sx<W-85&&sy>140&&sy<H-100)return;const cx=W*.5,cy=H*.5,a=Math.atan2(sy-cy,sx-cx);let x=clamp(cx+Math.cos(a)*440,100,W-110),y=clamp(cy+Math.sin(a)*215,147,H-115);ctx.save();ctx.translate(x,y);ctx.rotate(a);polygon([[20,0],[-16,-14],[-9,0],[-16,14]],'#ffdd8e','#764965',3);ctx.restore();box(x-47,y+23,94,20,'#102139e0',9);text(`${Math.round(Math.hypot(o.x-st.player.x,o.y-st.player.y)/10)*10}m`,x,y+32,'900 13px system-ui','#ffe4ac')}
+function drawFX(){for(const p of st.particles){ctx.save();ctx.globalAlpha=clamp(p.life/p.total,0,1);circ(p.x,p.y,p.size,p.color);ctx.restore()}for(const f of st.floaters){ctx.save();ctx.globalAlpha=clamp(f.life,0,1);text(f.text,f.x,f.y,'1000 22px system-ui',f.color,'#26344c');ctx.restore()}}
+function renderGame(){const w=st.world,p=st.player;if(!w||!p)return;ctx.save();if(st.shake>1)ctx.translate(rand(-st.shake,st.shake),rand(-st.shake,st.shake));ctx.translate(-Math.round(st.cam.x),-Math.round(st.cam.y));ground(w);backgroundStructure(w);drawDecor(w);exitPortal(w.exit);if(st.level===4){ctx.save();ctx.globalAlpha=.15;for(const tw of w.objects.filter(x=>x.type==='tower')){line(tw.x,tw.y,st.boss?.x||1400,st.boss?.y||580,tw.lit?'#fbe599':'#a07bbb',14)}ctx.restore()}
+ for(const h of w.hazards)hazardObject(h);for(const it of w.secrets)collectible(it);for(const it of w.items)collectible(it);
+ for(const o of w.objects){if(o.type==='npc')npcObject(o);else if(o.type==='trunk')trunkObject(o);else if(o.type==='console')consoleObject(o);else if(o.type==='checkpoint')checkpointObject(o);else if(o.type==='tower')towerObject(o)}
+ if(st.boss)bossObject(st.boss);for(const f of st.fireballs)projectile(f);
+ for(const b of st.burst){let progress=b.life/b.max;ctx.save();ctx.globalAlpha=progress;line(b.x,b.y,b.tx,b.ty,'#96f8ef',9*progress+2);glow(lerp(b.x,b.tx,1-progress),lerp(b.y,b.ty,1-progress),35,'#d5fffd91');ctx.restore()}
+ if(p.inv<=0||Math.floor(st.elapsed*12)%2===0)character(p.x,p.y,1.15,'arthur',p.face,p.walk,p.inv>0);
+ drawFX();ctx.restore();objectiveArrow();
+ const vign=ctx.createRadialGradient(W*.5,H*.5,260,W*.5,H*.5,800);vign.addColorStop(0,'#0000');vign.addColorStop(1,'#030a1b8e');ctx.fillStyle=vign;ctx.fillRect(0,0,W,H);
+ if(p.inv>0){ctx.fillStyle=`rgba(255,70,100,${.13*p.inv})`;ctx.fillRect(0,0,W,H)}
+}
+function renderAttract(time){const t=time/1000;let bg=ctx.createLinearGradient(0,0,W,H);bg.addColorStop(0,'#142641');bg.addColorStop(.5,'#273456');bg.addColorStop(1,'#0d132e');ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);glow(980,340,480,'#f06d9260');glow(1200,120,320,'#6bbfdd44');glow(680,690,380,'#64eab123');
+ for(let i=0;i<15;i++){let x=640+i*58;line(x,-20,x-130,H+20,'#ffe7b013',14)}for(let i=0;i<11;i++){ctx.save();ctx.translate(680+i*73,116+Math.sin(t+i)*8);ctx.rotate(Math.sin(t+i)*.06);ellipse(0,0,28,54,i%2?'#904d76':'#ad596d');ctx.restore()}box(650,600,640,120,'#a95b7c88');box(650,632,640,90,'#713e7288');for(let i=0;i<16;i++)box(680+i*38,656,21,8,'#ffd9a57b',4);
+ for(let i=0;i<st.attractLeaves.length;i++){let l=st.attractLeaves[i];l.y+=(0.6+l.spd)*.36;if(l.y>H+35){l.y=-30;l.x=rand(0,W)}ctx.save();ctx.translate(l.x,l.y);ctx.rotate(l.rot+t*.5);ellipse(0,0,l.s,l.s*.4,i%2?'#ffd2837a':'#ec917d85');ctx.restore()}
+ ctx.save();ctx.translate(1120,410);ctx.rotate(Math.sin(t*1.3)*.04);drawAttractBot();ctx.restore();character(850,580,2.65,'arthur',1,t*3);box(706,648,180,36,'#10213ddc',9);text('HELP ARTHUR',796,666,'1000 20px system-ui','#ffe4a6');ctx.fillStyle='rgba(4,9,23,.12)';ctx.fillRect(0,0,W,H)
+}
+function drawAttractBot(){
+ glow(0,0,210,'#f2b29a53');shadow(0,130,115);
+ // Illustrated theater curtain and costume, instead of a generic robot enemy.
+ box(-125,-155,250,295,'#41304f',20);box(-138,-167,276,36,'#e4b87b',13);
+ for(let j=0;j<6;j++){box(-124+j*42,-128,39,237,j%2?'#974d69':'#b65c75',14)}
+ polygon([[-128,-124],[-14,-108],[-68,88],[-127,105]],'#bc5e75');
+ polygon([[128,-124],[18,-108],[68,88],[127,105]],'#bc5e75');
+ line(-120,11,-61,48,'#fbd9a2',7);line(120,11,61,48,'#fbd9a2',7);
+ ellipse(0,36,79,85,'#f6d6a2');text('🦃',0,35,'110px system-ui');
+ box(-107,-182,214,32,'#ffdc95',12);text('SCHOOL PLAY',0,-166,'1000 22px system-ui','#45314e');
+ box(-110,121,220,28,'#683e66',8);text('CURTAIN JAM!',0,135,'1000 21px system-ui','#ffe3ac');
+}
+function frame(now){const dt=Math.min(.044,(now-(st.last||now))/1000||.016);st.last=now;st.now=now;try{if(st.screen==='playing'){tick(dt);if(st.screen==='playing')renderGame();else renderAttract(now)}else renderAttract(now)}catch(e){console.error('Game frame error:',e);if(st.screen==='playing')pause()}requestAnimationFrame(frame)}
+/* ------------------------- UI / INPUT ----------------------------------- */
+function pause(){if(st.screen!=='playing')return;showView('paused');keys.clear();stick.x=stick.y=0}
+function resume(){liveView();st.last=performance.now()}
+function openFinale(){const total=Object.entries(save.bests).filter(([k])=>k.endsWith('-'+st.mode)).reduce((sum,[,v])=>sum+(v.score||0),0);$('totalPoints').textContent=total.toLocaleString();showView('won');beep('complete')}
+on($('startBtn'),'click',()=>{beep('click');showView('mode')});on($('mapBtn'),'click',map);on($('continueBtn'),'click',()=>briefLevel(Math.min(4,save.unlocked)));on($('launchBtn'),'click',launchLevel);on($('pauseBtn'),'click',pause);on($('resumeBtn'),'click',resume);on($('nextActBtn'),'click',()=>beginAct(true));on($('actMapBtn'),'click',map);on($('readMissionBtn'),'click',()=>{let msg=`Chapter ${st.level+1}. Act ${st.act+1}. ${ACTS[st.level][st.act].title}. ${ACTS[st.level][st.act].hint}. Move the stick to explore. Tap interact near glowing objects.`;try{window.speechSynthesis.cancel();const utterance=new SpeechSynthesisUtterance(msg);utterance.rate=.9;window.speechSynthesis.speak(utterance)}catch{popup('READ ALOUD','Speech is not available on this device.','🔊')}});on($('restartBtn'),'click',()=>beginAct(true));on($('quitBtn'),'click',map);on($('replayBtn'),'click',()=>{st.act=0;launchLevel()});on($('retryBtn'),'click',()=>beginAct(true));on($('deadMapBtn'),'click',map);on($('nextBtn'),'click',()=>st.level===4?openFinale():briefLevel(st.level+1));on($('playAgainBtn'),'click',()=>{st.act=0;briefLevel(0)});on($('winnerMapBtn'),'click',map);
+document.querySelectorAll('[data-go]').forEach(b=>on(b,'click',()=>showView(b.dataset.go)));
+document.querySelectorAll('[data-mode]').forEach(b=>on(b,'click',()=>{st.mode=b.dataset.mode;save.mode=st.mode;persist();beep('complete');if(st.mode==='little'){window.LittleShow.start();return}briefLevel(Math.min(4,save.unlocked))}));
+on($('soundBtn'),'click',()=>{muted=!muted;$('soundBtn').textContent=muted?'♪̸':'♫';$('soundBtn').title=muted?'Unmute':'Mute';if(!muted)beep('coin')});
+on($('fullscreenBtn'),'click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if($('gameFrame').requestFullscreen)await $('gameFrame').requestFullscreen()}catch{popup('FULLSCREEN','Use Safari Share → Add to Home Screen for an immersive iPad game.','⛶')}});
+on(document,'keydown',e=>{const key=e.key.toLowerCase();if(['arrowup','arrowdown','arrowleft','arrowright',' ','shift'].includes(key)&&st.screen==='playing')e.preventDefault();keys.add(key);if(e.repeat)return;if(key==='escape'||key==='p'){if(st.screen==='playing')pause();else if(st.screen==='paused')resume()}else if((key==='e'||key===' ')&&st.screen==='playing'){action()}else if(key==='shift'&&st.screen==='playing'){dash()}else if(key==='enter'&&st.screen==='menu')showView('mode')});
+on(document,'keyup',e=>keys.delete(e.key.toLowerCase()));on(window,'blur',()=>{keys.clear();stick.x=stick.y=0;if(st.screen==='playing')pause()});on(document,'visibilitychange',()=>{if(document.hidden&&st.screen==='playing')pause()});
+// Pointer Capture makes the joystick usable while a finger slides outside its circle.
+const stickZone=$('stickZone'),knob=$('stickKnob');
+function stickAt(e){const r=stickZone.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,dx=e.clientX-cx,dy=e.clientY-cy,m=Math.hypot(dx,dy),limit=Math.max(30,r.width*.31);stick.x=clamp(dx/limit,-1,1);stick.y=clamp(dy/limit,-1,1);if(m>limit){stick.x=dx/m;stick.y=dy/m}knob.style.transform=`translate(${stick.x*limit*.75}px,${stick.y*limit*.75}px)`}
+on(stickZone,'pointerdown',e=>{if(st.screen!=='playing')return;e.preventDefault();stick.pointer=e.pointerId;try{stickZone.setPointerCapture(e.pointerId)}catch{}stickAt(e)});
+on(stickZone,'pointermove',e=>{if(stick.pointer!==e.pointerId)return;e.preventDefault();stickAt(e)});
+function stopStick(e){if(stick.pointer!==e.pointerId)return;stick.pointer=null;stick.x=stick.y=0;knob.style.transform='translate(0px,0px)'}
+on(stickZone,'pointerup',stopStick);on(stickZone,'pointercancel',stopStick);on(stickZone,'lostpointercapture',()=>{stick.pointer=null;stick.x=stick.y=0;knob.style.transform='translate(0px,0px)'});
+for(let [id,fn] of [['dashBtn',dash],['actionBtn',action]]){const el=$(id);on(el,'pointerdown',e=>{e.preventDefault();el.classList.add('pressed');fn()});on(el,'pointerup',()=>el.classList.remove('pressed'));on(el,'pointercancel',()=>el.classList.remove('pressed'));on(el,'pointerleave',()=>el.classList.remove('pressed'))}
+// Gamepad support: connect an external Bluetooth controller to an iPad for true console controls.
+let padLast={a:false,b:false,start:false};
+function readGamepad(){try{let p=[...(navigator.getGamepads?.()||[])].find(x=>x&&x.connected);if(!p){return}if(st.screen==='playing'){const ax=p.axes?.[0]||0,ay=p.axes?.[1]||0;stick.x=Math.abs(ax)>.15?ax:0;stick.y=Math.abs(ay)>.15?ay:0;let a=!!p.buttons?.[0]?.pressed,b=!!p.buttons?.[1]?.pressed,start=!!p.buttons?.[9]?.pressed;if(a&&!padLast.a)action();if(b&&!padLast.b)dash();if(start&&!padLast.start)pause();padLast={a,b,start}}}catch{}}
+function originalFrame(ts){readGamepad();frame(ts)}
+// frame schedules itself; gamepads are polled at a bounded interval independently.
+setInterval(readGamepad,50);
+showView('menu');requestAnimationFrame(frame);
+
+// Exposes readonly snapshots and local developer helpers for non-invasive classroom QA.
+window.ArcadeUI={openLittle:()=>showView('little'),openMode:()=>showView('mode'),sfx:beep};
+window.BackstageMayhem={getState:()=>({screen:st.screen,level:st.level,act:st.act,wave:st.wave,mode:st.mode,elapsed:st.elapsed,health:st.player?.hp,score:st.score,progress:st.world?progressStatus():null,player:st.player?{x:st.player.x,y:st.player.y}:null}),getSave:()=>({...save}),test:{settle:()=>updatePickups(),cooldownZero:()=>{if(st.player)st.player.blastCD=0},getWorld:()=>({kind:st.world?.kind,roundCount:st.world?.roundCount,items:st.world?.items.map(o=>({x:o.x,y:o.y,got:o.got}))||[],objects:st.world?.objects.map(o=>({type:o.type,x:o.x,y:o.y,idx:o.idx,sel:o.sel,target:o.target,lit:o.lit,locked:o.locked,open:o.open}))||[],exit:st.world?.exit,checkpoint:st.world?.checkpoint}),warp:(x,y)=>{if(st.screen==='playing'){st.player.x=x;st.player.y=y;st.cam.x=clamp(x-W*.43,0,st.world.w-W);st.cam.y=clamp(y-H*.5,0,st.world.h-H)}},action:()=>action(),dash:()=>dash()}};
+})();
+</script>
+<script>/* Little Turkey Helpers: a no-fail, touch-first story-play game for Pre-K and kindergarten. */
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id);
+const saveKey='arthur-showtime-little-2026-v1';
+const chapters=[
+ {label:'ARTHUR NEEDS A TURKEY',icon:'🦃',figure:'🎭',acts:[
+  {title:'Find the Turkey!',type:'find',want:'🦃',choices:['🦃','🍁','🎈','🎭','📚','🎁'],say:'Arthur needs someone to play the turkey. Tap every turkey you find!',end:'You spotted turkeys! Arthur has a clue.'},
+  {title:'Invite the Friends',type:'find',want:'✉️',choices:['✉️','🍂','🎁','🎨','🥁','🎩'],say:'Arthur invites his friends to be in the Thanksgiving play. Find the invitations!',end:'The friends know about the school play!'},
+  {title:'Follow the Feathers',type:'catch',want:'🪶',choices:['🪶','🍁','⭐','🎺','🎈','📜'],say:'Colorful feathers lead toward the costume room. Catch the feathers!',end:'You found a trail to the turkey costume!'},
+  {title:'Find the Stage',type:'find',want:'🎭',choices:['🎭','🧸','🪶','🎩','🍂','🎺'],say:'Arthur is directing the show. Find the theater masks so you can reach the stage!',end:'Arthur is ready to begin rehearsal.'}
+ ]},
+ {label:'MAKE THE TURKEY COSTUME',icon:'🪶',figure:'🦃',acts:[
+  {title:'Gather Feathers',type:'catch',want:'🪶',choices:['🪶','🍁','🎀','⭐','📚','🎵'],say:'A turkey costume needs bright feathers. Catch the feathers!',end:'The turkey costume has colorful feathers!'},
+  {title:'Find the Bow Ties',type:'find',want:'🎀',choices:['🎀','🎁','🧩','🍂','🎩','🎈'],say:'Find the bows to decorate the Thanksgiving costume!',end:'Those bows look fantastic!'},
+  {title:'Dress for the Play',type:'dress',want:'🎩',choices:['🎩','🎀','🪶','🧣','👒','⭐'],say:'Choose the costume piece shown in the yellow box. Each piece adds to Arthur’s costume design!',end:'The turkey performer has a complete costume!'},
+  {title:'Show the Costume',type:'find',want:'🦃',choices:['🦃','🎭','🧸','🎵','🎈','📜'],say:'Find the turkey performer in the finished costume!',end:'The costume is ready for the play!'}
+ ]},
+ {label:'PRACTICE THE SCHOOL PLAY',icon:'🎶',figure:'🎼',acts:[
+  {title:'Collect Music Notes',type:'catch',want:'🎵',choices:['🎵','🎺','🍁','🎀','⭐','🎩'],say:'Arthur needs music for the school play. Catch the music notes!',end:'The rehearsal music is ready!'},
+  {title:'Spotlight Time',type:'find',want:'💡',choices:['💡','🌟','🎭','🍂','🎺','🎈'],say:'Find the stage lights and help them shine!',end:'Every stage light is shining!'},
+  {title:'Follow the Beat',type:'rhythm',want:'🥁',choices:['🥁','🎺','🎵','🎻','👏','🔔'],say:'Listen to the stage music. Tap the glowing instrument to follow the beat!',end:'The whole cast is ready to perform together!'},
+  {title:'Take a Bow',type:'find',want:'👏',choices:['👏','🎀','🌟','🎵','🍂','🧸'],say:'Everyone practiced! Find the clapping hands and cheer them on!',end:'What a wonderful rehearsal!'}
+ ]},
+ {label:'DECORATE THE STAGE',icon:'🍁',figure:'🎪',acts:[
+  {title:'Autumn Leaf Party',type:'catch',want:'🍁',choices:['🍁','🎈','🎭','⭐','🎩','✉️'],say:'Catch the autumn leaves to decorate the Thanksgiving play!',end:'The stage looks warm and autumn-colored!'},
+  {title:'Bring the Pumpkins',type:'find',want:'🎃',choices:['🎃','🧸','🍁','🎵','🎀','🎺'],say:'Find the pumpkins for the stage decorations!',end:'The pumpkins are in the perfect places!'},
+  {title:'Add the Decorations',type:'dress',want:'🎀',choices:['🎀','🍁','🎈','🌟','🎭','🎃'],say:'Tap the special decoration shown in the yellow box to build a wonderful stage!',end:'Arthur’s stage is almost complete!'},
+  {title:'The Curtain Is Ready',type:'find',want:'🎭',choices:['🎭','🍁','🎈','💡','🥁','🎩'],say:'Find the theater masks. It is almost time to open the curtain!',end:'The curtain is ready to open!'}
+ ]},
+ {label:'ARTHUR’S THANKSGIVING SHOW',icon:'🌟',figure:'🦃',acts:[
+  {title:'Find the Turkey Star',type:'find',want:'🦃',choices:['🦃','🍁','👏','🎈','🎭','🎁'],say:'The show is about to start! Find the turkey performer!',end:'The turkey performer is in place!'},
+  {title:'Shine, Spotlights!',type:'rhythm',want:'💡',choices:['💡','⭐','🌟','🎵','🎭','👏'],say:'Tap the glowing stage lights as Arthur gets ready to begin!',end:'All the lights are shining on the school play!'},
+  {title:'Thanksgiving Applause',type:'catch',want:'👏',choices:['👏','⭐','🍁','🎁','🎀','🎵'],say:'The class is doing a great job! Catch the claps and cheer for the cast!',end:'The audience is giving everyone a big cheer!'},
+  {title:'The Curtain Call',type:'find',want:'⭐',choices:['⭐','🍁','🦃','🎭','🎵','🎈'],say:'The Thanksgiving play is a success! Find the shining stars to finish the show!',end:'Hooray! You helped Arthur and his friends put on the Thanksgiving play!'}
+ ]}
+];
+const positions=[[9,7],[30,5],[54,8],[78,7],[15,37],[39,37],[64,35],[83,39],[9,66],[29,67],[55,66],[77,66]];
+const state={chapter:0,act:0,round:0,hits:0,goal:8,stars:0,current:'',view:'stopped',latestLabel:''};
+let voiceTimer=null;
+function persist(){try{localStorage.setItem(saveKey,JSON.stringify({chapter:state.chapter,act:state.act,round:state.round,stars:state.stars}))}catch{}}
+function restore(){try{const saved=JSON.parse(localStorage.getItem(saveKey)||'null');if(saved&&typeof saved==='object'){state.chapter=Math.min(4,Math.max(0,Number(saved.chapter)||0));state.act=Math.min(3,Math.max(0,Number(saved.act)||0));state.round=Math.min(1,Math.max(0,Number(saved.round)||0));state.stars=Math.max(0,Number(saved.stars)||0)}}catch{}}
+function sfx(type){window.ArcadeUI?.sfx?.(type)}
+function utter(msg){state.latestLabel=msg;if(!('speechSynthesis' in window))return;try{window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(msg);u.lang='en-US';u.rate=.82;u.pitch=1.14;u.volume=.95;window.speechSynthesis.speak(u)}catch{}}
+function current(){return chapters[state.chapter].acts[state.act]}
+function goalCount(){return state.chapter===4&&state.act===3?10:state.act===2?9:8}
+function selectedSymbol(){const a=current();if(a.type==='dress'){return a.choices[state.hits%a.choices.length]}if(a.type==='rhythm'){return a.choices[(state.hits*2+state.round)%a.choices.length]}return a.want}
+function titleText(){return `Chapter ${state.chapter+1}. Story ${state.act+1} of 4. ${current().title}. ${current().say} ${current().type==='dress'||current().type==='rhythm'? 'Tap '+selectedSymbol()+'.':''}`}
+function start(){restore();window.ArcadeUI.openLittle();state.view='playing';renderRound();utter(titleText())}
+function renderRound(){
+ state.view='playing';state.hits=0;state.goal=goalCount();const a=current(),ch=chapters[state.chapter];
+ $('littleChapter').textContent=`${ch.icon} ${ch.label}`;$('littleCharacter').textContent=ch.icon;
+ $('littlePosition').textContent=`CHAPTER ${state.chapter+1} / 5 · STORY ${state.act+1} / 4 · ROUND ${state.round+1} / 2`;
+ $('littleTitle').textContent=a.title;
+ $('littlePrompt').textContent=(a.type==='dress'||a.type==='rhythm')?'Tap the glowing picture! '+selectedSymbol():a.say;
+ $('littleStageFigure').textContent=ch.figure;$('littleCount').textContent='⭐ '+state.stars;
+ $('littleFinish').classList.add('hidden');updateProgress();populate();
+}
+function updateProgress(){const pct=Math.round(state.hits/state.goal*100);$('littleFill').style.width=pct+'%';$('littleStatus').textContent=`${state.hits} / ${state.goal}`;}
+function shuffle(a){const arr=a.slice();for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}return arr}
+function populate(){
+ const scene=$('littleScene'),a=current(),target=selectedSymbol();$('littlePrompt').textContent=a.type==='dress'||a.type==='rhythm'?'TAP '+target+' — the glowing picture!':a.say;
+ [...scene.querySelectorAll('.little-token')].forEach(x=>x.remove());
+ const locations=shuffle(positions).slice(0,9);const choiceList=shuffle([target,target,...a.choices.filter(x=>x!==target)]).slice(0,9);
+ if(!choiceList.includes(target))choiceList[0]=target;
+ // Always guarantee at least two positive targets and generously sized finger targets.
+ const targetQuantity=choiceList.filter(x=>x===target).length;
+ if(targetQuantity<2)choiceList[1]=target;
+ const width=scene.clientWidth||1000,height=scene.clientHeight||400;
+ const iconSize=Math.max(55,Math.min(98,width*.075));
+ locations.forEach(([xp,yp],idx)=>{
+  const el=document.createElement('button');el.type='button';el.className='little-token';
+  const symbol=choiceList[idx%choiceList.length];el.textContent=symbol;el.setAttribute('aria-label','Picture: '+symbol);
+  el.style.left=`min(calc(${xp}% + 0px),calc(100% - ${iconSize+8}px))`;
+  el.style.top=`min(calc(${yp}% + 0px),calc(100% - ${iconSize+8}px))`;
+  el.style.setProperty('--float',(2.0+(idx%4)*.5)+'s');
+  if(symbol===target&&(a.type==='dress'||a.type==='rhythm'))el.classList.add('little-glow');
+  el.addEventListener('click',()=>hit(el,symbol===target));scene.appendChild(el);
+ });
+}
+function hit(el,correct){if(state.view!=='playing'||el.disabled)return;
+ if(!correct){el.classList.remove('little-wrong');void el.offsetWidth;el.classList.add('little-wrong');sfx('click');return}
+ el.disabled=true;el.classList.add('little-correct');state.hits++;state.stars++;sfx('coin');
+ $('littleCount').textContent='⭐ '+state.stars;updateProgress();
+ if(state.hits===state.goal){state.view='roundclear';window.setTimeout(finishRound,310)}
+ else window.setTimeout(()=>{if(state.view==='playing')populate()},260);
+}
+function finishRound(){const a=current();sfx('complete');let done=state.round===1;const chDone=state.act===3&&done;const allDone=state.chapter===4&&chDone;
+ $('littleWinIcon').textContent=allDone?'🏆':chDone?'🎭':'🌟';
+ $('littleWinTitle').textContent=allDone?'THE PLAY IS A HIT!':chDone?'CHAPTER COMPLETE!':'YOU DID IT!';
+ $('littleWinText').textContent=allDone?'You helped Arthur find a turkey performer, make a costume, rehearse, and put on the Thanksgiving school play!':a.end;
+ $('littleNext').textContent=allDone?'↻ PLAY AGAIN':'▶ NEXT STORY';$('littleFinish').classList.remove('hidden');utter($('littleWinText').textContent);
+}
+function next(){if(state.view!=='roundclear')return;
+ if(state.round<1){state.round++}else{state.round=0;if(state.act<3){state.act++}else{state.act=0;if(state.chapter<4){state.chapter++}else{state.chapter=0;state.stars=0}}}
+ persist();renderRound();utter(titleText());
+}
+function hint(){utter(titleText())}
+$('littleSpeak').addEventListener('click',hint);$('littleHint').addEventListener('click',hint);
+$('littleBack').addEventListener('click',()=>{persist();try{window.speechSynthesis.cancel()}catch{};state.view='stopped';window.ArcadeUI.openMode()});
+$('littleNext').addEventListener('click',next);
+window.LittleShow={start,getState:()=>({...state,type:current().type,selected:selectedSymbol()}),test:{clearRound:()=>{if(state.view==='playing'){state.hits=state.goal;updateProgress();state.view='roundclear';finishRound()}},next}};
+})();
+</script>
 </body>
 </html>
