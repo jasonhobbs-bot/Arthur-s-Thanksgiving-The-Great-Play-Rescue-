@@ -11,7 +11,8 @@
 
 
 
-<style>:root{--bg:#090e1d;--ink:#f5f8ff;--sub:#b5bdd7;--gold:#ffd678;--pink:#ff6a8a;--mint:#72f1c4;--blue:#70c0ff;--edge:#455071;--surface:#131c37;--shadow:0 28px 80px #020817ae}
+<style>
+:root{--bg:#090e1d;--ink:#f5f8ff;--sub:#b5bdd7;--gold:#ffd678;--pink:#ff6a8a;--mint:#72f1c4;--blue:#70c0ff;--edge:#455071;--surface:#131c37;--shadow:0 28px 80px #020817ae}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg)}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);overscroll-behavior:none;-webkit-tap-highlight-color:transparent;touch-action:pan-y}button{font:inherit;cursor:pointer;-webkit-user-select:none;user-select:none}button:focus-visible{outline:3px solid var(--mint);outline-offset:3px}.app{min-height:100svh;max-width:1540px;padding:16px clamp(9px,2.4vw,30px) 12px;margin:auto;background:radial-gradient(ellipse at 56% 25%,#1f284b 0%,#10162c 42%,#090e1d 85%)}.masthead{display:flex;justify-content:space-between;gap:18px;align-items:center;min-height:48px;margin:0 2px 12px}.identity{display:flex;align-items:center;gap:11px}.identity strong{display:block;font-weight:1000;letter-spacing:2px;font-size:13px;line-height:1.2}.identity small{display:block;color:#8194bc;font-size:10px;font-weight:700;letter-spacing:.75px;margin-top:5px}.brandmark{width:41px;height:41px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#b9ffbb,#5ee6a8);box-shadow:0 4px 0 #2c7560;color:#1b524f;font-size:23px;font-weight:1000;letter-spacing:-4px;padding-right:4px}.brandmark span{color:#c05255}.header-actions{display:flex;gap:8px;align-items:center}.edition{font-weight:900;letter-spacing:1.7px;color:#899aba;font-size:10px;margin-right:15px}.icon-button{height:41px;width:43px;border-radius:11px;background:#1e2a45;color:#dceaff;border:1px solid #354264;font-weight:900;font-size:21px}.icon-button:active{transform:translateY(2px)}.game-frame{width:100%;max-width:1450px;aspect-ratio:16/9;position:relative;background:#0b152a;border:2px solid #394462;border-radius:16px;overflow:hidden;box-shadow:0 5px 0 #050914,0 30px 110px #03051295;isolation:isolate;touch-action:none}.game-frame canvas{width:100%;height:100%;display:block;touch-action:none}.edge-light{position:absolute;inset:0;z-index:1;pointer-events:none;box-shadow:inset 0 0 0 1px #ffffff12,inset 0 -35px 80px #08091845;border-radius:14px}.hud{position:absolute;z-index:4;left:0;right:0;top:0;padding:15px 19px 6px;display:flex;align-items:flex-start;justify-content:space-between;gap:8px;background:linear-gradient(#080d22ed,#080d2260 78%,transparent)}.hidden{display:none!important}.mission-index{font-size:11px;color:#b9b3c5;letter-spacing:1.6px;font-weight:1000}.mission-name{font-size:clamp(16px,2.25vw,27px);font-weight:1000;letter-spacing:.8px;text-shadow:0 2px 15px #000b;line-height:1.2}.mission-task{font-size:12px;font-weight:800;color:#ffe4ad;margin-top:5px;max-width:560px}.hud-right{display:flex;align-items:center;gap:9px}.hud-chip{height:39px;padding:0 13px;display:flex;align-items:center;gap:7px;background:#111b30d9;border:1px solid #526389b3;border-radius:12px;font-weight:1000}.stars-chip span{color:#ffdb79;font-size:20px}.hp-chip{color:#ff677a;white-space:nowrap;letter-spacing:1px}.pause-btn{width:39px;height:39px;border:1px solid #526389b3;background:#111b30d9;color:#fff;border-radius:12px;font-weight:1000}.progress-rail{position:absolute;top:104px;left:20px;right:20px;max-width:570px;z-index:3;height:7px;border-radius:8px;background:#0009;box-shadow:0 0 0 2px #fff2;overflow:hidden}.progress-rail>div{height:100%;width:0;background:linear-gradient(90deg,#60dbbf,#ffda7f);transition:width .2s}.mission-popup{position:absolute;top:134px;left:50%;transform:translateX(-50%);min-width:310px;max-width:min(600px,86%);z-index:10;display:flex;align-items:center;gap:13px;padding:13px 22px;background:#101d34ed;border:1px solid #81fad19e;box-shadow:0 10px 50px #0009,0 0 25px #28ebc033;border-radius:15px;pointer-events:none;animation:popup .2s ease-out}.mission-popup>span{font-size:32px}.mission-popup strong{font-size:15px;letter-spacing:1px;color:#89f4d5}.mission-popup p{margin:3px 0 0;font-weight:700;font-size:14px}.game-tip{position:absolute;z-index:5;bottom:29px;left:50%;transform:translateX(-50%);background:#10162ee0;color:#ffe8bd;padding:11px 17px;border:1px solid #ffe6a575;border-radius:12px;font-size:13px;font-weight:800;max-width:50%;text-align:center;pointer-events:none}.touch-ui{position:absolute;inset:0;pointer-events:none;z-index:5}.stick-zone{pointer-events:auto;position:absolute;left:25px;bottom:19px;width:160px;height:160px;display:grid;place-items:center;touch-action:none}.stick-base{width:122px;height:122px;border:2px solid #f4f8ff47;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 32px #94f5e018,0 0 22px #0009;background:#0d213c9e;backdrop-filter:blur(4px)}.stick-base:before,.stick-base:after{content:"";position:absolute;background:#b0c3e644}.stick-base:before{width:2px;height:110px}.stick-base:after{height:2px;width:110px}.stick-knob{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 31% 28%,#d4fff5,#66f1c3 60%,#1c947f);border:3px solid #e3fff8a1;box-shadow:0 5px 16px #0008;position:relative;z-index:1;transition:transform .04s linear;will-change:transform}.action-stack{position:absolute;right:22px;bottom:19px;display:flex;gap:13px;align-items:flex-end;pointer-events:none}.dash-button,.action-button{pointer-events:auto;touch-action:none;border:2px solid #ffffff6f;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;color:#10253b;box-shadow:0 6px 0 #0009,0 8px 25px #0009}.action-stack small{font-size:11px;font-weight:1000;letter-spacing:.8px}.action-stack b{font-size:30px;line-height:1.2}.dash-button{width:83px;height:83px;border-radius:50%;background:linear-gradient(135deg,#81d7ff,#3576df);margin-bottom:0}.action-button{width:111px;height:111px;border-radius:50%;background:linear-gradient(135deg,#ffe7ac,#f79158)}.action-button:active,.dash-button:active,.action-button.pressed,.dash-button.pressed{transform:scale(.93);filter:brightness(1.19)}.screen-overlay{position:absolute;inset:0;z-index:7;pointer-events:none}.view{position:absolute;inset:0;overflow:auto;overscroll-behavior:contain;pointer-events:auto}.view.hidden{display:none!important}.view-menu{display:flex;align-items:center;justify-content:space-between;padding:clamp(18px,4.4vw,65px);background:linear-gradient(90deg,#080e22fa 0%,#0a1128ee 31%,#0a1225ab 53%,#0d10241b 100%)}.hero-copy{width:min(690px,68%);position:relative;z-index:1}.eyebrow{display:flex;align-items:center;gap:9px;font-size:11px;font-weight:1000;letter-spacing:2px;color:#c8e8db}.status-dot{display:inline-block;width:8px;height:8px;border-radius:100%;background:#79f0b7;box-shadow:0 0 13px #52ffa0}.edition-tag{color:#ffdc7c;border-left:1px solid #6c7d93;padding-left:10px}.hero-title{font-weight:1000;letter-spacing:-3.5px;line-height:.99;text-shadow:0 8px 0 #0003;margin:17px 0 15px}.hero-title>span{display:block;color:#fff;font-size:clamp(35px,5.6vw,85px);white-space:nowrap}.hero-title em{display:block;font-style:normal;color:#ffc86b;font-size:clamp(44px,7.7vw,119px);white-space:nowrap;letter-spacing:-5px}.hero-title .bang{color:#f77a83;display:inline-block;transform:rotate(9deg);margin-left:3px}.hero-rule{height:5px;background:linear-gradient(90deg,#ff786e 0%,#ffcb78 46%,transparent 95%);width:min(460px,100%);border-radius:6px;margin-bottom:19px}.hero-desc{font-size:clamp(13px,1.55vw,19px);line-height:1.45;color:#d6dcf1;font-weight:650;max-width:550px;margin:0 0 8px}.hero-hook{font-size:clamp(14px,1.7vw,20px);font-weight:800;color:#e7eefb;margin:0 0 23px}.hero-hook b{color:#82ffcb}.hero-buttons,.modal-actions{display:flex;gap:11px;flex-wrap:wrap;align-items:center}.primary-cta,.secondary-cta{min-height:51px;display:inline-flex;gap:25px;align-items:center;justify-content:space-between;padding:13px 21px;border:2px solid #ffe6a233;border-radius:11px;font-size:clamp(13px,1.28vw,16px);font-weight:1000;letter-spacing:.3px;transition:transform .12s,filter .12s;white-space:nowrap}.primary-cta{background:linear-gradient(110deg,#ffd977,#ffa64c);color:#2b2131;box-shadow:0 5px 0 #86582a,0 10px 18px #0005}.secondary-cta{background:#1e2943db;color:#e3eaff;border-color:#6775947d}.primary-cta:hover,.secondary-cta:hover{filter:brightness(1.12)}.primary-cta:active,.secondary-cta:active{transform:translateY(3px);box-shadow:0 2px 0 #0007}.hero-meta{display:flex;flex-wrap:wrap;gap:15px;color:#aab8ce;letter-spacing:.9px;font-size:10px;font-weight:1000;margin-top:26px}.hero-side{display:flex;align-self:stretch;position:relative;align-items:flex-start;justify-content:end;flex:1}.mission-badge{margin-top:9px;width:140px;aspect-ratio:1/1;transform:rotate(9deg);background:#10213bcc;border:2px dashed #fac97f8c;box-shadow:inset 0 0 0 8px #0e1b3488,0 9px 38px #000b;border-radius:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}.mission-badge-top{font-size:10px;color:#80e6c5;font-weight:1000;letter-spacing:2px}.mission-badge-big{font-size:53px;line-height:1;font-weight:1000;color:#ffd27f}.mission-badge-label{font-size:9px;font-weight:1000;letter-spacing:1px}.hero-orbit{position:absolute;right:0;bottom:3%;font-size:35px;color:#ffd484;text-shadow:0 8px 9px #0008;display:flex;flex-direction:column;gap:55px}.hero-orbit span:nth-child(1){transform:rotate(-17deg)}.hero-orbit span:nth-child(3){transform:rotate(19deg)}.modal-view{background:radial-gradient(ellipse at 50% 22%,#1b2852ed,#0a1128f7 78%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(12px,3.1vw,46px)}.modal-kicker{color:#7cf2c7;font-size:12px;letter-spacing:3px;font-weight:1000;margin-bottom:13px}.modal-view h1{font-size:clamp(29px,4.2vw,58px);line-height:1.04;letter-spacing:-1.1px;margin:0 0 15px;font-weight:1000;text-transform:uppercase}.modal-intro{max-width:700px;line-height:1.5;font-size:clamp(14px,1.5vw,18px);font-weight:650;color:#bdc9e3;margin:0 auto 19px}.mode-choices{display:flex;gap:20px;width:min(760px,100%);margin-top:12px}.mode-choice{background:linear-gradient(145deg,#1e3550,#14223e);border:2px solid #4e7997;text-align:left;padding:20px 22px;flex:1;border-radius:16px;box-shadow:0 10px 40px #0006;color:#fff}.mode-choice:nth-child(2){border-color:#a45875;background:linear-gradient(145deg,#462438,#23162e)}.mode-choice:hover,.mode-choice:focus-visible{transform:translateY(-5px);border-color:#ffe19a}.mode-symbol{font-size:33px;display:block;margin-bottom:5px}.mode-choice strong{display:block;font-size:25px;font-weight:1000}.mode-choice small{color:#ffd57b;font-size:11px;letter-spacing:1.2px;font-weight:1000}.mode-choice p{font-size:14px;line-height:1.4;color:#d1d9ef}.mode-play{display:block;color:#86efc9;font-weight:1000;margin-top:10px}.text-back{border:0;background:transparent;color:#a7b5ce;font-size:12px;font-weight:950;letter-spacing:1.3px;margin-top:25px;padding:10px}.stage-map{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px;width:min(1060px,100%);margin:20px 0 27px}.stage-node{min-height:165px;background:#1a2744d9;border:1px solid #507194;border-radius:14px;text-align:left;padding:18px 14px;color:#fff;display:flex;flex-direction:column;gap:8px}.stage-node span:first-child{font-size:28px}.stage-node strong{font-size:14px;font-weight:1000;line-height:1.2}.stage-node small{color:#9fc0d3;font-size:11px;letter-spacing:1px;font-weight:900}.stage-node.locked{opacity:.4;filter:grayscale(.7)}.stage-node:not(.locked):hover{border-color:#f5c978;transform:translateY(-3px)}.stage-node.done{background:linear-gradient(155deg,#174d54,#193247);border-color:#6ae0c5}.briefing-layout{display:flex;align-items:center;gap:35px;max-width:950px;text-align:left}.briefing-poster{min-width:260px;width:37%;height:333px;background:radial-gradient(circle at 50% 28%,#456b7e,#20334c 58%,#0b1931);border:4px solid #6c8596;box-shadow:8px 8px 0 #050a19;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:13px;padding:20px;transform:rotate(-2deg)}.briefing-icon{font-size:89px;filter:drop-shadow(0 6px 15px #0007)}.briefing-poster span{letter-spacing:2px;font-size:10px;font-weight:900;color:#a6e2d5}.briefing-poster strong{font-size:31px;line-height:1.1;color:#ffda86}.briefing-text h1{font-size:clamp(28px,3.6vw,53px)}.briefing-text>p{color:#d4dcf0;line-height:1.45;font-size:clamp(15px,1.55vw,19px)}.briefing-task{border-left:4px solid #ffd37d;background:#ffd37d17;color:#ffdb8a;padding:11px 15px;font-size:16px;font-weight:1000;margin-top:20px}.briefing-text .control-instructions{font-size:12px;color:#c4cde1;margin:18px 0 23px}.clear-medal{width:80px;height:80px;border:5px solid #fff4c4;border-radius:50%;display:grid;place-items:center;background:linear-gradient(#ffd77d,#f49a53);color:#493a51;box-shadow:0 0 40px #ffd78686,0 8px 0 #0004;margin:0 0 19px;font-size:49px;font-weight:1000}.trophy-icon{font-size:83px;margin:0 0 4px}.results{display:flex;justify-content:center;gap:10px;margin:14px 0 24px;min-width:550px}.results>div{flex:1;padding:13px 20px;background:#141f37;border:1px solid #60739577;border-radius:12px;display:flex;flex-direction:column;gap:3px}.results small{font-size:11px;font-weight:1000;letter-spacing:1px;color:#93a4c2}.results strong{font-size:25px;color:#ffe0a2;font-weight:1000}.footer{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:9px;color:#71819e;letter-spacing:.3px;line-height:1.5;margin:10px 4px 0}.footer b{color:#8ee5c3}.footer>div:last-child{text-align:right;max-width:600px}@keyframes popup{from{opacity:0;top:118px}to{opacity:1;top:134px}}
 @media(max-width:850px){.edition{display:none}.hero-side{display:none}.hero-copy{width:100%}.view-menu{background:linear-gradient(90deg,#080e22f5,#0a1128d1 85%,#0a1225a2)}.hero-title>span{font-size:clamp(39px,8vw,66px)}.hero-title em{font-size:clamp(52px,10.6vw,88px)}.hero-title{letter-spacing:-2px}.stage-map{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.stage-node{min-height:120px;padding:9px}.stage-node strong{font-size:11px}.stage-node span:first-child{font-size:20px}.briefing-poster{min-width:160px;width:29%;height:225px}.briefing-icon{font-size:56px}.briefing-poster strong{font-size:19px}.briefing-layout{gap:22px}.footer .desktop-hint{display:none}.mission-name{font-size:16px}.mission-task{font-size:11px}.touch-ui .stick-zone{left:10px;bottom:8px;transform:scale(.77);transform-origin:bottom left}.touch-ui .action-stack{right:10px;bottom:10px;transform:scale(.8);transform-origin:bottom right}}
 @media(max-width:600px){.app{padding:8px 3px}.masthead{margin:0 7px 8px;min-height:36px}.brandmark{height:33px;width:33px;font-size:19px}.identity strong{font-size:10px;letter-spacing:1px}.identity small{font-size:8px}.icon-button{width:34px;height:33px;font-size:16px}.game-frame{min-height:360px;aspect-ratio:16/10;border-radius:8px}.view{padding:13px}.hero-title>span{font-size:32px}.hero-title em{font-size:45px;letter-spacing:-2px}.hero-desc{font-size:13px}.hero-hook{font-size:14px;margin-bottom:14px}.hero-meta{gap:7px;font-size:8px;margin-top:14px}.hero-buttons{gap:8px}.primary-cta,.secondary-cta{font-size:12px;min-height:40px;padding:8px 10px;gap:7px}.eyebrow{font-size:9px;gap:5px}.mode-choices{gap:6px}.mode-choice{padding:9px 8px}.mode-choice strong{font-size:15px}.mode-choice p{font-size:11px}.mode-symbol{font-size:20px}.mode-choice small{font-size:9px}.modal-kicker{font-size:10px;margin:0 0 7px}.modal-view h1{font-size:25px;margin-bottom:7px}.modal-intro{font-size:12px;line-height:1.35;margin-bottom:8px}.stage-map{margin:8px 0;gap:3px}.stage-node{min-height:92px;padding:6px 3px}.stage-node strong{font-size:8px}.stage-node small{font-size:7px}.stage-node span:first-child{font-size:17px}.briefing-poster{min-width:100px;width:30%;height:185px;padding:6px}.briefing-icon{font-size:40px}.briefing-poster span{font-size:6px}.briefing-poster strong{font-size:14px}.briefing-layout{gap:10px}.briefing-text>p{font-size:12px}.briefing-task{font-size:10px;padding:8px;margin-top:5px}.briefing-text .control-instructions{font-size:9px;margin:8px 0}.results{min-width:0;width:90%;gap:3px;margin:7px 0}.results>div{padding:5px}.results strong{font-size:15px}.results small{font-size:8px}.clear-medal{width:49px;height:49px;font-size:25px;margin-bottom:8px}.touch-ui .stick-zone{transform:scale(.58);left:7px;bottom:7px}.touch-ui .action-stack{transform:scale(.62);right:8px;bottom:7px}.hud{padding:7px 8px}.mission-index{font-size:7px}.mission-name{font-size:13px}.mission-task{font-size:9px}.hud-chip{font-size:11px;height:27px;padding:0 6px}.pause-btn{height:27px;width:27px}.hud-right{gap:4px}.progress-rail{top:67px;height:5px;left:8px}.mission-popup{top:80px;min-width:200px;padding:6px 10px}.game-tip{bottom:10px;font-size:9px;padding:5px 7px}.footer{font-size:8px}}
@@ -63,6 +64,48 @@
 .little-meter>div{height:100%;width:0%;background:linear-gradient(90deg,#93d5ac,#ffe08b);transition:width .2s}.little-bottom{height:40px}.little-bottom span{font-weight:1000;color:#ffe6b1;white-space:nowrap}
 .little-finish{position:absolute;inset:0;z-index:8;background:radial-gradient(ellipse at center,#8b507ddd,#26223df5);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:22px;text-align:center;gap:12px}.little-win-icon{font-size:clamp(70px,9vw,140px);filter:drop-shadow(0 12px 13px #1f102380);animation:littleBob 1.2s infinite alternate}.little-finish h2{margin:0;font-size:clamp(29px,4vw,64px);font-weight:1000;color:#fff3bd}.little-finish p{font-weight:800;color:#ffe1b4;max-width:620px;font-size:clamp(15px,2vw,24px)}
 @media(max-width:850px){.little-view{padding:8px 11px!important;gap:5px}.little-heading{min-height:72px}.little-character{width:58px;height:58px;font-size:37px}.little-sound{width:50px;height:50px;font-size:23px}.little-count{font-size:15px;padding:6px 9px}.little-small{padding:5px 10px;font-size:10px}.little-heading h2{font-size:clamp(18px,2.9vw,29px)}.little-heading p{font-size:clamp(11px,1.7vw,16px)}.little-token{width:clamp(55px,7.4vw,80px);height:clamp(55px,7.4vw,80px);font-size:clamp(32px,4vw,46px)}.little-bottom{height:31px}}
+/* CHALLENGE EDITION — Pre-K visual brain games */
+.think-wrap{position:absolute;inset:8px 9px 16%;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(5px,1vh,10px);padding:5px 12px;overflow:hidden}
+.think-topline{font-size:clamp(12px,1.4vw,20px);font-weight:1000;color:#fff9db;text-shadow:0 3px 9px #24142f;letter-spacing:1.2px;text-align:center;flex-shrink:0}
+.think-pair-grid{width:min(680px,98%);height:100%;max-height:340px;display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(6px,1.2vw,15px);align-content:center;justify-content:center}
+.think-card{min-width:0;min-height:clamp(45px,8vh,98px);font-size:clamp(29px,4vw,58px);color:#fff2c7;font-weight:1000;background:linear-gradient(155deg,#9955ad,#523375);border:3px solid #ffdfaa;border-radius:18px;box-shadow:0 5px 0 #1d153b;touch-action:manipulation}
+.think-card.face-up{background:linear-gradient(155deg,#fff7e2,#f8c58f)}.think-card.matched{background:#8fe3bb;border-color:#f5fff8;opacity:.85}
+.think-card.hint-glow{box-shadow:0 0 0 4px #ffdb82,0 0 20px #ffdf80}
+.think-sequence{display:flex;gap:clamp(5px,1.0vw,13px);align-items:center;justify-content:center;max-width:100%;flex-wrap:nowrap}
+.think-pattern-symbol{height:clamp(49px,8.5vh,96px);width:clamp(48px,7.2vw,100px);background:#fff8e6;border:3px solid #ffdaa1;border-radius:19px;display:grid;place-items:center;font-size:clamp(27px,4.1vw,58px);box-shadow:0 6px 0 #5b4461;flex-shrink:1;min-width:0}
+.think-pattern-symbol.missing{background:#ffda79;color:#352a50;border-style:dashed}
+.think-option-grid{width:min(590px,100%);display:flex;justify-content:center;gap:clamp(6px,1.5vw,16px);flex-wrap:nowrap}
+.think-choice{height:clamp(59px,11vh,106px);width:clamp(62px,8vw,112px);flex-shrink:1;min-width:0;background:linear-gradient(150deg,#fff4df,#f7c8a7);border:4px solid #fff;border-radius:20px;font-size:clamp(30px,4.2vw,62px);box-shadow:0 6px 0 #643d60;touch-action:manipulation;transition:transform .12s}
+.think-choice:active{transform:scale(.91)}.think-choice.lit{background:#fff8aa;box-shadow:0 0 0 7px #f5e68396,0 0 32px #ffff7a}.think-choice.good{background:#9ff3c3}.think-choice:disabled{opacity:.5;filter:saturate(.45)}
+.think-big-cue{font-size:clamp(68px,14vh,126px);height:clamp(75px,17vh,140px);display:grid;place-items:center;filter:drop-shadow(0 9px 8px #2f2146)}
+.think-wrong{animation:littleWiggle .3s!important;border-color:#ff656f!important}.think-feedback{position:absolute;bottom:2px;font-size:13px;font-weight:800;background:#192546eb;border-radius:11px;padding:7px;color:#fff}
+@media(max-width:850px){.think-wrap{inset:0 3px 14%;gap:3px;padding:2px}.think-card{min-height:38px;font-size:26px;border-width:2px;border-radius:11px}.think-pattern-symbol{height:46px;font-size:25px;border-radius:10px}.think-choice{height:50px;font-size:28px;border-width:2px;border-radius:10px}.think-big-cue{height:72px;font-size:65px}.think-pair-grid{max-height:230px}.think-topline{font-size:11px}}
+/* GRADE 5 DIRECTOR LABS */
+.director-view{padding:15px 30px!important;background:radial-gradient(ellipse at 40% 30%,#453360,#121e37 72%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;overflow:hidden!important}
+.director-view h1{font-size:clamp(19px,3.1vw,42px);margin:0;color:#ffe1a1;line-height:1.05;letter-spacing:-1px}
+.director-header{display:flex;width:100%;align-items:center;justify-content:space-between;gap:12px}.director-heading{font-weight:1000;letter-spacing:1.6px;color:#95efdb;font-size:clamp(10px,1.2vw,16px)}.director-stage{font-size:12px;color:#d9c4e9;font-weight:800}
+.director-instruction{font-size:clamp(12px,1.5vw,19px);max-width:1000px;text-align:center;margin:0;color:#f1edf8;line-height:1.25;font-weight:700}
+.director-main{width:100%;flex:1;max-height:440px;min-height:155px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;overflow:auto}
+.director-grid{display:grid;gap:5px;width:min(440px,100%);margin:auto;align-content:center;justify-content:center}
+.maze-grid{grid-template-columns:repeat(6,1fr);max-width:420px}.lights-grid{grid-template-columns:repeat(4,1fr);max-width:360px}
+.director-tile{aspect-ratio:1/1;border-radius:12px;min-height:0;min-width:0;font-size:clamp(18px,3.1vw,39px);font-weight:900;color:#eaf5ff;border:2px solid #7585a3;background:linear-gradient(#294b5d,#273146);box-shadow:0 3px 0 #0b1027;touch-action:manipulation}
+.director-tile.wall{background:#4b3550;border-color:#735873}.director-tile.player{background:#ffe39f}.director-tile.ticket{background:#8a692b;border-color:#ffe19c}.director-tile.goal{background:#466e60;border-color:#97f9c0}.director-tile.on{background:#eee1a0;border-color:#fff9c9;box-shadow:0 0 13px #ffea8a77}.director-tile.off{background:#27334e;color:#59657d}
+.director-cue-row{display:flex;justify-content:center;gap:9px;max-width:100%;flex-wrap:nowrap}.director-cue{width:clamp(48px,7.2vw,92px);height:clamp(52px,11vh,94px);border:3px solid #ffce8a;border-radius:16px;background:linear-gradient(#fff0c8,#f5b4a0);font-size:clamp(26px,4vw,55px);box-shadow:0 4px 0 #3d2743;touch-action:manipulation}.director-cue.selected{outline:5px solid #83ffe1;transform:translateY(-5px)}.director-clues{padding:10px 15px;max-width:760px;font-size:clamp(12px,1.3vw,17px);line-height:1.4;color:#ffefd1;font-weight:800;border:1px solid #ffda8b58;background:#101b37bb;border-radius:12px;margin-top:7px}
+.director-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center}.director-controls button{background:#273957;border:1px solid #7488a4;color:#fff1dd;font-size:clamp(10px,1.2vw,14px);font-weight:850;border-radius:10px;padding:9px 13px}.director-moves{color:#8cf3cf;font-size:13px;font-weight:1000}.director-message{font-size:12px;color:#ffceaa;text-align:center;min-height:15px}
+.director-win{position:absolute;inset:0;z-index:3;background:#161931f2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:20px}.director-win h2{font-size:clamp(26px,5vw,54px);color:#ffdf98;margin:0}.director-win p{font-size:18px;max-width:600px}
+@media(max-width:850px){.director-view{padding:6px 10px!important;gap:2px}.director-main{max-height:250px}.director-tile{border-radius:7px;font-size:20px}.director-grid{width:min(240px,100%);gap:3px}.director-header{gap:4px}.director-clues{font-size:10px;margin-top:3px;padding:4px 7px}.director-cue{height:48px;width:52px;font-size:28px}.director-instruction{font-size:11px}.director-controls button{padding:4px 7px}.director-view h1{font-size:21px}}
+
+/* Clear the game space of decorative icons for logical picture challenges */
+.little-scene:has(.think-wrap)::before{display:none}
+
+.director-tile.hint-glow{outline:5px solid #85ffe0;box-shadow:0 0 0 6px #83ffd47b,0 0 34px #a5fffcc2}
+/* Keep every maze cell visible on iPad landscape, including the bottom row. */
+.director-grid{width:min(340px,92%);max-height:100%}
+.maze-grid{width:min(340px,92%);max-width:340px}
+.lights-grid{width:min(314px,92%);max-width:314px}
+.director-main{min-height:0}
+@media(max-width:850px){.director-grid,.maze-grid,.lights-grid{width:min(228px,90%);max-width:228px}}
+
 </style>
 <title>ARTHUR’S THANKSGIVING — SAVE THE SCHOOL PLAY</title>
 </head>
@@ -92,10 +135,10 @@
         <div class="hero-side"><div class="mission-badge"><div class="mission-badge-top">DIRECTOR’S PASS</div><div class="mission-badge-big">05</div><div class="mission-badge-label">CHAPTERS / 20 ACTS<br>HELP ARTHUR</div></div><div class="hero-orbit"><span>🍁</span><span>✶</span><span>🎭</span></div></div>
       </section>
       <section id="mode" class="view modal-view hidden"><div class="modal-kicker">PLAYER SELECT</div><h1>CHOOSE HOW TO PLAY</h1><p class="modal-intro">Pre-K has a gentle tap-to-play adventure. Grades 1–5 explore an action game with joystick controls.</p><div class="mode-choices">
-  <button class="mode-choice" data-mode="little"><span class="mode-symbol">🧸</span><strong>LITTLE TURKEY HELPERS</strong><small>PRE-K & KINDERGARTEN</small><p>Tap big pictures, collect feathers, play stage rhythms. No losing, no joystick, and cheerful spoken instructions.</p><span class="mode-play">LET’S HELP ARTHUR →</span></button>
+  <button class="mode-choice" data-mode="little"><span class="mode-symbol">🧠</span><strong>LITTLE TURKEY THINKERS</strong><small>PRE-K & KINDERGARTEN</small><p>Solve picture-memory games, copy rehearsal rhythms, finish patterns, and remember costume sequences. No reading or game over.</p><span class="mode-play">LET’S HELP ARTHUR →</span></button>
   <button class="mode-choice" data-mode="rookie"><span class="mode-symbol">🦃</span><strong>STORY ADVENTURERS</strong><small>GRADES 1–2</small><p>Explore, find costume pieces, repair the stage, and rehearse with extra hearts and helpful hints.</p><span class="mode-play">START ADVENTURE →</span></button>
   <button class="mode-choice" data-mode="adventure"><span class="mode-symbol">🎭</span><strong>STAGE HEROES</strong><small>GRADES 3–4</small><p>More exploration, quicker challenges, stage puzzles, and a dramatic curtain finale.</p><span class="mode-play">SAVE THE SHOW →</span></button>
-  <button class="mode-choice" data-mode="expert"><span class="mode-symbol">🌟</span><strong>DIRECTOR’S CHALLENGE</strong><small>GRADE 5</small><p>The most demanding backstage adventure, with more objectives and bonus collectibles.</p><span class="mode-play">BRING IT ON →</span></button>
+  <button class="mode-choice" data-mode="expert"><span class="mode-symbol">🌟</span><strong>DIRECTOR’S CHALLENGE</strong><small>GRADE 5</small><p>Explore the full arcade adventure PLUS 20 strategic backstage puzzle rooms: mazes, spotlights, and logic challenges.</p><span class="mode-play">BRING IT ON →</span></button>
 </div><button class="text-back" data-go="menu">← BACK TO TITLE</button></section>
       <section id="map" class="view modal-view hidden"><div class="modal-kicker">MISSION CONTROL</div><h1>ARTHUR’S SHOWTIME CHAPTERS</h1><p class="modal-intro">Choose a stage you've unlocked. Your best scores save on this iPad.</p><div id="stageMap" class="stage-map"></div><div class="modal-actions"><button class="secondary-cta" data-go="menu">← BACK</button><button id="continueBtn" class="primary-cta">CONTINUE ▶</button></div></section>
       <section id="briefing" class="view modal-view hidden"><div class="modal-kicker" id="briefingKicker">CHAPTER 01 / 05</div><div class="briefing-layout"><div class="briefing-poster"><div id="briefingIcon" class="briefing-icon">🍁</div><span>DIRECTOR’S NOTES</span><strong id="briefingPosterTitle">THE TURKEY SEARCH</strong></div><div class="briefing-text"><h1 id="briefingTitle">THE TURKEY SEARCH</h1><p id="briefingStory">The rehearsal pages have blown across campus.</p><div id="briefingTask" class="briefing-task">ACT 1 OF 4</div><button id="readMissionBtn" class="secondary-cta" type="button" style="margin-bottom:8px">🔊 HEAR THIS MISSION</button><p class="control-instructions"><b>iPad:</b> drag joystick · BOOST to dash · INTERACT near glowing objects<br><b>Keyboard:</b> WASD / arrows · SHIFT dash · E or SPACE interact</p><button id="launchBtn" class="primary-cta">BEGIN MISSION <span>→</span></button></div></div></section>
@@ -104,6 +147,15 @@
       <section id="clear" class="view modal-view hidden"><div class="modal-kicker">MISSION COMPLETE</div><div class="clear-medal" id="clearMedal">S</div><h1 id="clearTitle">CAMPUS CLEARED!</h1><p class="modal-intro" id="clearCopy">The rehearsal is back on track.</p><div class="results"><div><small>POINTS</small><strong id="resultPoints">0000</strong></div><div><small>TIME</small><strong id="resultTime">00:00</strong></div><div><small>RANK</small><strong id="resultRank">S</strong></div></div><div class="modal-actions"><button class="secondary-cta" id="replayBtn">↻ REPLAY</button><button id="nextBtn" class="primary-cta">NEXT MISSION →</button></div></section>
       <section id="dead" class="view modal-view hidden"><div class="modal-kicker">THE SHOW MUST GO ON</div><h1>NOT OUT YET.</h1><p class="modal-intro">Every great crew has to improvise. Try a different route, use BOOST to slip past hazards, and don't give up.</p><div class="modal-actions"><button id="retryBtn" class="primary-cta">↻ TRY AGAIN</button><button id="deadMapBtn" class="secondary-cta">MISSION MAP</button></div></section>
       <section id="won" class="view modal-view hidden"><div class="modal-kicker">STANDING OVATION</div><div class="trophy-icon">🏆</div><h1>YOU SAVED THE SHOW!</h1><p class="modal-intro">Arthur and his friends are ready for their Thanksgiving play! You helped everyone work together, solve problems, and make room for the turkey performer.</p><div class="results"><div><small>TOTAL SCORE</small><strong id="totalPoints">00000</strong></div><div><small>STAGES</small><strong>5 / 5</strong></div><div><small>BADGE</small><strong>DIRECTOR</strong></div></div><div class="modal-actions"><button id="playAgainBtn" class="primary-cta">PLAY AGAIN ↻</button><button id="winnerMapBtn" class="secondary-cta">STAGE SELECT</button></div></section>
+
+      <section id="director" class="view director-view hidden">
+        <div class="director-header"><div id="directorHeading" class="director-heading">DIRECTOR’S CHALLENGE 1 / 20</div><div id="directorStage" class="director-stage">CASTING CALL · ACT 1</div></div>
+        <h1 id="directorType">THE PROP ROOM MAZE</h1><p id="directorInstruction" class="director-instruction">Find the backstage clues!</p>
+        <div id="directorPlay" class="director-main"><div id="directorBoard" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column"></div></div>
+        <div id="directorMoves" class="director-moves">MOVES 0</div><div id="directorMessage" class="director-message" aria-live="polite"></div>
+        <div class="director-controls"><button id="directorHint">💡 HINT</button><button id="directorSpeak">🔊 READ DIRECTIONS</button><button id="directorReset">↻ RESTART PUZZLE</button></div>
+        <div id="directorWin" class="director-win hidden"><div style="font-size:75px">🎭</div><h2>DIRECTOR’S PUZZLE SOLVED!</h2><p id="directorWinText">Excellent thinking!</p><button id="directorContinue" class="primary-cta">▶ CONTINUE THE ADVENTURE</button></div>
+      </section>
       <section id="little" class="view little-view hidden">
         <div class="little-top"><button id="littleBack" class="little-small">← CHOOSE MODE</button><div id="littleChapter" class="little-chapter">🎭 ARTHUR NEEDS A TURKEY!</div><div class="little-count" id="littleCount">⭐ 0</div></div>
         <div class="little-heading"><div class="little-character" id="littleCharacter">🦃</div><div><div class="little-eyebrow" id="littlePosition">CHAPTER 1 · STORY 1 / 4</div><h2 id="littleTitle">Find the Turkey!</h2><p id="littlePrompt">Tap the turkey pictures!</p></div><button id="littleSpeak" class="little-sound" aria-label="Hear the directions">🔊</button></div>
@@ -113,9 +165,10 @@
       </section>
     </div>
   </main>
-  <footer class="footer"><div><b>BOOK CONNECTION:</b> Help Arthur solve the Thanksgiving play’s turkey-role problem. <span class="desktop-hint">Move with WASD / arrows · Dash SHIFT · Use E / SPACE · Pause ESC</span></div><div>20-ACT UNOFFICIAL CLASSROOM COMPANION TO <i>ARTHUR'S THANKSGIVING</i> • NOT AFFILIATED WITH THE AUTHOR OR PUBLISHER</div></footer>
+  <footer class="footer"><div><b>BOOK CONNECTION:</b> Help Arthur solve the Thanksgiving play’s turkey-role problem. <span class="desktop-hint">Move with WASD / arrows · Dash SHIFT · Use E / SPACE · Pause ESC</span></div><div>20-ACT + 20 DIRECTOR PUZZLES · UNOFFICIAL CLASSROOM COMPANION TO <i>ARTHUR'S THANKSGIVING</i> • NOT AFFILIATED WITH THE AUTHOR OR PUBLISHER</div></footer>
 </div>
-<script>/* ARTHUR’S THANKSGIVING SHOWTIME — original unofficial arcade companion. */
+<script>
+/* ARTHUR’S THANKSGIVING SHOWTIME — original unofficial arcade companion. */
 (()=>{
 'use strict';
 const W=1280,H=720,TAU=Math.PI*2,canvas=document.getElementById('gameCanvas'),ctx=canvas.getContext('2d',{alpha:false});
@@ -138,7 +191,7 @@ const ACTS=[
  [{title:'LAST-MINUTE DECOR',kind:'collect',hint:'Collect the decorations before the audience arrives.'},{title:'CHECK THE LIGHTS',kind:'consoles',hint:'Make sure each stage light is ready.'},{title:'OPENING NIGHT',kind:'towers',hint:'Turn on the three big stage spotlights.'},{title:'THE CURTAIN JAM',kind:'boss',hint:'Power three lights, then reset the tangled curtain rig!'}]
 ];
 const ROUTE=[[365,445],[720,1005],[1040,555],[1480,930],[1810,420],[2120,965],[1740,755],[1305,510],[865,925],[390,1090],[610,335],[1045,820],[1520,630],[2095,350],[2100,1085],[1640,940],[1120,485],[755,730],[400,885],[935,1120]];
-const MODE_SPEC={rookie:{label:'GRADES 1–2',health:9,speed:258,targets:9,console:4,checkpoints:8,hazard:.65,boss:6},adventure:{label:'GRADES 3–4',health:7,speed:287,targets:12,console:5,checkpoints:11,hazard:.87,boss:9},expert:{label:'GRADE 5',health:6,speed:307,targets:16,console:7,checkpoints:15,hazard:1.18,boss:13}};
+const MODE_SPEC={rookie:{label:'GRADES 1–2',health:9,speed:258,targets:9,console:4,checkpoints:8,hazard:.65,boss:6},adventure:{label:'GRADES 3–4',health:7,speed:287,targets:12,console:5,checkpoints:11,hazard:.87,boss:9},expert:{label:'GRADE 5',health:6,speed:307,targets:18,console:8,checkpoints:16,hazard:1.25,boss:17}};
 const modeSpec=()=>MODE_SPEC[st.mode]||MODE_SPEC.adventure;
 
 let save={unlocked:0,bests:{},mode:'adventure',actProgress:{}};
@@ -146,7 +199,7 @@ try{const raw=JSON.parse(localStorage.getItem(SAVE)||'{}');if(raw&&typeof raw===
 const persist=()=>{try{localStorage.setItem(SAVE,JSON.stringify(save))}catch{}};
 const st={screen:'menu',mode:MODE_SPEC[save.mode]?save.mode:'adventure',level:0,act:0,wave:0,actElapsed:0,world:null,player:null,cam:{x:0,y:0},elapsed:0,now:0,last:0,score:0,particles:[],floaters:[],burst:[],popupUntil:0,shake:0,goalComplete:false,boss:null,fireballs:[],prompt:'',hudClock:0,attractLeaves:Array.from({length:28},()=>({x:rand(0,W),y:rand(0,H),spd:rand(.5,1.8),s:rand(8,20),rot:rand(0,TAU)}))};
 const keys=new Set(),stick={x:0,y:0,pointer:null},touchUI=$('touchUI');let audio=null,muted=false;
-const views=['menu','mode','map','briefing','actclear','paused','clear','dead','won','little'];
+const views=['menu','mode','map','briefing','actclear','paused','clear','dead','won','little','director'];
 const on=(el,ev,fn)=>el.addEventListener(ev,fn);
 function beep(type='coin'){
  if(muted)return;
@@ -208,7 +261,7 @@ function beginAct(keepChapter=false){
 }
 function completeWave(){
  if(st.screen!=='playing')return;
- if(st.wave+1>=st.world.roundCount){completeAct();return}
+ if(st.wave+1>=st.world.roundCount){if(st.mode==='expert'){window.DirectorTrials.start(st.level,st.act,()=>{st.screen='playing';st.score+=1200;completeAct()})}else completeAct();return}
  const max=st.world.roundCount;st.wave++;
  const old=st.player;
  st.world=createWorld(st.level,st.act,st.wave);st.player=freshPlayer();
@@ -301,6 +354,7 @@ function action(){
    if(near(p,st.boss,860)){
      p.blastCD=.49;st.burst.push({x:p.x,y:p.y,tx:st.boss.x,ty:st.boss.y,life:.26,max:.26});
      beep('fire');sparks(p.x,p.y,'#86efff',8,90);st.boss.hp--;st.boss.hit=.24;st.shake=5;
+     if(st.mode==='expert'&&st.boss.hp>0&&st.boss.hp%4===0){const towers=w.objects.filter(o=>o.type==='tower'&&o.lit);const t=towers[(st.boss.hp/4)%towers.length];if(t){t.lit=false;w.lights--;popup('SPOTLIGHT LOST','The curtain rig tripped a circuit! Turn the dark spotlight on again before removing more knots.','💡')}}
      if(st.boss.hp<=0){
        st.boss.alive=false;st.fireballs.length=0;st.score+=1500;
        sparks(st.boss.x,st.boss.y,'#ffe989',150,410);
@@ -464,115 +518,169 @@ function originalFrame(ts){readGamepad();frame(ts)}
 // frame schedules itself; gamepads are polled at a bounded interval independently.
 setInterval(readGamepad,50);
 showView('menu');requestAnimationFrame(frame);
-
+/* Single-file distribution: no service-worker dependency. */
 // Exposes readonly snapshots and local developer helpers for non-invasive classroom QA.
-window.ArcadeUI={openLittle:()=>showView('little'),openMode:()=>showView('mode'),sfx:beep};
+window.ArcadeUI={openLittle:()=>showView('little'),openMode:()=>showView('mode'),openDirector:()=>showView('director'),sfx:beep};
 window.BackstageMayhem={getState:()=>({screen:st.screen,level:st.level,act:st.act,wave:st.wave,mode:st.mode,elapsed:st.elapsed,health:st.player?.hp,score:st.score,progress:st.world?progressStatus():null,player:st.player?{x:st.player.x,y:st.player.y}:null}),getSave:()=>({...save}),test:{settle:()=>updatePickups(),cooldownZero:()=>{if(st.player)st.player.blastCD=0},getWorld:()=>({kind:st.world?.kind,roundCount:st.world?.roundCount,items:st.world?.items.map(o=>({x:o.x,y:o.y,got:o.got}))||[],objects:st.world?.objects.map(o=>({type:o.type,x:o.x,y:o.y,idx:o.idx,sel:o.sel,target:o.target,lit:o.lit,locked:o.locked,open:o.open}))||[],exit:st.world?.exit,checkpoint:st.world?.checkpoint}),warp:(x,y)=>{if(st.screen==='playing'){st.player.x=x;st.player.y=y;st.cam.x=clamp(x-W*.43,0,st.world.w-W);st.cam.y=clamp(y-H*.5,0,st.world.h-H)}},action:()=>action(),dash:()=>dash()}};
 })();
+
 </script>
-<script>/* Little Turkey Helpers: a no-fail, touch-first story-play game for Pre-K and kindergarten. */
+<script>
+/* Little Turkey Thinkers — interactive picture memory, pattern and sequence adventures. */
 (()=>{
 'use strict';
-const $=id=>document.getElementById(id);
-const saveKey='arthur-showtime-little-2026-v1';
-const chapters=[
- {label:'ARTHUR NEEDS A TURKEY',icon:'🦃',figure:'🎭',acts:[
-  {title:'Find the Turkey!',type:'find',want:'🦃',choices:['🦃','🍁','🎈','🎭','📚','🎁'],say:'Arthur needs someone to play the turkey. Tap every turkey you find!',end:'You spotted turkeys! Arthur has a clue.'},
-  {title:'Invite the Friends',type:'find',want:'✉️',choices:['✉️','🍂','🎁','🎨','🥁','🎩'],say:'Arthur invites his friends to be in the Thanksgiving play. Find the invitations!',end:'The friends know about the school play!'},
-  {title:'Follow the Feathers',type:'catch',want:'🪶',choices:['🪶','🍁','⭐','🎺','🎈','📜'],say:'Colorful feathers lead toward the costume room. Catch the feathers!',end:'You found a trail to the turkey costume!'},
-  {title:'Find the Stage',type:'find',want:'🎭',choices:['🎭','🧸','🪶','🎩','🍂','🎺'],say:'Arthur is directing the show. Find the theater masks so you can reach the stage!',end:'Arthur is ready to begin rehearsal.'}
- ]},
- {label:'MAKE THE TURKEY COSTUME',icon:'🪶',figure:'🦃',acts:[
-  {title:'Gather Feathers',type:'catch',want:'🪶',choices:['🪶','🍁','🎀','⭐','📚','🎵'],say:'A turkey costume needs bright feathers. Catch the feathers!',end:'The turkey costume has colorful feathers!'},
-  {title:'Find the Bow Ties',type:'find',want:'🎀',choices:['🎀','🎁','🧩','🍂','🎩','🎈'],say:'Find the bows to decorate the Thanksgiving costume!',end:'Those bows look fantastic!'},
-  {title:'Dress for the Play',type:'dress',want:'🎩',choices:['🎩','🎀','🪶','🧣','👒','⭐'],say:'Choose the costume piece shown in the yellow box. Each piece adds to Arthur’s costume design!',end:'The turkey performer has a complete costume!'},
-  {title:'Show the Costume',type:'find',want:'🦃',choices:['🦃','🎭','🧸','🎵','🎈','📜'],say:'Find the turkey performer in the finished costume!',end:'The costume is ready for the play!'}
- ]},
- {label:'PRACTICE THE SCHOOL PLAY',icon:'🎶',figure:'🎼',acts:[
-  {title:'Collect Music Notes',type:'catch',want:'🎵',choices:['🎵','🎺','🍁','🎀','⭐','🎩'],say:'Arthur needs music for the school play. Catch the music notes!',end:'The rehearsal music is ready!'},
-  {title:'Spotlight Time',type:'find',want:'💡',choices:['💡','🌟','🎭','🍂','🎺','🎈'],say:'Find the stage lights and help them shine!',end:'Every stage light is shining!'},
-  {title:'Follow the Beat',type:'rhythm',want:'🥁',choices:['🥁','🎺','🎵','🎻','👏','🔔'],say:'Listen to the stage music. Tap the glowing instrument to follow the beat!',end:'The whole cast is ready to perform together!'},
-  {title:'Take a Bow',type:'find',want:'👏',choices:['👏','🎀','🌟','🎵','🍂','🧸'],say:'Everyone practiced! Find the clapping hands and cheer them on!',end:'What a wonderful rehearsal!'}
- ]},
- {label:'DECORATE THE STAGE',icon:'🍁',figure:'🎪',acts:[
-  {title:'Autumn Leaf Party',type:'catch',want:'🍁',choices:['🍁','🎈','🎭','⭐','🎩','✉️'],say:'Catch the autumn leaves to decorate the Thanksgiving play!',end:'The stage looks warm and autumn-colored!'},
-  {title:'Bring the Pumpkins',type:'find',want:'🎃',choices:['🎃','🧸','🍁','🎵','🎀','🎺'],say:'Find the pumpkins for the stage decorations!',end:'The pumpkins are in the perfect places!'},
-  {title:'Add the Decorations',type:'dress',want:'🎀',choices:['🎀','🍁','🎈','🌟','🎭','🎃'],say:'Tap the special decoration shown in the yellow box to build a wonderful stage!',end:'Arthur’s stage is almost complete!'},
-  {title:'The Curtain Is Ready',type:'find',want:'🎭',choices:['🎭','🍁','🎈','💡','🥁','🎩'],say:'Find the theater masks. It is almost time to open the curtain!',end:'The curtain is ready to open!'}
- ]},
- {label:'ARTHUR’S THANKSGIVING SHOW',icon:'🌟',figure:'🦃',acts:[
-  {title:'Find the Turkey Star',type:'find',want:'🦃',choices:['🦃','🍁','👏','🎈','🎭','🎁'],say:'The show is about to start! Find the turkey performer!',end:'The turkey performer is in place!'},
-  {title:'Shine, Spotlights!',type:'rhythm',want:'💡',choices:['💡','⭐','🌟','🎵','🎭','👏'],say:'Tap the glowing stage lights as Arthur gets ready to begin!',end:'All the lights are shining on the school play!'},
-  {title:'Thanksgiving Applause',type:'catch',want:'👏',choices:['👏','⭐','🍁','🎁','🎀','🎵'],say:'The class is doing a great job! Catch the claps and cheer for the cast!',end:'The audience is giving everyone a big cheer!'},
-  {title:'The Curtain Call',type:'find',want:'⭐',choices:['⭐','🍁','🦃','🎭','🎵','🎈'],say:'The Thanksgiving play is a success! Find the shining stars to finish the show!',end:'Hooray! You helped Arthur and his friends put on the Thanksgiving play!'}
- ]}
+const $=id=>document.getElementById(id), KEY='arthur-showtime-thinkers-2026-v2';
+const stories=[
+ {name:'FIND A TURKEY PERFORMER',emoji:'🦃',acts:['Find the Cast','Send the Invitations','Follow the Feathers','Discover the Stage'],icons:['🦃','✉️','🎭','🍁','🪶','🎩']},
+ {name:'MAKE THE COSTUME',emoji:'🪶',acts:['Choose the Feathers','Costume Closet','Dress the Turkey','Ready for Rehearsal'],icons:['🪶','🎀','🎩','🧣','👒','⭐']},
+ {name:'PRACTICE TOGETHER',emoji:'🥁',acts:['Music Class','Spotlights On','Remember the Beat','Take a Bow'],icons:['🥁','🎺','🎵','🎻','💡','👏']},
+ {name:'DECORATE THE STAGE',emoji:'🍁',acts:['Autumn Colors','Bring the Pumpkins','Set the Props','Open the Curtain'],icons:['🍁','🎃','🎀','🎈','🌟','🎭']},
+ {name:'ARTHUR’S BIG SHOW',emoji:'🌟',acts:['Find the Turkey Star','Cue the Lights','Applause, Please','Curtain Call'],icons:['🦃','💡','👏','🌟','🎭','🎵']}
 ];
-const positions=[[9,7],[30,5],[54,8],[78,7],[15,37],[39,37],[64,35],[83,39],[9,66],[29,67],[55,66],[77,66]];
-const state={chapter:0,act:0,round:0,hits:0,goal:8,stars:0,current:'',view:'stopped',latestLabel:''};
-let voiceTimer=null;
-function persist(){try{localStorage.setItem(saveKey,JSON.stringify({chapter:state.chapter,act:state.act,round:state.round,stars:state.stars}))}catch{}}
-function restore(){try{const saved=JSON.parse(localStorage.getItem(saveKey)||'null');if(saved&&typeof saved==='object'){state.chapter=Math.min(4,Math.max(0,Number(saved.chapter)||0));state.act=Math.min(3,Math.max(0,Number(saved.act)||0));state.round=Math.min(1,Math.max(0,Number(saved.round)||0));state.stars=Math.max(0,Number(saved.stars)||0)}}catch{}}
-function sfx(type){window.ArcadeUI?.sfx?.(type)}
-function utter(msg){state.latestLabel=msg;if(!('speechSynthesis' in window))return;try{window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(msg);u.lang='en-US';u.rate=.82;u.pitch=1.14;u.volume=.95;window.speechSynthesis.speak(u)}catch{}}
-function current(){return chapters[state.chapter].acts[state.act]}
-function goalCount(){return state.chapter===4&&state.act===3?10:state.act===2?9:8}
-function selectedSymbol(){const a=current();if(a.type==='dress'){return a.choices[state.hits%a.choices.length]}if(a.type==='rhythm'){return a.choices[(state.hits*2+state.round)%a.choices.length]}return a.want}
-function titleText(){return `Chapter ${state.chapter+1}. Story ${state.act+1} of 4. ${current().title}. ${current().say} ${current().type==='dress'||current().type==='rhythm'? 'Tap '+selectedSymbol()+'.':''}`}
-function start(){restore();window.ArcadeUI.openLittle();state.view='playing';renderRound();utter(titleText())}
-function renderRound(){
- state.view='playing';state.hits=0;state.goal=goalCount();const a=current(),ch=chapters[state.chapter];
- $('littleChapter').textContent=`${ch.icon} ${ch.label}`;$('littleCharacter').textContent=ch.icon;
+const state={chapter:0,act:0,round:0,stars:0,hits:0,goal:1,type:'',view:'stopped',mistakes:0};
+let challenge=null, pending=null, timers=[],lastSpeak='';
+function later(fn,ms){const id=setTimeout(fn,ms);timers.push(id);return id}
+function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function save(){try{localStorage.setItem(KEY,JSON.stringify({chapter:state.chapter,act:state.act,round:state.round,stars:state.stars}))}catch{}}
+function load(){try{let v=JSON.parse(localStorage.getItem(KEY)||'null');if(v){state.chapter=Math.max(0,Math.min(4,Number(v.chapter)||0));state.act=Math.max(0,Math.min(3,Number(v.act)||0));state.round=Math.max(0,Math.min(1,Number(v.round)||0));state.stars=Math.max(0,Number(v.stars)||0)}}catch{}}
+function sound(n){window.ArcadeUI?.sfx?.(n)}
+function speak(message){lastSpeak=message;try{if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(message);u.lang='en-US';u.rate=.82;u.pitch=1.08;speechSynthesis.speak(u)}}catch{}}
+function scene(){return $('littleScene')}
+function progress(){const p=state.goal?state.hits/state.goal:0;$('littleFill').style.width=Math.max(0,Math.min(100,p*100))+'%';$('littleStatus').textContent=`${state.hits} / ${state.goal}`;$('littleCount').textContent='⭐ '+state.stars}
+function em(tag,klass,text,parent,cb){let e=document.createElement(tag);e.className=klass;if(text!==null&&text!==undefined)e.textContent=text;if(cb){e.type='button';e.addEventListener('click',cb)}(parent||scene()).appendChild(e);return e}
+function setup(){clearTimers();state.view='playing';state.hits=0;state.mistakes=0;const st=stories[state.chapter];state.type=['pairs','echo','pattern','order'][(state.act+state.round+state.chapter)%4];
+ $('littleChapter').textContent=st.emoji+' '+st.name;
+ $('littleCharacter').textContent=st.emoji;if($('littleStageFigure'))$('littleStageFigure').textContent=st.emoji;
  $('littlePosition').textContent=`CHAPTER ${state.chapter+1} / 5 · STORY ${state.act+1} / 4 · ROUND ${state.round+1} / 2`;
- $('littleTitle').textContent=a.title;
- $('littlePrompt').textContent=(a.type==='dress'||a.type==='rhythm')?'Tap the glowing picture! '+selectedSymbol():a.say;
- $('littleStageFigure').textContent=ch.figure;$('littleCount').textContent='⭐ '+state.stars;
- $('littleFinish').classList.add('hidden');updateProgress();populate();
+ $('littleTitle').textContent=st.acts[state.act];$('littleFinish').classList.add('hidden');
+ const texts={pairs:'Flip the picture cards. Find every matching pair!',echo:'Watch Arthur’s rehearsal signals. Then copy them in order!',pattern:'Look at the picture pattern. What comes next?',order:'Remember the backstage picture order. Then put it back together!'};
+ $('littlePrompt').textContent=texts[state.type];scene().replaceChildren();challenge={kind:state.type};
+ if(state.type==='pairs')startPairs();if(state.type==='echo')startEcho();if(state.type==='pattern')startPattern();if(state.type==='order')startOrder();
+ progress();speak(texts[state.type]);
 }
-function updateProgress(){const pct=Math.round(state.hits/state.goal*100);$('littleFill').style.width=pct+'%';$('littleStatus').textContent=`${state.hits} / ${state.goal}`;}
-function shuffle(a){const arr=a.slice();for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}return arr}
-function populate(){
- const scene=$('littleScene'),a=current(),target=selectedSymbol();$('littlePrompt').textContent=a.type==='dress'||a.type==='rhythm'?'TAP '+target+' — the glowing picture!':a.say;
- [...scene.querySelectorAll('.little-token')].forEach(x=>x.remove());
- const locations=shuffle(positions).slice(0,9);const choiceList=shuffle([target,target,...a.choices.filter(x=>x!==target)]).slice(0,9);
- if(!choiceList.includes(target))choiceList[0]=target;
- // Always guarantee at least two positive targets and generously sized finger targets.
- const targetQuantity=choiceList.filter(x=>x===target).length;
- if(targetQuantity<2)choiceList[1]=target;
- const width=scene.clientWidth||1000,height=scene.clientHeight||400;
- const iconSize=Math.max(55,Math.min(98,width*.075));
- locations.forEach(([xp,yp],idx)=>{
-  const el=document.createElement('button');el.type='button';el.className='little-token';
-  const symbol=choiceList[idx%choiceList.length];el.textContent=symbol;el.setAttribute('aria-label','Picture: '+symbol);
-  el.style.left=`min(calc(${xp}% + 0px),calc(100% - ${iconSize+8}px))`;
-  el.style.top=`min(calc(${yp}% + 0px),calc(100% - ${iconSize+8}px))`;
-  el.style.setProperty('--float',(2.0+(idx%4)*.5)+'s');
-  if(symbol===target&&(a.type==='dress'||a.type==='rhythm'))el.classList.add('little-glow');
-  el.addEventListener('click',()=>hit(el,symbol===target));scene.appendChild(el);
- });
+function start(){load();window.ArcadeUI.openLittle();setup()}
+function wrong(el){state.mistakes++;sound('click');if(el){el.classList.add('think-wrong');later(()=>el.classList.remove('think-wrong'),380)}if(state.mistakes>0&&state.mistakes%3===0){em('div','think-feedback','Good try! Use the hint, then try again.',scene());later(()=>{const e=scene().querySelector('.think-feedback');e?.remove()},1500)}}
+function award(){state.stars+=2;state.hits++;sound('coin');progress();if(state.hits>=state.goal){state.view='roundclear';later(win,480)}}
+function win(){const last=state.chapter===4&&state.act===3&&state.round===1;const endAct=state.round===1;
+ $('littleWinIcon').textContent=last?'🏆':endAct?'🎭':'🌟';$('littleWinTitle').textContent=last?'THE PLAY IS A HIT!':endAct?'SCENE COMPLETE!':'BRAIN POWER!';
+ $('littleWinText').textContent=last?'You helped Arthur find a turkey performer, make the costume, rehearse, and save the school Thanksgiving play!':'You solved the backstage challenge. Arthur and the cast are ready for the next part!';
+ $('littleNext').textContent=last?'↻ PLAY AGAIN':'▶ NEXT CHALLENGE';$('littleFinish').classList.remove('hidden');speak($('littleWinText').textContent);save();}
+function next(){if(state.view!=='roundclear')return;if(state.round===0)state.round=1;else{state.round=0;if(state.act<3)state.act++;else{state.act=0;if(state.chapter<4)state.chapter++;else{state.chapter=0;state.stars=0}}}save();setup()}
+// MEMORY PAIRS — player must actively recall locations, not merely spot glowing cards.
+function startPairs(){const count=Math.min(5,3+Math.floor(state.chapter/2)+(state.round===1?1:0));let symbols=shuffle(stories[state.chapter].icons).slice(0,count);
+ challenge={kind:'pairs',symbols,flipped:[],matched:[],locked:false};state.goal=count;
+ const wrap=em('div','think-wrap',null),head=em('div','think-topline',`MATCH ${count} PAIRS · Tap two cards`,wrap);
+ const grid=em('div','think-pair-grid',null,wrap);grid.style.gridTemplateColumns=`repeat(${count<=3?3:count===4?4:5},1fr)`;const deck=shuffle([...symbols,...symbols]);
+ deck.forEach((symbol,idx)=>{let b=em('button','think-card','?',grid,()=>{
+  if(challenge.locked||challenge.matched.includes(idx)||challenge.flipped.includes(idx)||state.view!=='playing')return;
+  b.textContent=symbol;b.classList.add('face-up');challenge.flipped.push(idx);sound('click');
+  if(challenge.flipped.length===2){const [i,j]=challenge.flipped;challenge.locked=true;
+   if(deck[i]===deck[j]){challenge.matched.push(i,j);later(()=>{challenge.flipped=[];challenge.locked=false;grid.children[i].classList.add('matched');grid.children[j].classList.add('matched');award()},330)}
+   else{wrong(b);later(()=>{grid.children[i].textContent='?';grid.children[j].textContent='?';grid.children[i].classList.remove('face-up');grid.children[j].classList.remove('face-up');challenge.flipped=[];challenge.locked=false},770)}
+  }
+ });b.setAttribute('aria-label','Turn over picture '+(idx+1))});
 }
-function hit(el,correct){if(state.view!=='playing'||el.disabled)return;
- if(!correct){el.classList.remove('little-wrong');void el.offsetWidth;el.classList.add('little-wrong');sfx('click');return}
- el.disabled=true;el.classList.add('little-correct');state.hits++;state.stars++;sfx('coin');
- $('littleCount').textContent='⭐ '+state.stars;updateProgress();
- if(state.hits===state.goal){state.view='roundclear';window.setTimeout(finishRound,310)}
- else window.setTimeout(()=>{if(state.view==='playing')populate()},260);
+// REHEARSAL ECHO — watch a sequence and reproduce it in order (Simon-style).
+function startEcho(){const count=3+Math.floor(state.chapter/2)+state.round;const palette=shuffle(stories[state.chapter].icons).slice(0,4),seq=Array.from({length:count},(_,i)=>palette[Math.floor(Math.random()*4)]);
+ challenge={kind:'echo',palette,seq,index:0,watching:true};state.goal=count;
+ const wrap=em('div','think-wrap',null),display=em('div','think-big-cue','🎬',wrap),head=em('div','think-topline','WATCH THE REHEARSAL SIGNALS',wrap),grid=em('div','think-option-grid',null,wrap);
+ palette.forEach(sym=>{let b=em('button','think-choice',sym,grid,()=>{if(challenge.watching||state.view!=='playing')return;
+  if(sym===seq[challenge.index]){b.classList.add('good');later(()=>b.classList.remove('good'),250);award();challenge.index++;if(state.view==='playing'){head.textContent=`YOUR TURN · ${challenge.index} OF ${count}`;display.textContent='⭐'}}
+  else{wrong(b);challenge.index=0;state.hits=0;progress();head.textContent='TRY AGAIN · LISTEN AND WATCH';later(playEcho,370)}
+ });b.setAttribute('aria-label','Rehearsal symbol '+sym)});
+ function playEcho(){if(state.view!=='playing')return;challenge.watching=true;head.textContent='WATCH THE REHEARSAL SIGNALS';display.textContent='👀';let step=0;
+ function flash(){if(state.view!=='playing')return;if(step>=seq.length){challenge.watching=false;display.textContent='👉';head.textContent='YOUR TURN · TAP THE SAME ORDER';speak('Your turn. Tap the pictures in the same order.');return}
+ display.textContent=seq[step];sound('coin');const target=[...grid.children].find(x=>x.textContent===seq[step]);target?.classList.add('lit');later(()=>target?.classList.remove('lit'),460);step++;later(flash,620)}later(flash,650)};
+ challenge.replay=playEcho;playEcho();}
+// PATTERN MAKER — infer the repeating rule rather than tap a highlighted answer.
+function startPattern(){state.goal=2+Math.floor(state.chapter/2)+state.round;
+ const wrap=em('div','think-wrap',null),head=em('div','think-topline','WHAT COMES NEXT?',wrap),row=em('div','think-sequence',null,wrap),options=em('div','think-option-grid',null,wrap);challenge={kind:'pattern',head,row,options};newPattern();}
+function newPattern(){if(state.view!=='playing')return;const c=challenge;const palette=shuffle(stories[state.chapter].icons);let length=state.chapter>=3?3:2,pattern=palette.slice(0,length);if(state.round===1&&state.chapter>=2)length=3;pattern=palette.slice(0,length);
+ let shown=state.chapter>=2?6:5;const answer=pattern[shown%length];c.target=answer;c.row.replaceChildren();c.options.replaceChildren();
+ for(let i=0;i<shown;i++)em('div','think-pattern-symbol',pattern[i%length],c.row);em('div','think-pattern-symbol missing','❓',c.row);
+ const distract=shuffle([...new Set([...pattern,...palette])]).slice(0,4);if(!distract.includes(answer))distract[0]=answer;
+ shuffle(distract).forEach(sym=>{let b=em('button','think-choice',sym,c.options,()=>{if(state.view!=='playing')return;if(sym===answer){b.classList.add('good');award();if(state.view==='playing')later(newPattern,320)}else wrong(b)})});
+ c.head.textContent=`FINISH THE PATTERN · ${state.hits+1} OF ${state.goal}`;}
+// BACKSTAGE ORDER — preview a short order, conceal it, and reconstruct without dragging.
+function startOrder(){const n=Math.min(5,3+Math.floor(state.chapter/2)+(state.round===1?1:0));state.goal=n;const symbols=shuffle(stories[state.chapter].icons).slice(0,n);
+ const wrap=em('div','think-wrap',null),head=em('div','think-topline','WATCH THE COSTUME LINEUP',wrap),row=em('div','think-sequence',null,wrap),grid=em('div','think-option-grid',null,wrap);
+ challenge={kind:'order',symbols,index:0,head,row,grid,watching:true};symbols.forEach(sym=>em('div','think-pattern-symbol',sym,row));
+ shuffle(symbols).forEach(sym=>{let b=em('button','think-choice',sym,grid,()=>{if(challenge.watching||state.view!=='playing')return;if(sym===symbols[challenge.index]){b.disabled=true;b.classList.add('good');row.children[challenge.index].textContent=sym;challenge.index++;award();}else wrong(b)})});
+ const hide=()=>{if(state.view!=='playing')return;challenge.watching=false;challenge.index=0;head.textContent='PUT THE PICTURES BACK IN ORDER';[...row.children].forEach(x=>x.textContent='❔')};challenge.replay=()=>{if(state.view!=='playing')return;challenge.watching=true;[...row.children].forEach((x,i)=>x.textContent=symbols[i]);head.textContent='LOOK AND REMEMBER';later(hide,2600)};later(hide,3200);
 }
-function finishRound(){const a=current();sfx('complete');let done=state.round===1;const chDone=state.act===3&&done;const allDone=state.chapter===4&&chDone;
- $('littleWinIcon').textContent=allDone?'🏆':chDone?'🎭':'🌟';
- $('littleWinTitle').textContent=allDone?'THE PLAY IS A HIT!':chDone?'CHAPTER COMPLETE!':'YOU DID IT!';
- $('littleWinText').textContent=allDone?'You helped Arthur find a turkey performer, make a costume, rehearse, and put on the Thanksgiving school play!':a.end;
- $('littleNext').textContent=allDone?'↻ PLAY AGAIN':'▶ NEXT STORY';$('littleFinish').classList.remove('hidden');utter($('littleWinText').textContent);
-}
-function next(){if(state.view!=='roundclear')return;
- if(state.round<1){state.round++}else{state.round=0;if(state.act<3){state.act++}else{state.act=0;if(state.chapter<4){state.chapter++}else{state.chapter=0;state.stars=0}}}
- persist();renderRound();utter(titleText());
-}
-function hint(){utter(titleText())}
-$('littleSpeak').addEventListener('click',hint);$('littleHint').addEventListener('click',hint);
-$('littleBack').addEventListener('click',()=>{persist();try{window.speechSynthesis.cancel()}catch{};state.view='stopped';window.ArcadeUI.openMode()});
-$('littleNext').addEventListener('click',next);
-window.LittleShow={start,getState:()=>({...state,type:current().type,selected:selectedSymbol()}),test:{clearRound:()=>{if(state.view==='playing'){state.hits=state.goal;updateProgress();state.view='roundclear';finishRound()}},next}};
+function hint(){if(state.view!=='playing')return;const c=challenge;if(c.kind==='pairs'){const closed=[...scene().querySelectorAll('.think-card:not(.matched)')];closed.forEach(x=>{x.classList.add('hint-glow')});later(()=>closed.forEach(x=>x.classList.remove('hint-glow')),800);speak('Remember which pictures were behind each card. Find two that match.')}
+ else if(c.kind==='pattern')speak('Look for the pictures that repeat. Which picture should come next?');else{c.replay?.();speak('Watch these pictures carefully. Remember the order, then try again.')}}
+$('littleSpeak').addEventListener('click',()=>speak($('littlePrompt').textContent));$('littleHint').addEventListener('click',hint);
+$('littleBack').addEventListener('click',()=>{save();clearTimers();try{speechSynthesis.cancel()}catch{}state.view='stopped';window.ArcadeUI.openMode()});$('littleNext').addEventListener('click',next);
+window.LittleShow={start,getState:()=>({...state,challengeType:challenge?.kind}),test:{clearRound:()=>{if(state.view==='playing'){state.hits=state.goal;progress();state.view='roundclear';clearTimers();win()}},next}};
 })();
+
+</script>
+<script>
+/* Director's Challenge: 20 expert-only puzzle rooms, alternating three genuine strategies. */
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id), icons=['✉️','📜','🪶','🎩','🎭','💡','🎵','🍁'];
+const story=['CASTING CALL','COSTUME DEPARTMENT','REHEARSAL CONTROL','OPENING NIGHT','SAVE THE SHOW'];
+let s=null;
+const shuffle=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function el(tag,c,text,parent,click){const e=document.createElement(tag);e.className=c||'';if(text!==undefined&&text!==null)e.textContent=text;if(click){e.type='button';e.addEventListener('click',click)}parent.appendChild(e);return e}
+function speak(txt){try{if('speechSynthesis' in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(txt);u.rate=.91;speechSynthesis.speak(u)}}catch{}}
+function start(level,act,done){const n=level*4+act;s={level,act,n,done,moves:0,solved:false,type:['maze','lights','logic','lights'][n%4]};
+ window.ArcadeUI.openDirector();$('directorHeading').textContent=`DIRECTOR’S CHALLENGE ${n+1} / 20`;
+ $('directorStage').textContent=`${story[level]} · ACT ${act+1}`;
+ $('directorWin').classList.add('hidden');$('directorPlay').classList.remove('hidden');
+ if(s.type==='maze')maze();else if(s.type==='lights')lights();else logic();
+}
+function finish(){if(s.solved)return;s.solved=true;$('directorWin').classList.remove('hidden');$('directorWinText').textContent=`You solved the backstage problem in ${s.moves} moves. Arthur’s Thanksgiving play is one step closer to opening night!`;window.ArcadeUI.sfx('complete');speak('You solved it! Great thinking. The play can continue.')}
+function counter(msg){$('directorMoves').textContent=`MOVES ${s.moves} · ${msg}`}
+function title(name,instruction){$('directorType').textContent=name;$('directorInstruction').textContent=instruction;counter('THINK BEFORE YOU TAP');$('directorBoard').replaceChildren();s.instruction=instruction}
+// Navigate a branching floor plan with two keys and blocked scenery; only adjacent taps count.
+function maze(){title('PROP ROOM MAZE','Help Arthur carry BOTH gold tickets to the stage. Tap an adjacent open square to move. Avoid the stacked props!');
+ const map=['...#..','##.#.#','.....#','.###..','....#.','##....'];
+ const keys=new Set(['2,0','4,5']);let pos=[0,0];s.keys=new Set();const board=el('div','director-grid maze-grid',null,$('directorBoard'));
+ function draw(){board.replaceChildren();for(let r=0;r<6;r++)for(let c=0;c<6;c++){
+   const id=r+','+c,wall=map[r][c]==='#',here=pos[0]===r&&pos[1]===c,goal=r===5&&c===5,unfound=keys.has(id)&&!s.keys.has(id);
+   const b=el('button','director-tile '+(wall?'wall':here?'player':goal?'goal':unfound?'ticket':''),wall?'📦':here?'🧸':goal?'🎭':unfound?'🎟️':'·',board,()=>{
+    if(s.solved||wall||Math.abs(r-pos[0])+Math.abs(c-pos[1])!==1)return;
+    pos=[r,c];s.moves++;if(keys.has(id))s.keys.add(id);counter(`TICKETS ${s.keys.size}/2`);draw();if(goal&&s.keys.size===keys.size)finish();
+    else if(goal){$('directorMessage').textContent='Both tickets are needed to open the curtain.';window.ArcadeUI.sfx('click')}
+   });b.setAttribute('aria-label',`Row ${r+1} column ${c+1}, ${wall?'prop stack':here?'player':goal?'stage':unfound?'ticket':'open'}`);
+ }}draw();counter('TICKETS 0/2');}
+// Lights Out: press each cell to switch itself + its orthogonal neighbors. Always solvable.
+function lights(){title('SPOTLIGHT POWER GRID','Restore all 16 spotlights. Tapping a switch changes that light AND its four neighbors. Plan your moves!');
+ let arr=Array(16).fill(true),seed=(s.n*3+5)%16;const press=i=>{const r=Math.floor(i/4),c=i%4;for(let j=0;j<16;j++){let rr=Math.floor(j/4),cc=j%4;if((Math.abs(r-rr)+Math.abs(c-cc))<=1)arr[j]=!arr[j]}};
+ const steps=5+Math.floor(s.level/2);let scramble=shuffle(Array.from({length:16},(_,i)=>i)).slice(0,steps);scramble.forEach(press)
+ if(arr.every(Boolean)){press(5);scramble.push(5)}s.solution=Array(16).fill(false);scramble.forEach(i=>s.solution[i]=!s.solution[i]);s.reset=()=>{arr=Array(16).fill(true);scramble.forEach(press);draw()};
+ const board=el('div','director-grid lights-grid',null,$('directorBoard'));
+ function draw(){board.replaceChildren();arr.forEach((on,i)=>{const b=el('button','director-tile light-tile '+(on?'on':'off'),on?'💡':'◼',board,()=>{if(s.solved)return;press(i);s.solution[i]=!s.solution[i];s.moves++;counter(`POWERED ${arr.filter(Boolean).length}/16`);draw();if(arr.every(Boolean))finish()});b.setAttribute('aria-label',`Light ${i+1}, ${on?'on':'off'}, tap to toggle neighbors`)});}
+ draw();counter(`POWERED ${arr.filter(Boolean).length}/16`);
+ s.tip='A light can be changed by its own switch or any neighboring switch. Use a highlighted switch to move toward a solution.';
+ s.resetPuzzle=()=>{s.moves=0;s.solution=Array(16).fill(false);scramble.forEach(i=>s.solution[i]=!s.solution[i]);s.reset();counter(`POWERED ${arr.filter(Boolean).length}/16`)};
+}
+// Theater cue logic: arrange every prop with meaningful relative-order clues.
+function logic(){const n=s.level>=3?6:5,correct=icons.slice(0,n),labels={'✉️':'invitations','📜':'script','🪶':'feathers','🎩':'costume hat','🎭':'curtain','💡':'spotlight'};
+ title('BACKSTAGE CUE SEQUENCER','Arrange the show cues in the right order. Tap any two props to swap them. Follow the clues below!');
+ // Rotate canonical story into an expert puzzle with randomized order clues but a unique order.
+ const target=shuffle(correct);let order=shuffle(target);if(order.every((v,i)=>v===target[i]))order.reverse();let selected=-1;
+ const wrap=$('directorBoard'),row=el('div','director-cue-row',null,wrap),clues=el('div','director-clues',null,wrap);
+ const clueText=target.slice(0,-1).map((v,i)=>`• ${labels[v]||v} goes before ${labels[target[i+1]]||target[i+1]}.`).join(' ');
+ clues.textContent='DIRECTOR’S CLUES: '+clueText;
+ function draw(){row.replaceChildren();order.forEach((sym,i)=>{const b=el('button','director-cue '+(selected===i?'selected':''),sym,row,()=>{
+  if(s.solved)return;if(selected<0){selected=i;draw()}else{[order[selected],order[i]]=[order[i],order[selected]];selected=-1;s.moves++;counter(`CUES IN PLACE ${order.filter((x,j)=>x===target[j]).length}/${n}`);draw();if(order.every((v,j)=>v===target[j]))finish()}
+ });b.setAttribute('aria-label',`Cue position ${i+1}, ${labels[sym]||sym}`)});}
+ draw();counter(`CUES IN PLACE ${order.filter((x,j)=>x===target[j]).length}/${n}`);
+ s.tip='Read each clue. If one prop must be before another, move it to an earlier slot. All the clues form a single order.';
+ s.expected=target;s.order=()=>order;
+}
+$('directorHint').addEventListener('click',()=>{const hint=s.type==='maze'?'Find two gold tickets before the theater door. You can move only one space up, down, left or right.':s.type==='lights'?(s.tip||'Try fixing the top row first.'):(s.tip||'Follow the clues.');$('directorMessage').textContent=hint;if(s.type==='lights'){const i=s.solution.findIndex(Boolean);if(i>=0){const b=$('directorBoard').querySelectorAll('.director-tile')[i];b?.classList.add('hint-glow');setTimeout(()=>b?.classList.remove('hint-glow'),2200)}}speak(hint)});
+$('directorSpeak').addEventListener('click',()=>speak(s.instruction));
+$('directorContinue').addEventListener('click',()=>{if(!s?.solved)return;let callback=s.done;s=null;callback()});
+$('directorReset').addEventListener('click',()=>{if(s?.type==='maze')maze();else if(s?.type==='lights')s.resetPuzzle();else if(s?.type==='logic')logic()});
+window.DirectorTrials={start,getState:()=>s?{type:s.type,level:s.level,act:s.act,moves:s.moves,solved:s.solved}:null,test:{complete:()=>{if(s&&!s.solved)finish()},getSolution:()=>s?.solution?.map((v,i)=>v?i:-1).filter(i=>i>=0)||[],getOrder:()=>s?.order?.(),getExpected:()=>s?.expected}};
+})();
+
 </script>
 </body>
 </html>
